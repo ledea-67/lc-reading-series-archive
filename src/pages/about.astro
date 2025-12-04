@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import { metadata } from '../lib/data';
+---
+
+<Base title="About" description="About the Lewis & Clark College Reading Series and this archive">
+  <article>
+    <h1>About the Reading Series</h1>
+
+    <!-- Design: intro section with appropriate styling -->
+    <section>
+      <p>
+        The Lewis & Clark College Reading Series has been bringing distinguished
+        literary writers to campus since 2004. This archive documents over two
+        decades of readings featuring poets, novelists, essayists, and critics.
+      </p>
+    </section>
+
+    <!-- Design: history/mission section -->
+    <section>
+      <h2>History</h2>
+      <p>
+        <!-- Content about the series history will go here -->
+        Founded in 2004, the series has hosted {metadata.totalWriters} writers
+        representing the full spectrum of contemporary literature.
+      </p>
+    </section>
+
+    <!-- Design: acknowledgments/credits section -->
+    <section>
+      <h2>About This Archive</h2>
+      <p>
+        This digital archive preserves the legacy of the Reading Series,
+        making information about visiting writers accessible to students,
+        scholars, and the broader literary community.
+      </p>
+      <p>
+        <small>Data last updated: {metadata.lastUpdated}</small>
+      </p>
+    </section>
+  </article>
+</Base>

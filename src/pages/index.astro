@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { writers, metadata, getAllYears } from '../lib/data';
+
+const years = getAllYears();
+const recentWriters = writers.filter(w => !w.years.includes(0)).slice(0, 6);
+---
+
+<Base title="Home">
+  <!-- Hero section - design will customize -->
+  <section>
+    <h1>Lewis & Clark College Reading Series</h1>
+    <p>An archive of {metadata.totalWriters} literary writers who have visited the series from 2004 to 2026.</p>
+  </section>
+
+  <!-- Featured/recent writers section - design will customize -->
+  <section>
+    <h2>Featured Writers</h2>
+    <!-- Design: featured writer cards/grid will go here -->
+    <ul>
+      {recentWriters.map((writer) => (
+        <li>
+          <a href={`/writers/${writer.id}`}>{writer.name}</a>
+          <span>({writer.genre})</span>
+        </li>
+      ))}
+    </ul>
+    <a href="/writers">View all writers</a>
+  </section>
+
+  <!-- Years overview - design will customize -->
+  <section>
+    <h2>Browse by Year</h2>
+    <!-- Design: year timeline/grid will go here -->
+    <ul>
+      {years.slice(0, 5).map((year) => (
+        <li>
+          <a href={`/years/${year}`}>{year}</a>
+        </li>
+      ))}
+    </ul>
+    <a href="/years">View all years</a>
+  </section>
+</Base>

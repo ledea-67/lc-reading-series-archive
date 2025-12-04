@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllYears, getWritersByYear, getWritersWithUnknownYear } from '../../lib/data';
+
+const years = getAllYears();
+const unknownYearWriters = getWritersWithUnknownYear();
+
+// Build year data with writer counts
+const yearData = years.map((year) => ({
+  year,
+  count: getWritersByYear(year).length,
+}));
+---
+
+<Base title="Years" description="Browse the Lewis & Clark Reading Series by year">
+  <h1>Browse by Year</h1>
+
+  <!-- Design: timeline visualization will go here -->
+  <section>
+    <p>
+      The Reading Series has hosted writers from {years[years.length - 1]} to {years[0]}.
+    </p>
+  </section>
+
+  <!-- Design: year grid/timeline -->
+  <section>
+    <h2>All Years</h2>
+    <ul>
+      {yearData.map(({ year, count }) => (
+        <li>
+          <a href={`/years/${year}`}>
+            <strong>{year}</strong>
+            <span>({count} writer{count !== 1 ? 's' : ''})</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Design: unknown year section -->
+  {unknownYearWriters.length > 0 && (
+    <section>
+      <h2>Year Unknown ({unknownYearWriters.length})</h2>
+      <p>
+        These writers visited the series, but the specific year is not yet confirmed.
+      </p>
+      <ul>
+        {unknownYearWriters.map((writer) => (
+          <li>
+            <a href={`/writers/${writer.id}`}>{writer.name}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>

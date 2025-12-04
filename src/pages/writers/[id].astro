@@ -1,0 +1,113 @@
+---
+import Base from '../../layouts/Base.astro';
+import { writers, getWriterById } from '../../lib/data';
+import type { Writer } from '../../types/writer';
+
+export function getStaticPaths() {
+  return writers.map((writer) => ({
+    params: { id: writer.id },
+  }));
+}
+
+const { id } = Astro.params;
+const writer = getWriterById(id) as Writer;
+
+const knownYears = writer.years.filter((y) => y !== 0);
+const hasUnknownYear = writer.years.includes(0);
+---
+
+<Base title={writer.name} description={writer.bio}>
+  <article>
+    <!-- Design: writer header with photo -->
+    <header>
+      <h1>{writer.name}</h1>
+      <p>{writer.genre}</p>
+
+      <!-- Photo placeholder - design will style -->
+      <div>
+        {writer.photo.status === 'available' ? (
+          <img
+            src={`/photos/${writer.id}.jpg`}
+            alt={`Photo of ${writer.name}`}
+            loading="lazy"
+          />
+        ) : (
+          <img
+            src="/photos/placeholder.svg"
+            alt="Photo not available"
+          />
+        )}
+        {writer.photo.attribution && (
+          <small>Photo: {writer.photo.attribution}</small>
+        )}
+      </div>
+    </header>
+
+    <!-- Design: bio section -->
+    <section>
+      <h2>Biography</h2>
+      <p>{writer.bio}</p>
+    </section>
+
+    <!-- Design: appearance years -->
+    <section>
+      <h2>Reading Series Appearances</h2>
+      {knownYears.length > 0 ? (
+        <ul>
+          {knownYears.map((year) => (
+            <li>
+              <a href={`/years/${year}`}>{year}</a>
+            </li>
+          ))}
+        </ul>
+      ) : hasUnknownYear ? (
+        <p>Year unknown</p>
+      ) : null}
+    </section>
+
+    <!-- Design: notable works -->
+    {writer.notableWorks.length > 0 && (
+      <section>
+        <h2>Notable Works</h2>
+        <ul>
+          {writer.notableWorks.map((work) => (
+            <li>{work}</li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <!-- Design: awards -->
+    {writer.awards.length > 0 && (
+      <section>
+        <h2>Awards & Honors</h2>
+        <ul>
+          {writer.awards.map((award) => (
+            <li>{award}</li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <!-- Design: external links -->
+    <section>
+      <h2>Links</h2>
+      <ul>
+        {writer.wikipediaUrl && (
+          <li>
+            <a href={writer.wikipediaUrl} target="_blank" rel="noopener">
+              Wikipedia
+            </a>
+          </li>
+        )}
+        {writer.officialWebsite && (
+          <li>
+            <a href={writer.officialWebsite} target="_blank" rel="noopener">
+              Official Website
+            </a>
+          </li>
+        )}
+      </ul>
+    </section>
+  </article>
+</Base>

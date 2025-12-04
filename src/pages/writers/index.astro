@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import { writers, getAllGenres } from '../../lib/data';
+
+const genres = getAllGenres();
+const sortedWriters = [...writers].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base title="All Writers" description="Browse all writers who have visited the Lewis & Clark Reading Series">
+  <h1>Writers</h1>
+
+  <!-- Design: filter/search controls will go here -->
+  <section>
+    <h2>Filter by Genre</h2>
+    <ul>
+      {genres.map((genre) => (
+        <li>
+          <a href={`?genre=${genre}`}>{genre}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Design: writer grid/list with cards -->
+  <section>
+    <h2>All Writers ({writers.length})</h2>
+    <ul>
+      {sortedWriters.map((writer) => (
+        <li>
+          <a href={`/writers/${writer.id}`}>
+            <strong>{writer.name}</strong>
+          </a>
+          <span>{writer.genre}</span>
+          {writer.years.filter(y => y !== 0).length > 0 && (
+            <span>({writer.years.filter(y => y !== 0).join(', ')})</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>

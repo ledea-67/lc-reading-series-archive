@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllYears, getWritersByYear } from '../../lib/data';
+
+export function getStaticPaths() {
+  const years = getAllYears();
+  return years.map((year) => ({
+    params: { year: String(year) },
+  }));
+}
+
+const { year } = Astro.params;
+const yearNum = parseInt(year, 10);
+const writers = getWritersByYear(yearNum);
+const allYears = getAllYears();
+
+// Find previous and next years for navigation
+const currentIndex = allYears.indexOf(yearNum);
+const prevYear = currentIndex < allYears.length - 1 ? allYears[currentIndex + 1] : null;
+const nextYear = currentIndex > 0 ? allYears[currentIndex - 1] : null;
+---
+
+<Base
+  title={`${year} Writers`}
+  description={`Writers who visited the Lewis & Clark Reading Series in ${year}`}
+>
+  <!-- Design: year navigation -->
+  <nav>
+    {prevYear && <a href={`/years/${prevYear}`}>&larr; {prevYear}</a>}
+    <a href="/years">All Years</a>
+    {nextYear && <a href={`/years/${nextYear}`}>{nextYear} &rarr;</a>}
+  </nav>
+
+  <h1>{year}</h1>
+  <p>{writers.length} writer{writers.length !== 1 ? 's' : ''} visited the series</p>
+
+  <!-- Design: writer cards for this year -->
+  <section>
+    <ul>
+      {writers.map((writer) => (
+        <li>
+          <a href={`/writers/${writer.id}`}>
+            <strong>{writer.name}</strong>
+          </a>
+          <span>{writer.genre}</span>
+          <p>{writer.bio.slice(0, 150)}...</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
