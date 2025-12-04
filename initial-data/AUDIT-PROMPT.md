@@ -16,7 +16,7 @@ Key files:
 - `initial-data/writers-sample.json` - Current writer data (108 writers, mostly incomplete)
 - `initial-data/Lewis-Clark-for-Pauls-Sheet1.pdf` - PDF with year-to-writer mappings
 - `initial-data/data-audit-process.md` - Full process documentation
-- `initial-data/writer-checklist.md` - Tracking checklist (needs updating)
+- `initial-data/audit-tracker.json` - JSON tracker for audit progress (tracks yearComplete, photoComplete, audited status per writer)
 
 ### The Problem
 
@@ -55,7 +55,7 @@ For each writer:
 
 After completing Batch 1:
 1. Save updated writers to `initial-data/writers-audit-batch1.json` (just the updated entries)
-2. Update `initial-data/writer-checklist.md` with accurate status for audited writers
+2. Update `initial-data/audit-tracker.json` - set `yearComplete`, `photoComplete`, and `audited` to true for completed writers, update batch number
 3. Create `initial-data/photo-sources.md` documenting photo research results
 4. Report progress and any issues found
 
@@ -82,7 +82,7 @@ Follow the same process:
 1. Update years from the year-mapping
 2. Research photos for each writer
 3. Save results to writers-audit-batch[N].json
-4. Update the checklist
+4. Update audit-tracker.json with completion status
 5. Add to photo-sources.md
 
 Report progress when done.
