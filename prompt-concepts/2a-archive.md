@@ -1,10 +1,7 @@
 # Implement: Lewis & Clark Reading Series — Concept A: "The Archive"
 
-## Prerequisites
-Ensure the worktree is set up per `prompt-concepts/1-setup.md` before starting. Run `npm run dev` to verify the site loads.
-
 ## Context
-You're working in a git worktree branched from the base project. The Astro project is already set up with:
+This Astro project is set up with:
 - **108 writers** with full data (bios, works, awards, years) in `src/data/writers.json`
 - Data functions in `src/lib/data.ts`: `getWriterById()`, `getWritersByYear()`, `getAllYears()`, `getWritersByGenre()`, `getAllGenres()`
 - TypeScript types in `src/types/writer.ts` (includes `Writer`, `WriterPhoto`)
