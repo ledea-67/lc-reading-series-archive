@@ -1,5 +1,12 @@
 ---
+/**
+ * Writer Detail — The Archive
+ *
+ * A considered profile. Photo complements rather than competes with name and bio.
+ * Works and awards presented cleanly. External links understated.
+ */
 import Base from '../../layouts/Base.astro';
+import WriterHero from '../../components/WriterHero.astro';
 import { writers, getWriterById } from '../../lib/data';
 import type { Writer } from '../../types/writer';
 
@@ -17,97 +24,275 @@ const hasUnknownYear = writer.years.includes(0);
 ---
 
 <Base title={writer.name} description={writer.bio}>
-  <article>
-    <!-- Design: writer header with photo -->
-    <header>
-      <h1>{writer.name}</h1>
-      <p>{writer.genre}</p>
+  <article class="writer-page">
+    <!-- Hero Section -->
+    <WriterHero writer={writer} />
 
-      <!-- Photo placeholder - design will style -->
-      <div>
-        {writer.photo.status === 'available' ? (
-          <img
-            src={`/photos/${writer.id}.jpg`}
-            alt={`Photo of ${writer.name}`}
-            loading="lazy"
-          />
-        ) : (
-          <img
-            src="/photos/placeholder.svg"
-            alt="Photo not available"
-          />
-        )}
-        {writer.photo.attribution && (
-          <small>Photo: {writer.photo.attribution}</small>
-        )}
-      </div>
-    </header>
+    <!-- Content Sections -->
+    <div class="writer-content">
+      <!-- Notable Works -->
+      {writer.notableWorks.length > 0 && (
+        <section class="content-section works-section">
+          <h2 class="section-heading">Notable Works</h2>
+          <ul class="works-list">
+            {writer.notableWorks.map((work, i) => (
+              <li class="work-item" style={`animation-delay: ${300 + i * 50}ms`}>
+                <span class="work-title">{work}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-    <!-- Design: bio section -->
-    <section>
-      <h2>Biography</h2>
-      <p>{writer.bio}</p>
-    </section>
+      <!-- Awards & Honors -->
+      {writer.awards.length > 0 && (
+        <section class="content-section awards-section">
+          <h2 class="section-heading">Awards & Honors</h2>
+          <ul class="awards-list">
+            {writer.awards.map((award, i) => (
+              <li class="award-item" style={`animation-delay: ${400 + i * 50}ms`}>
+                <span class="award-name">{award}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-    <!-- Design: appearance years -->
-    <section>
-      <h2>Reading Series Appearances</h2>
-      {knownYears.length > 0 ? (
-        <ul>
-          {knownYears.map((year) => (
-            <li>
-              <a href={`/years/${year}`}>{year}</a>
-            </li>
-          ))}
-        </ul>
-      ) : hasUnknownYear ? (
-        <p>Year unknown</p>
-      ) : null}
-    </section>
+      <!-- External Links -->
+      {(writer.wikipediaUrl || writer.officialWebsite) && (
+        <section class="content-section links-section">
+          <h2 class="section-heading">External Links</h2>
+          <ul class="links-list">
+            {writer.wikipediaUrl && (
+              <li class="link-item">
+                <a
+                  href={writer.wikipediaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="external-link"
+                >
+                  <span class="link-label">Wikipedia</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              </li>
+            )}
+            {writer.officialWebsite && (
+              <li class="link-item">
+                <a
+                  href={writer.officialWebsite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="external-link"
+                >
+                  <span class="link-label">Official Website</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              </li>
+            )}
+          </ul>
+        </section>
+      )}
+    </div>
 
-    <!-- Design: notable works -->
-    {writer.notableWorks.length > 0 && (
-      <section>
-        <h2>Notable Works</h2>
-        <ul>
-          {writer.notableWorks.map((work) => (
-            <li>{work}</li>
-          ))}
-        </ul>
-      </section>
-    )}
-
-    <!-- Design: awards -->
-    {writer.awards.length > 0 && (
-      <section>
-        <h2>Awards & Honors</h2>
-        <ul>
-          {writer.awards.map((award) => (
-            <li>{award}</li>
-          ))}
-        </ul>
-      </section>
-    )}
-
-    <!-- Design: external links -->
-    <section>
-      <h2>Links</h2>
-      <ul>
-        {writer.wikipediaUrl && (
-          <li>
-            <a href={writer.wikipediaUrl} target="_blank" rel="noopener">
-              Wikipedia
-            </a>
-          </li>
-        )}
-        {writer.officialWebsite && (
-          <li>
-            <a href={writer.officialWebsite} target="_blank" rel="noopener">
-              Official Website
-            </a>
-          </li>
-        )}
-      </ul>
-    </section>
+    <!-- Back Navigation -->
+    <nav class="writer-nav" aria-label="Page navigation">
+      <a href="/writers" class="nav-link">
+        <span class="nav-arrow">&larr;</span>
+        <span class="nav-label">All Writers</span>
+      </a>
+    </nav>
   </article>
 </Base>
+
+<style>
+  .writer-page {
+    max-width: var(--width-content);
+    margin: 0 auto;
+    padding: 0 var(--margin-page);
+  }
+
+  /* Content Sections */
+  .writer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-10);
+    padding: var(--space-8) 0;
+  }
+
+  .content-section {
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .works-section {
+    animation-delay: 300ms;
+  }
+
+  .awards-section {
+    animation-delay: 350ms;
+  }
+
+  .links-section {
+    animation-delay: 400ms;
+  }
+
+  .section-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--ink-deep);
+    margin: 0 0 var(--space-5);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--rule-faint);
+  }
+
+  /* Works List */
+  .works-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work-item {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--rule-faint);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .work-item:last-child {
+    border-bottom: none;
+  }
+
+  .work-title {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-style: italic;
+    color: var(--ink-body);
+  }
+
+  /* Awards List */
+  .awards-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .award-item {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--rule-faint);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .award-item:last-child {
+    border-bottom: none;
+  }
+
+  .award-name {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-body);
+  }
+
+  /* Links */
+  .links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .link-item {
+    display: inline-block;
+  }
+
+  .external-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid var(--rule-faint);
+    border-radius: 2px;
+    transition:
+      border-color var(--duration-normal) var(--ease-out),
+      color var(--duration-normal) var(--ease-out);
+  }
+
+  .external-link:hover {
+    border-color: var(--rule-light);
+    color: var(--accent-stamp);
+  }
+
+  .link-label {
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .link-arrow {
+    font-size: var(--text-xs);
+    opacity: 0.6;
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  .external-link:hover .link-arrow {
+    transform: translate(2px, -2px);
+  }
+
+  /* Navigation */
+  .writer-nav {
+    padding: var(--space-10) 0 var(--space-6);
+    border-top: 1px solid var(--rule-faint);
+    margin-top: var(--space-8);
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    text-decoration: none;
+    letter-spacing: var(--tracking-wide);
+    transition: var(--transition-color);
+  }
+
+  .nav-link:hover {
+    color: var(--accent-stamp);
+  }
+
+  .nav-arrow {
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  .nav-link:hover .nav-arrow {
+    transform: translateX(-4px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .writer-page {
+      padding: 0 var(--margin-page-narrow);
+    }
+
+    .writer-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .writer-content {
+      padding: var(--space-6) 0;
+    }
+  }
+</style>

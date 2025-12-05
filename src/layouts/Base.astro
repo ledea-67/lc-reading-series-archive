@@ -1,10 +1,21 @@
 ---
+/**
+ * Base Layout — The Archive
+ *
+ * The foundational structure: fonts, global styles, navigation, footer.
+ * Every page breathes with archival dignity.
+ */
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 interface Props {
   title: string;
   description?: string;
 }
 
 const { title, description = 'Archive of the Lewis & Clark College Reading Series (2004-2026)' } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -14,73 +25,43 @@ const { title, description = 'Archive of the Lewis & Clark College Reading Serie
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title} | Lewis & Clark Reading Series</title>
-    <!-- Design: fonts will be added here -->
-    <!-- Design: additional meta tags, favicons, etc. -->
-  </head>
-  <body>
-    <!-- Navigation placeholder - design will customize -->
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/writers">Writers</a>
-      <a href="/years">Years</a>
-    </nav>
 
-    <main>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Typography: Cormorant Garamond (display/body) + Spectral (UI) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+
+  <body>
+    <Navigation currentPath={currentPath} />
+
+    <main class="site-main">
       <slot />
     </main>
 
-    <!-- Footer placeholder - design will customize -->
-    <footer>
-      <p>Lewis & Clark College Reading Series Archive</p>
-      <p>2004 - 2026</p>
-    </footer>
-
-    <style is:global>
-      /* Minimal reset - design branches will override */
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-      }
-
-      body {
-        min-height: 100vh;
-      }
-
-      a {
-        color: inherit;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-
-    <style>
-      /* Layout scaffolding - design branches will replace */
-      nav {
-        display: flex;
-        gap: 1rem;
-        padding: 1rem;
-      }
-
-      main {
-        padding: 1rem;
-      }
-
-      footer {
-        padding: 1rem;
-        margin-top: 2rem;
-      }
-    </style>
+    <Footer />
   </body>
 </html>
+
+<style is:global>
+  /* Layout structure */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .site-main {
+    flex: 1;
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-12);
+  }
+</style>

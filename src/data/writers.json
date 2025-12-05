@@ -34,7 +34,8 @@
         "license": "CC BY 2.0",
         "attribution": "Tulane Public Relations",
         "status": "available",
-        "imageUrl": "https://images2.penguinrandomhouse.com/author/22801"
+        "imageUrl": "https://images2.penguinrandomhouse.com/author/22801",
+        "localPath": "writers/ondaatje-michael.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -66,7 +67,8 @@
         "attribution": "John D. and Catherine T. MacArthur Foundation",
         "status": "available",
         "notes": "High-resolution photos available from MacArthur Foundation; also on ASU faculty page and Poetry Foundation",
-        "imageUrl": "https://www.macfound.org/media/fellows/profile_photos/diaz_2018_profile-240.png"
+        "imageUrl": "https://www.macfound.org/media/fellows/profile_photos/diaz_2018_profile-240.png",
+        "localPath": "writers/diaz-natalie.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -98,7 +100,8 @@
         "attribution": "National Book Foundation",
         "status": "available",
         "notes": "Photo on National Book Foundation page; also on Poetry Foundation and Academy of American Poets",
-        "imageUrl": "https://i0.wp.com/www.nationalbook.org/wp-content/uploads/2023/08/finney-forrest1-Vaughan-Fielder.jpeg?fit=1485%2C1650&ssl=1"
+        "imageUrl": "https://i0.wp.com/www.nationalbook.org/wp-content/uploads/2023/08/finney-forrest1-Vaughan-Fielder.jpeg?fit=1485%2C1650&ssl=1",
+        "localPath": "writers/finney-nikky.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -132,7 +135,8 @@
         "attribution": "Author website",
         "status": "available",
         "notes": "Photo available on official author website and Penguin Random House publisher page",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/61d134ccd321f568c9289a2d/873fa02f-0b49-4cb3-b564-738d97b9033a/Aamina_1526_r.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/61d134ccd321f568c9289a2d/873fa02f-0b49-4cb3-b564-738d97b9033a/Aamina_1526_r.jpg",
+        "localPath": "writers/ahmad-aamina.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -161,7 +165,8 @@
         "attribution": "UCLA / Stephanie Yantz",
         "status": "available",
         "notes": "Photo on UCLA faculty page; additional photos by Stephanie Yantz in UCLA College Magazine profile",
-        "imageUrl": "https://english.ucla.edu/wp-content/uploads/Adam-Bradley-Portrait-e1603147045312.jpg"
+        "imageUrl": "https://english.ucla.edu/wp-content/uploads/Adam-Bradley-Portrait-e1603147045312.jpg",
+        "localPath": "writers/bradley-adam.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -193,7 +198,8 @@
         "attribution": "Christopher Michel",
         "status": "available",
         "notes": "Multiple photos on Wikimedia Commons; also Library of Congress photos by Shawn Miller",
-        "imageUrl": "https://www.loc.gov/static/managed-content/uploads/sites/7/2022/07/AdaLimon_creditShawnMiller_500x500.jpg"
+        "imageUrl": "https://www.loc.gov/static/managed-content/uploads/sites/7/2022/07/AdaLimon_creditShawnMiller_500x500.jpg",
+        "localPath": "writers/limon-ada.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -228,7 +234,8 @@
         "attribution": "UNC Dept. of English / Steve Exum",
         "status": "available",
         "notes": "Photos on UNC English department pages; photo by Steve Exum in Wilson Library; Griffin Poetry Prize page also has photo",
-        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/AlanShapiro_NewBioImage-AlgonquinPress.png"
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/AlanShapiro_NewBioImage-AlgonquinPress.png",
+        "localPath": "writers/shapiro-alan.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -256,7 +263,8 @@
         "attribution": "Rose Marie Cromwell",
         "status": "available",
         "notes": "Author photo by Rose Marie Cromwell on official website and publisher pages",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c2bcaf2f793923866d2cebc/1549839303533-NRMPSPI2HVSM1ZJ6CTIS/photo+of+me+by+rose+marie+cromwell+2.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c2bcaf2f793923866d2cebc/1549839303533-NRMPSPI2HVSM1ZJ6CTIS/photo+of+me+by+rose+marie+cromwell+2.jpg",
+        "localPath": "writers/arthurs-alexia.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -286,7 +294,8 @@
         "attribution": "Annie Beedy",
         "status": "available",
         "notes": "Photo by Annie Beedy on Tin House author page",
-        "imageUrl": "https://literary-arts.org/wp-content/uploads/2016/08/web_photo_Smith_Alexis-credit-Annie-Beedy-scaled.jpg"
+        "imageUrl": "https://literary-arts.org/wp-content/uploads/2016/08/web_photo_Smith_Alexis-credit-Annie-Beedy-scaled.jpg",
+        "localPath": "writers/smith-alexis.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -350,7 +359,8 @@
         "attribution": "David Heald / Solomon R. Guggenheim Foundation",
         "status": "available",
         "notes": "Photo by David Heald for Guggenheim Museum; also photos on Poetry Foundation and official website",
-        "imageUrl": "https://www.guggenheim.org/wp-content/uploads/2023/01/people-ama-codjoe.jpg"
+        "imageUrl": "https://www.guggenheim.org/wp-content/uploads/2023/01/people-ama-codjoe.jpg",
+        "localPath": "writers/codjoe-ama.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -382,7 +392,8 @@
         "attribution": "Opal Rockett / Hilde Franzsen",
         "status": "available",
         "notes": "Press photos available for download on official website (The Piano Farm); Oregon Cultural Trust also has photos from laureate tenure",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5d3946e72a72b00001af2683/1577991740933-9HUAP9K7UUEXVHRZN2DX/Hilde+little.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5d3946e72a72b00001af2683/1577991740933-9HUAP9K7UUEXVHRZN2DX/Hilde+little.jpg",
+        "localPath": "writers/mojgani-anis.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -410,7 +421,8 @@
         "attribution": "Linfield University",
         "status": "available",
         "notes": "Photo on Linfield University faculty page; also available on Macmillan author page and MacDowell artist page",
-        "imageUrl": "https://m.media-amazon.com/images/I/613rtiPQ66L._SX450_CR0%2C0%2C450%2C450_.jpg"
+        "imageUrl": "https://m.media-amazon.com/images/I/613rtiPQ66L._SX450_CR0%2C0%2C450%2C450_.jpg",
+        "localPath": "writers/keesey-anna.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -464,7 +476,8 @@
         "attribution": "LA Times Festival of Books",
         "status": "available",
         "notes": "Photo available on LA Times Festival of Books speaker page; also on Publishers Marketplace profile",
-        "imageUrl": "https://avatars.sched.co/2/34/7491083/avatar.jpg.320x320px.jpg?90b"
+        "imageUrl": "https://avatars.sched.co/2/34/7491083/avatar.jpg.320x320px.jpg?90b",
+        "localPath": "writers/amster-betsy.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -500,7 +513,8 @@
         "attribution": "Robert Hass",
         "status": "available",
         "notes": "Photo by Robert Hass available on Blue Flower Arts speaker page; also on Poetry Foundation, Academy of American Poets",
-        "imageUrl": "https://blueflowerarts.com/wp-content/uploads/2014/07/Hillman-pls-credit-Robert-Hass.jpeg"
+        "imageUrl": "https://blueflowerarts.com/wp-content/uploads/2014/07/Hillman-pls-credit-Robert-Hass.jpeg",
+        "localPath": "writers/hillman-brenda.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -535,7 +549,8 @@
         "attribution": "Jacqueline Mia Foster",
         "status": "available",
         "notes": "Photo by Jacqueline Mia Foster on Academy of American Poets, Poetry Foundation, and official website",
-        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/Catherine%20Barnett_NewBioImage_1.png"
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/Catherine%20Barnett_NewBioImage_1.png",
+        "localPath": "writers/barnett-catherine.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -595,7 +610,8 @@
         "attribution": "Rachel Eliza Griffiths",
         "status": "available",
         "notes": "Photo by Rachel Eliza Griffiths on Northwestern faculty page; also credited to Beowulf Sheehan on some pages",
-        "imageUrl": "https://english.northwestern.edu/images/people/faculty/charif-shanahan.jpg"
+        "imageUrl": "https://english.northwestern.edu/images/people/faculty/charif-shanahan.jpg",
+        "localPath": "writers/shanahan-charif.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -632,7 +648,8 @@
         "attribution": "University of Minnesota",
         "status": "available",
         "notes": "Photo on University of Minnesota English department page; additional photo by Aaron Lavinsky in Minneapolis Sculpture Garden for Star Tribune",
-        "imageUrl": "https://cla.umn.edu/sites/cla.umn.edu/files/styles/feature_image/public/unsorted/images/d4a10f-20110105-charles-baxter.jpg"
+        "imageUrl": "https://cla.umn.edu/sites/cla.umn.edu/files/styles/feature_image/public/unsorted/images/d4a10f-20110105-charles-baxter.jpg",
+        "localPath": "writers/baxter-charles.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -665,7 +682,8 @@
         "attribution": "Artist Trust / Photo courtesy of the artist",
         "status": "available",
         "notes": "Photo on Artist Trust page; also may have photos from KUOW interview and Seattle Arts & Lectures",
-        "imageUrl": "https://media.artisttrust.org/assets/artists/combined_headshot-1024x606.png"
+        "imageUrl": "https://media.artisttrust.org/assets/artists/combined_headshot-1024x606.png",
+        "localPath": "writers/deavel-christine.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -701,7 +719,8 @@
         "attribution": "Lise Watkins",
         "status": "available",
         "notes": "Photo by Lise Watkins on Community of Writers bio page; also on Penguin Random House and Lannan Foundation pages",
-        "imageUrl": "https://communityofwriters.org/wp-content/uploads/2021/12/Watkins-Author-photo-BW.jpg"
+        "imageUrl": "https://communityofwriters.org/wp-content/uploads/2021/12/Watkins-Author-photo-BW.jpg",
+        "localPath": "writers/watkins-claire-vaye.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -728,7 +747,8 @@
         "attribution": "Lewis & Clark College",
         "status": "available",
         "notes": "Photo on Lewis & Clark Visiting Writers Series event page; also on New Orleans Poetry Festival and Portland State faculty pages",
-        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/600/height/600/crop/1/src_region/0,204,1545,1748/105515_2025.04.01_ENG_Consuelo_Wise_Visiting_Writers_Series.jpg"
+        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/600/height/600/crop/1/src_region/0,204,1545,1748/105515_2025.04.01_ENG_Consuelo_Wise_Visiting_Writers_Series.jpg",
+        "localPath": "writers/wise-consuelo.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -763,7 +783,8 @@
         "attribution": "Anna Longworth",
         "status": "available",
         "notes": "Photo by Anna Longworth on official website; also on Poetry Foundation, NEA, and University of Illinois pages",
-        "imageUrl": "https://www.poets.org/sites/default/files/cdsn9odz_400x400.png"
+        "imageUrl": "https://www.poets.org/sites/default/files/cdsn9odz_400x400.png",
+        "localPath": "writers/van-landingham-corey.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -798,7 +819,8 @@
         "attribution": "Ben Decastro",
         "status": "available",
         "notes": "Photo by Ben Decastro on Poetry Foundation; also on USF faculty page and Academy of American Poets",
-        "imageUrl": "https://writersworkshop.uiowa.edu/sites/writersworkshop.uiowa.edu/files/styles/large/public/2024-03/d-a-powell.jpeg?itok=-KcEhGic"
+        "imageUrl": "https://writersworkshop.uiowa.edu/sites/writersworkshop.uiowa.edu/files/styles/large/public/2024-03/d-a-powell.jpeg?itok=-KcEhGic",
+        "localPath": "writers/powell-d-a.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -831,7 +853,8 @@
         "attribution": "Denison University",
         "status": "available",
         "notes": "Photo on Denison University faculty page; also on Kenyon Review contributor page and Poetry Foundation",
-        "imageUrl": "https://denison.edu/sites/default/files/contacts/baker_david_rs.jpg"
+        "imageUrl": "https://denison.edu/sites/default/files/contacts/baker_david_rs.jpg",
+        "localPath": "writers/baker-david.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -864,7 +887,8 @@
         "attribution": "Danny Montemayor",
         "status": "available",
         "notes": "Author photo by Danny Montemayor on official website; also on Poetry Foundation, Stanford Creative Writing, and BOA Editions",
-        "imageUrl": "https://creativewriting.stanford.edu/sites/creativewriting/files/styles/hs_small_square_200x200/public/media/people/derrickaustin_0.jpg.webp?itok=3q2J3uX-"
+        "imageUrl": "https://creativewriting.stanford.edu/sites/creativewriting/files/styles/hs_small_square_200x200/public/media/people/derrickaustin_0.jpg.webp?itok=3q2J3uX-",
+        "localPath": "writers/austin-derrick.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -897,7 +921,8 @@
         "attribution": "Author website",
         "status": "available",
         "notes": "Photo on official author website; also on University of Iowa Press and Narrative Magazine",
-        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/268/height/340/crop/1/src_region/0,0,2133,3200/85762_Waters_Don.rev.1602785044.jpg"
+        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/268/height/340/crop/1/src_region/0,0,2133,3200/85762_Waters_Don.rev.1602785044.jpg",
+        "localPath": "writers/waters-don.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -928,7 +953,8 @@
         "attribution": "Hannah O'Leary",
         "status": "available",
         "notes": "Bio and photos page on official website; also on Oregon State University faculty page and Literary Arts",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/58cdd2c58419c2ea93236b2b/1490048667382-V60ZXQ91QBQ7K1ASR7BJ/elena1.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/58cdd2c58419c2ea93236b2b/1490048667382-V60ZXQ91QBQ7K1ASR7BJ/elena1.jpg",
+        "localPath": "writers/passarello-elena.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -958,7 +984,8 @@
         "attribution": "Literary Arts",
         "status": "available",
         "notes": "Photo on Literary Arts page; also on Penguin Random House author page and PDX Book Fest",
-        "imageUrl": "https://literary-arts.org/wp-content/uploads/2014/04/CHENOWETH-1536x1024.jpg"
+        "imageUrl": "https://literary-arts.org/wp-content/uploads/2014/04/CHENOWETH-1536x1024.jpg",
+        "localPath": "writers/chenoweth-emily.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -990,7 +1017,8 @@
         "attribution": "Imogen Roth",
         "status": "available",
         "notes": "Photo by Imogen Roth; available on UPenn faculty page, MacArthur Foundation, and Literary Arts",
-        "imageUrl": "https://www.english.upenn.edu/sites/default/files/people/photo/2016-12-05%2017.44.32.jpg"
+        "imageUrl": "https://www.english.upenn.edu/sites/default/files/people/photo/2016-12-05%2017.44.32.jpg",
+        "localPath": "writers/wilson-emily.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1023,7 +1051,8 @@
         "attribution": "Steven Bloch",
         "status": "available",
         "notes": "Photo by Steven Bloch; available on official website and Academy of American Poets",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/629506316df6af2046ce03c4/7e23aee4-8839-4665-bfb6-911a96dc114c/hartigan3dcrop.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/629506316df6af2046ce03c4/7e23aee4-8839-4665-bfb6-911a96dc114c/hartigan3dcrop.jpg",
+        "localPath": "writers/hartigan-endi-bogue.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1052,7 +1081,8 @@
         "attribution": "Kevin A. Roberts / Gena Brady",
         "status": "available",
         "notes": "Photo by Kevin A. Roberts in St. Louis Magazine; additional photo by Gena Brady on publisher pages",
-        "imageUrl": "https://www.stlmag.com/wp-content/uploads/slm_mp/slm_208620__lungren.jpg"
+        "imageUrl": "https://www.stlmag.com/wp-content/uploads/slm_mp/slm_208620__lungren.jpg",
+        "localPath": "writers/lundgren-eric.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1084,7 +1114,8 @@
         "attribution": "Jim Scherer",
         "status": "available",
         "notes": "Photo by Jim Scherer; available on Penguin Random House author page and Harry Walker Agency speaker page",
-        "imageUrl": "https://images3.penguinrandomhouse.com/author/27189"
+        "imageUrl": "https://images3.penguinrandomhouse.com/author/27189",
+        "localPath": "writers/schlosser-eric.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1113,7 +1144,8 @@
         "attribution": "Lewis & Clark College",
         "status": "available",
         "notes": "Photo on Lewis & Clark event page; also featured on Literary Hub Loggernaut anniversary article",
-        "imageUrl": "https://www.lclark.edu/live/image/gid/271/width/192/height/173/crop/1/14575_13547_erin_ergenbright_2_20a42fa370ebf178b092ca8c41dadaf5.rev.1373935911.webp"
+        "imageUrl": "https://www.lclark.edu/live/image/gid/271/width/192/height/173/crop/1/14575_13547_erin_ergenbright_2_20a42fa370ebf178b092ca8c41dadaf5.rev.1373935911.webp",
+        "localPath": "writers/ergenbright-erin.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1148,7 +1180,8 @@
         "attribution": "Cybele Knowles",
         "status": "available",
         "notes": "Photo by Cybele Knowles on Academy of American Poets; also on Poetry Foundation and Milkweed Editions",
-        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/fadyjoudah_newbioimage2018_photocredit_cybeleknowles_0.png"
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/fadyjoudah_newbioimage2018_photocredit_cybeleknowles_0.png",
+        "localPath": "writers/joudah-fady.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1180,7 +1213,8 @@
         "attribution": "Thomas Teal",
         "status": "available",
         "notes": "Photo by Thomas Teal on official author website; also on Liveright/W.W. Norton publisher page",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/66707d3fe6276a4d15f51f86/bc0c1c5a-db43-4153-bb12-d2cc6f24cea9/IMG_4468.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/66707d3fe6276a4d15f51f86/bc0c1c5a-db43-4153-bb12-d2cc6f24cea9/IMG_4468.jpg",
+        "localPath": "writers/hudson-genevieve.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1210,7 +1244,8 @@
         "attribution": "UC Berkeley",
         "status": "available",
         "notes": "Faculty photo on UC Berkeley English Department page; also on Wave Books author page",
-        "imageUrl": "https://english.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/people/wheeler.jpg?itok=DF9_axFr&timestamp=1692510459"
+        "imageUrl": "https://english.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/people/wheeler.jpg?itok=DF9_axFr&timestamp=1692510459",
+        "localPath": "writers/obrien-geoffrey-g.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1243,7 +1278,8 @@
         "attribution": "Sonoma State University",
         "status": "available",
         "notes": "Faculty photo on Sonoma State English Department; also photo by Heather Conley on Poets & Writers profile",
-        "imageUrl": "https://english.sonoma.edu/sites/english/files/styles/square_800_x_800/public/gilliancon-thumb.jpg?h=653d7163&itok=sJPGl9YV"
+        "imageUrl": "https://english.sonoma.edu/sites/english/files/styles/square_800_x_800/public/gilliancon-thumb.jpg?h=653d7163&itok=sJPGl9YV",
+        "localPath": "writers/conoley-gillian.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1276,7 +1312,8 @@
         "attribution": "Soraya Gilanni Viljoen (illustration) / Dani Ismailov (photo)",
         "status": "available",
         "notes": "Author illustration by Soraya Gilanni Viljoen on Tilted Axis Press; photo by Dani Ismailov on The National News",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/565a42a7e4b0f06765f7b528/1568038070665-JJ5ANGMTT8FTOTIYE45Y/Hamid+drawing.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/565a42a7e4b0f06765f7b528/1568038070665-JJ5ANGMTT8FTOTIYE45Y/Hamid+drawing.jpg",
+        "localPath": "writers/ismailov-hamid.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1306,7 +1343,8 @@
         "attribution": "Chris Hardy / The Chronicle",
         "status": "available",
         "notes": "Photo by Chris Hardy in SF Chronicle obituary; taught at Squaw Valley for 20 years",
-        "imageUrl": "https://www.historicnavalfiction.com/images/stories/images/Henry_Carlisle.jpg"
+        "imageUrl": "https://www.historicnavalfiction.com/images/stories/images/Henry_Carlisle.jpg",
+        "localPath": "writers/carlisle-henry.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1336,7 +1374,8 @@
         "attribution": "Annette Hornischer",
         "status": "available",
         "notes": "Photo by Annette Hornischer on American Academy in Berlin page",
-        "imageUrl": "https://www.americanacademy.de/wp-content/uploads/2016/12/hillelschwarz.jpg"
+        "imageUrl": "https://www.americanacademy.de/wp-content/uploads/2016/12/hillelschwarz.jpg",
+        "localPath": "writers/schwartz-hillel.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1368,7 +1407,8 @@
         "attribution": "Community of Writers",
         "status": "available",
         "notes": "Photo on Community of Writers bio page; also on BOMB Magazine interview and Simon & Schuster author page",
-        "imageUrl": "https://communityofwriters.org/wp-content/uploads/2015/09/Prcic_Ismet.jpg"
+        "imageUrl": "https://communityofwriters.org/wp-content/uploads/2015/09/Prcic_Ismet.jpg",
+        "localPath": "writers/prcic-ismet.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1399,7 +1439,8 @@
         "attribution": "Jeremy Maryott / UCI",
         "status": "available",
         "notes": "Photo by Jeremy Maryott on UCI School of Humanities memorial page; J. Hillis Miller papers including photos at UCI",
-        "imageUrl": "https://www.humanities.uci.edu/sites/default/files/styles/article_image_891x504/public/article/HillisStory_0.png"
+        "imageUrl": "https://www.humanities.uci.edu/sites/default/files/styles/article_image_891x504/public/article/HillisStory_0.png",
+        "localPath": "writers/miller-j-hillis.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1430,7 +1471,8 @@
         "attribution": "Danny Chung",
         "status": "available",
         "notes": "Photo by Danny Chung on Michigan Quarterly Review; courtesy photo on Poetry Foundation",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5fe8db577b743f626b43be66/130a688c-2413-4361-b470-5ef4de3876d5/Jacques+Headshots-0013.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5fe8db577b743f626b43be66/130a688c-2413-4361-b470-5ef4de3876d5/Jacques+Headshots-0013.jpg",
+        "localPath": "writers/rancourt-jacques.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1459,7 +1501,8 @@
         "attribution": "Author website",
         "status": "available",
         "notes": "Photo on official author website; also on Penguin Random House and Goodreads author pages",
-        "imageUrl": "https://jamesandersonauthor.com/wp-content/uploads/James_Anderson_Painted_Hills.jpg"
+        "imageUrl": "https://jamesandersonauthor.com/wp-content/uploads/James_Anderson_Painted_Hills.jpg",
+        "localPath": "writers/anderson-james.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1491,7 +1534,8 @@
         "attribution": "Gritchelle Fallesgon",
         "status": "available",
         "notes": "Author headshot by Gritchelle Fallesgon on official website; header photo by Helene Christensen",
-        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5b3ebef39f87702e755d679e/4f9ee229-91d6-4ef0-b9fb-f952bf737be5/JaneW+headshot.jpg"
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5b3ebef39f87702e755d679e/4f9ee229-91d6-4ef0-b9fb-f952bf737be5/JaneW+headshot.jpg",
+        "localPath": "writers/wong-jane.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1526,7 +1570,8 @@
         "attribution": "Middlebury Bread Loaf Writers' Conferences",
         "status": "available",
         "notes": "Photo on Bread Loaf director page; also on University of Rochester faculty page (photo by J. Adam Fenster)",
-        "imageUrl": "https://www.middlebury.edu/writers-conferences/sites/default/files/styles/432x576/public/2020-06/JenniferGrotz.jpg?fv=1-NYR7ca&itok=Pw0ybyJx"
+        "imageUrl": "https://www.middlebury.edu/writers-conferences/sites/default/files/styles/432x576/public/2020-06/JenniferGrotz.jpg?fv=1-NYR7ca&itok=Pw0ybyJx",
+        "localPath": "writers/grotz-jennifer.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1558,7 +1603,8 @@
         "attribution": "University of Iowa Writers' Workshop",
         "status": "available",
         "notes": "Photo on Iowa Writers' Workshop faculty page; also on Poetry Foundation and Academy of American Poets",
-        "imageUrl": "https://writersworkshop.uiowa.edu/sites/writersworkshop.uiowa.edu/files/styles/large/public/2024-02/James_Galvin.jpg?itok=qTG9vUHp"
+        "imageUrl": "https://writersworkshop.uiowa.edu/sites/writersworkshop.uiowa.edu/files/styles/large/public/2024-02/James_Galvin.jpg?itok=qTG9vUHp",
+        "localPath": "writers/galvin-james.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1594,7 +1640,8 @@
         "attribution": "Linfield University",
         "status": "available",
         "notes": "Photo on Linfield University faculty page; also on Academy of American Poets",
-        "imageUrl": "https://linfield.edu/assets/images/bio_images/jwilkins.jpg"
+        "imageUrl": "https://linfield.edu/assets/images/bio_images/jwilkins.jpg",
+        "localPath": "writers/wilkins-joe.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1623,7 +1670,8 @@
         "attribution": "Wave Books",
         "status": "available",
         "notes": "Photo on Wave Books author page; also on Canarium Books and Poetry Foundation",
-        "imageUrl": "https://www.wavepoetry.com/cdn/shop/products/web-beer.jpg?v=1663705255"
+        "imageUrl": "https://www.wavepoetry.com/cdn/shop/products/web-beer.jpg?v=1663705255",
+        "localPath": "writers/beer-john.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1681,7 +1729,8 @@
         "attribution": "Claremont McKenna College",
         "status": "available",
         "notes": "Photo on CMC faculty profile page",
-        "imageUrl": "https://www.cmc.edu/sites/default/files/styles/crop_3_4/public/pictures/2025-03/john-farrell.jpg"
+        "imageUrl": "https://www.cmc.edu/sites/default/files/styles/crop_3_4/public/pictures/2025-03/john-farrell.jpg",
+        "localPath": "writers/farrell-john.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1707,7 +1756,8 @@
         "attribution": "Author website",
         "status": "available",
         "notes": "Photo on official author website; also on Penguin Random House and NYS Writers Institute page",
-        "imageUrl": "https://johnfreemangill.com/images/John_Freeman_Gill.jpg"
+        "imageUrl": "https://johnfreemangill.com/images/John_Freeman_Gill.jpg",
+        "localPath": "writers/gill-john-freeman.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1731,7 +1781,8 @@
         "attribution": "HistoryLink.org / Graceguts.com",
         "status": "available",
         "notes": "Photos available on HistoryLink.org article about Open Books; also referenced in Graceguts.com interview with photos from January 2008",
-        "imageUrl": "https://lectures.org/wp-content/uploads/Screen-Shot-2019-07-01-at-11.29.28-AM-480x267-1.jpg"
+        "imageUrl": "https://lectures.org/wp-content/uploads/Screen-Shot-2019-07-01-at-11.29.28-AM-480x267-1.jpg",
+        "localPath": "writers/marshall-john.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1764,7 +1815,8 @@
         "attribution": "K.B. Dixon",
         "status": "available",
         "notes": "Photo by K.B. Dixon on Oregon ArtsWatch and Portland Monthly; also on Literary Arts bio page",
-        "imageUrl": "https://i0.wp.com/www.orartswatch.org/wp-content/uploads/2022/07/Jon-Raymond-PC-K.B.-Dixon-1.jpg"
+        "imageUrl": "https://i0.wp.com/www.orartswatch.org/wp-content/uploads/2022/07/Jon-Raymond-PC-K.B.-Dixon-1.jpg",
+        "localPath": "writers/raymond-jon.webp"
       },
       "confidence": "high",
       "needsReview": false

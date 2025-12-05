@@ -1,0 +1,191 @@
+---
+/**
+ * Navigation — The Archive
+ *
+ * Designed like a table of contents or index page header.
+ * Small caps, letterspacing, restrained but dignified.
+ */
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '' } = Astro.props;
+
+const navItems = [
+  { href: '/', label: 'Archive', short: 'Archive' },
+  { href: '/years', label: 'Timeline', short: 'Years' },
+  { href: '/writers', label: 'Writers', short: 'Writers' },
+  { href: '/about', label: 'About', short: 'About' },
+];
+
+function isActive(href: string, current: string): boolean {
+  if (href === '/') return current === '/';
+  return current.startsWith(href);
+}
+---
+
+<header class="nav-header">
+  <nav class="nav-container" aria-label="Main navigation">
+    <a href="/" class="nav-title">
+      <span class="nav-title-text">Lewis & Clark</span>
+      <span class="nav-title-series">Reading Series</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      {navItems.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class:list={['nav-link', { 'is-active': isActive(item.href, currentPath) }]}
+            aria-current={isActive(item.href, currentPath) ? 'page' : undefined}
+          >
+            <span class="nav-link-full">{item.label}</span>
+            <span class="nav-link-short">{item.short}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .nav-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--paper-warm);
+    border-bottom: 1px solid var(--rule-faint);
+
+    /* Subtle paper texture continuation */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-blend-mode: soft-light;
+    background-size: 200px;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: var(--width-wide);
+    margin: 0 auto;
+    padding: var(--space-5) var(--margin-page);
+  }
+
+  .nav-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    transition: var(--transition-color);
+  }
+
+  .nav-title:hover {
+    color: var(--ink-deep);
+  }
+
+  .nav-title-text {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    letter-spacing: var(--tracking-tight);
+    color: var(--ink-deep);
+    line-height: 1.1;
+  }
+
+  .nav-title-series {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: var(--space-6);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    letter-spacing: var(--tracking-wider);
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: var(--space-1);
+    transition: var(--transition-color);
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-stamp);
+    transition: width var(--duration-normal) var(--ease-out);
+  }
+
+  .nav-link:hover {
+    color: var(--ink-deep);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link.is-active {
+    color: var(--ink-deep);
+  }
+
+  .nav-link.is-active::after {
+    width: 100%;
+    background: var(--rule-medium);
+  }
+
+  .nav-link-short {
+    display: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-container {
+      padding: var(--space-4) var(--margin-page-narrow);
+    }
+
+    .nav-links {
+      gap: var(--space-4);
+    }
+
+    .nav-link-full {
+      display: none;
+    }
+
+    .nav-link-short {
+      display: inline;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      text-align: center;
+    }
+
+    .nav-title {
+      align-items: center;
+    }
+
+    .nav-links {
+      gap: var(--space-5);
+    }
+  }
+</style>

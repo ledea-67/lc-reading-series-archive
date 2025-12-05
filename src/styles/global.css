@@ -1,0 +1,432 @@
+/*
+ * The Archive — Lewis & Clark Reading Series
+ *
+ * Typography: Cormorant Garamond (display/body) + Spectral (alternative serif)
+ * A transitional face with genuine character: tall ascenders, elegant italics,
+ * oldstyle figures that feel at home in a rare books room.
+ */
+
+/* ============================================
+   CSS Custom Properties — Design Tokens
+   ============================================ */
+
+:root {
+  /*
+   * Color Palette: Paper & Ink
+   * Not generic cream-and-charcoal but specific archival tones
+   */
+
+  /* Papers — aged vellum to crisp cotton */
+  --paper-aged: #f5f1e8;
+  --paper-warm: #faf8f3;
+  --paper-cotton: #fcfbf9;
+
+  /* Inks — rich letterpress tones, not pure black */
+  --ink-deep: #1a1612;
+  --ink-body: #2d2520;
+  --ink-soft: #4a433c;
+  --ink-muted: #7a716a;
+  --ink-faint: #a89f96;
+
+  /* Accent — library stamp, bookplate edge */
+  --accent-stamp: #8b3a3a;
+  --accent-faded: #a86a5d;
+
+  /* Borders — hairline rules */
+  --rule-dark: #3d352f;
+  --rule-medium: #8a7f74;
+  --rule-light: #c9c1b6;
+  --rule-faint: #e5dfd6;
+
+  /*
+   * Typography Scale
+   * Generous, bookish sizing with dramatic display options
+   */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Cormorant Garamond', 'Georgia', serif;
+  --font-ui: 'Spectral', 'Georgia', serif;
+
+  /* Scale using a 1.333 ratio (perfect fourth) */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1.125rem;   /* 18px — generous body */
+  --text-lg: 1.25rem;      /* 20px */
+  --text-xl: 1.5rem;       /* 24px */
+  --text-2xl: 2rem;        /* 32px */
+  --text-3xl: 2.5rem;      /* 40px */
+  --text-4xl: 3.5rem;      /* 56px */
+  --text-5xl: 4.5rem;      /* 72px */
+  --text-hero: 6rem;       /* 96px — for dramatic moments */
+
+  /* Leading — poetry-like spacing */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.65;
+  --leading-relaxed: 1.85;
+  --leading-loose: 2;
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+  --tracking-widest: 0.2em;
+
+  /*
+   * Spacing — Luxurious Margins
+   * Think rare books room, not startup landing page
+   */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+  --space-16: 7rem;
+  --space-20: 9rem;
+  --space-24: 11rem;
+
+  /* Generous page margins */
+  --margin-page: clamp(1.5rem, 8vw, 8rem);
+  --margin-page-narrow: clamp(1rem, 4vw, 3rem);
+
+  /* Max content widths */
+  --width-prose: 38rem;    /* ~65 characters */
+  --width-content: 52rem;
+  --width-wide: 72rem;
+  --width-full: 90rem;
+
+  /*
+   * Animation Timing
+   * Restrained but present — pages finding rest
+   */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  /* Transitions */
+  --transition-color: color var(--duration-normal) var(--ease-out);
+  --transition-opacity: opacity var(--duration-slow) var(--ease-out);
+  --transition-transform: transform var(--duration-slow) var(--ease-out);
+}
+
+/* ============================================
+   Base Reset & Defaults
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: var(--leading-normal);
+  color: var(--ink-body);
+  background-color: var(--paper-warm);
+  min-height: 100vh;
+
+  /* Subtle paper texture via noise overlay */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-blend-mode: soft-light;
+  background-size: 200px;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: var(--leading-tight);
+  color: var(--ink-deep);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+  letter-spacing: var(--tracking-tight);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  letter-spacing: var(--tracking-tight);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin-bottom: var(--space-5);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Small caps utility */
+.small-caps {
+  font-feature-settings: "smcp" 1, "c2sc" 1;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* Italic emphasis with character */
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+small {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+/* ============================================
+   Links
+   ============================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-color);
+}
+
+a:hover {
+  color: var(--accent-stamp);
+}
+
+/* Prose links with subtle underline */
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: var(--rule-light);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--accent-stamp);
+}
+
+/* ============================================
+   Lists
+   ============================================ */
+
+ul, ol {
+  list-style: none;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: var(--space-5);
+  padding-left: var(--space-6);
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-bottom: var(--space-2);
+}
+
+/* ============================================
+   Images
+   ============================================ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================
+   Horizontal Rules — Hairline Style
+   ============================================ */
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--rule-medium) 15%,
+    var(--rule-medium) 85%,
+    transparent
+  );
+  margin: var(--space-10) 0;
+}
+
+/* Decorative rule variant */
+.rule-ornate {
+  position: relative;
+  background: transparent;
+  margin: var(--space-12) 0;
+}
+
+.rule-ornate::before {
+  content: '§';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--ink-muted);
+  background: var(--paper-warm);
+  padding: 0 var(--space-4);
+}
+
+.rule-ornate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--rule-light) 20%,
+    var(--rule-light) 80%,
+    transparent
+  );
+  z-index: -1;
+}
+
+/* ============================================
+   Focus States — Accessibility
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid var(--accent-stamp);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Selection
+   ============================================ */
+
+::selection {
+  background-color: var(--accent-faded);
+  color: var(--paper-warm);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+/* Text alignment */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+/* Font weights */
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+
+/* Genre/category labels */
+.genre-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-style: italic;
+  color: var(--ink-muted);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* Year display */
+.year-display {
+  font-family: var(--font-display);
+  font-variant-numeric: oldstyle-nums;
+}
+
+/* ============================================
+   Animation Classes
+   ============================================ */
+
+/* Fade in on load */
+.fade-in {
+  animation: fadeIn var(--duration-slow) var(--ease-out) forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Settle into place */
+.settle {
+  animation: settle var(--duration-slower) var(--ease-out) forwards;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+@keyframes settle {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger delays for lists */
+.stagger-1 { animation-delay: 50ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 150ms; }
+.stagger-4 { animation-delay: 200ms; }
+.stagger-5 { animation-delay: 250ms; }
+.stagger-6 { animation-delay: 300ms; }
+.stagger-7 { animation-delay: 350ms; }
+.stagger-8 { animation-delay: 400ms; }
+
+/* ============================================
+   Responsive Typography
+   ============================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --text-base: 1rem;
+    --text-4xl: 2.5rem;
+    --text-5xl: 3rem;
+    --text-hero: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-hero: 3rem;
+    --text-4xl: 2rem;
+  }
+}

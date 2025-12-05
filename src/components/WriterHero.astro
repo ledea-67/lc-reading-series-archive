@@ -1,0 +1,273 @@
+---
+/**
+ * WriterHero — The Archive
+ *
+ * Full writer profile header for detail pages.
+ * The name and bio are primary; the photo complements rather than dominates.
+ * Reads like a brief entry in a literary encyclopedia.
+ */
+import type { Writer } from '../types/writer';
+
+interface Props {
+  writer: Writer;
+}
+
+const { writer } = Astro.props;
+
+const knownYears = writer.years.filter(y => y !== 0);
+const hasUnknownYear = writer.years.includes(0);
+const hasPhoto = writer.photo?.status === 'available';
+const photoPath = hasPhoto ? `/images/writers/${writer.id}.webp` : '/photos/placeholder.svg';
+---
+
+<header class="writer-hero">
+  <div class="hero-container">
+    <!-- Portrait column (secondary) -->
+    <aside class="hero-portrait">
+      <div class="portrait-frame">
+        <img
+          src={photoPath}
+          alt={hasPhoto ? `Portrait of ${writer.name}` : ''}
+          loading="eager"
+          class="portrait-image"
+        />
+        <div class="portrait-overlay"></div>
+      </div>
+      {writer.photo?.attribution && (
+        <p class="portrait-attribution">
+          Photo: {writer.photo.attribution}
+        </p>
+      )}
+    </aside>
+
+    <!-- Content column (primary) -->
+    <div class="hero-content">
+      <p class="hero-genre">{writer.genre}</p>
+
+      <h1 class="hero-name">{writer.name}</h1>
+
+      <div class="hero-meta">
+        {knownYears.length > 0 && (
+          <p class="hero-years">
+            Reading Series {knownYears.length > 1 ? 'appearances' : 'appearance'}:
+            {knownYears.map((year, i) => (
+              <>
+                <a href={`/years/${year}`} class="year-link">{year}</a>
+                {i < knownYears.length - 1 && ', '}
+              </>
+            ))}
+          </p>
+        )}
+        {hasUnknownYear && knownYears.length === 0 && (
+          <p class="hero-years hero-years-unknown">Year of appearance unknown</p>
+        )}
+      </div>
+
+      <div class="hero-bio">
+        <p>{writer.bio}</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .writer-hero {
+    padding: var(--space-12) 0 var(--space-8);
+    border-bottom: 1px solid var(--rule-faint);
+    margin-bottom: var(--space-10);
+    animation: fadeIn var(--duration-slow) var(--ease-out) forwards;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-10);
+    max-width: var(--width-content);
+    margin: 0 auto;
+    padding: 0 var(--margin-page);
+    align-items: start;
+  }
+
+  /* Portrait */
+  .hero-portrait {
+    position: sticky;
+    top: calc(80px + var(--space-6));
+  }
+
+  .portrait-frame {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--rule-faint);
+    box-shadow:
+      0 4px 12px rgba(26, 22, 18, 0.08),
+      0 1px 3px rgba(26, 22, 18, 0.06);
+  }
+
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: sepia(12%) saturate(92%) contrast(96%);
+  }
+
+  .portrait-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 40%,
+      rgba(26, 22, 18, 0.12) 100%
+    );
+    pointer-events: none;
+  }
+
+  .portrait-attribution {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: italic;
+    color: var(--ink-faint);
+    text-align: center;
+    margin-top: var(--space-2);
+    line-height: var(--leading-snug);
+  }
+
+  /* Content */
+  .hero-content {
+    padding-top: var(--space-2);
+  }
+
+  .hero-genre {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+    margin-bottom: var(--space-3);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    animation-delay: 100ms;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .hero-name {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: 400;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.1;
+    color: var(--ink-deep);
+    margin: 0 0 var(--space-4);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    animation-delay: 150ms;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .hero-meta {
+    margin-bottom: var(--space-6);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    animation-delay: 200ms;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .hero-years {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    font-variant-numeric: oldstyle-nums;
+    margin: 0;
+  }
+
+  .hero-years-unknown {
+    font-style: italic;
+    color: var(--ink-muted);
+  }
+
+  .year-link {
+    color: var(--ink-body);
+    text-decoration: underline;
+    text-decoration-color: var(--rule-light);
+    text-underline-offset: 0.15em;
+    transition: var(--transition-color);
+  }
+
+  .year-link:hover {
+    color: var(--accent-stamp);
+    text-decoration-color: var(--accent-stamp);
+  }
+
+  .hero-bio {
+    max-width: var(--width-prose);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    animation-delay: 250ms;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .hero-bio p {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    color: var(--ink-body);
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .hero-container {
+      grid-template-columns: 160px 1fr;
+      gap: var(--space-8);
+    }
+
+    .hero-name {
+      font-size: var(--text-4xl);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .hero-portrait {
+      position: static;
+      max-width: 180px;
+      margin: 0 auto;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .hero-bio {
+      text-align: left;
+    }
+
+    .hero-name {
+      font-size: var(--text-3xl);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .writer-hero {
+      padding: var(--space-8) 0 var(--space-6);
+    }
+
+    .hero-container {
+      padding: 0 var(--margin-page-narrow);
+    }
+
+    .hero-name {
+      font-size: var(--text-2xl);
+    }
+
+    .hero-portrait {
+      max-width: 140px;
+    }
+  }
+</style>

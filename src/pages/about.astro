@@ -1,42 +1,347 @@
 ---
+/**
+ * About — The Archive
+ *
+ * Clean prose with room for the series history to unfold.
+ * Dignified layout that lets the content breathe.
+ */
 import Base from '../layouts/Base.astro';
-import { metadata } from '../lib/data';
+import { metadata, getAllYears, writers } from '../lib/data';
+
+const years = getAllYears();
+const startYear = years[years.length - 1];
+const endYear = years[0];
 ---
 
 <Base title="About" description="About the Lewis & Clark College Reading Series and this archive">
-  <article>
-    <h1>About the Reading Series</h1>
+  <article class="about-page">
+    <!-- Page Header -->
+    <header class="page-header">
+      <h1 class="page-title">About the Reading Series</h1>
+      <p class="page-subtitle">A brief history of voices</p>
+    </header>
 
-    <!-- Design: intro section with appropriate styling -->
-    <section>
-      <p>
-        The Lewis & Clark College Reading Series has been bringing distinguished
-        literary writers to campus since 2004. This archive documents over two
-        decades of readings featuring poets, novelists, essayists, and critics.
-      </p>
-    </section>
+    <!-- Main Content -->
+    <div class="prose-container">
+      <!-- Introduction -->
+      <section class="prose-section intro-section">
+        <p class="intro-text">
+          The Lewis & Clark College Reading Series has been bringing distinguished
+          literary writers to campus since {startYear}. This archive documents over two
+          decades of readings featuring poets, novelists, essayists, and critics.
+        </p>
+      </section>
 
-    <!-- Design: history/mission section -->
-    <section>
-      <h2>History</h2>
-      <p>
-        <!-- Content about the series history will go here -->
-        Founded in 2004, the series has hosted {metadata.totalWriters} writers
-        representing the full spectrum of contemporary literature.
-      </p>
-    </section>
+      <!-- Decorative divider -->
+      <div class="section-ornament">
+        <span class="ornament-symbol">§</span>
+      </div>
 
-    <!-- Design: acknowledgments/credits section -->
-    <section>
-      <h2>About This Archive</h2>
-      <p>
-        This digital archive preserves the legacy of the Reading Series,
-        making information about visiting writers accessible to students,
-        scholars, and the broader literary community.
-      </p>
-      <p>
-        <small>Data last updated: {metadata.lastUpdated}</small>
-      </p>
-    </section>
+      <!-- History -->
+      <section class="prose-section">
+        <h2 class="section-heading">History</h2>
+        <p>
+          Founded in {startYear}, the Reading Series has become a vital part of the
+          literary life of Lewis & Clark College and the broader Portland community.
+          Over the years, the series has hosted {metadata.totalWriters} writers representing
+          the full spectrum of contemporary literature.
+        </p>
+        <p>
+          The series has welcomed winners of major literary awards including the
+          Pulitzer Prize, National Book Award, MacArthur Fellowship, and many others.
+          These readings have provided students with the rare opportunity to encounter
+          living authors whose work shapes the literary landscape.
+        </p>
+      </section>
+
+      <!-- The Archive -->
+      <section class="prose-section">
+        <h2 class="section-heading">About This Archive</h2>
+        <p>
+          This digital archive preserves the legacy of the Reading Series, making
+          information about visiting writers accessible to students, scholars, and
+          the broader literary community.
+        </p>
+        <p>
+          Each writer's entry includes biographical information, notable works,
+          awards and honors, and links to further resources. The archive can be
+          explored chronologically through the Timeline, or alphabetically through
+          the Writers index.
+        </p>
+      </section>
+
+      <!-- Statistics -->
+      <section class="prose-section stats-section">
+        <h2 class="section-heading">By the Numbers</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">{metadata.totalWriters}</span>
+            <span class="stat-label">Writers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">{years.length}</span>
+            <span class="stat-label">Years</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">{startYear}–{endYear}</span>
+            <span class="stat-label">Span</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Colophon -->
+      <section class="prose-section colophon-section">
+        <h2 class="section-heading">Colophon</h2>
+        <p>
+          This archive was designed with the goal of creating a reading experience
+          befitting its literary content. The typography uses Cormorant Garamond,
+          a modern interpretation of Claude Garamond's classic typeface, paired
+          with Spectral for interface elements.
+        </p>
+        <p class="meta-note">
+          Archive last updated: {metadata.lastUpdated}
+        </p>
+      </section>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="page-nav" aria-label="Page navigation">
+      <a href="/years" class="nav-link">
+        <span class="nav-label">Explore the Timeline</span>
+        <span class="nav-arrow">&rarr;</span>
+      </a>
+      <a href="/writers" class="nav-link">
+        <span class="nav-label">Browse Writers</span>
+        <span class="nav-arrow">&rarr;</span>
+      </a>
+    </nav>
   </article>
 </Base>
+
+<style>
+  .about-page {
+    max-width: var(--width-prose);
+    margin: 0 auto;
+    padding: 0 var(--margin-page);
+  }
+
+  /* Page Header */
+  .page-header {
+    text-align: center;
+    padding: var(--space-12) 0;
+    border-bottom: 1px solid var(--rule-faint);
+    margin-bottom: var(--space-10);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    letter-spacing: var(--tracking-tight);
+    color: var(--ink-deep);
+    margin: 0 0 var(--space-3);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .page-subtitle {
+    font-family: var(--font-ui);
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+    margin: 0;
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    animation-delay: 50ms;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  /* Prose Container */
+  .prose-container {
+    animation: fadeIn var(--duration-slow) var(--ease-out) forwards;
+    animation-delay: 150ms;
+    opacity: 0;
+  }
+
+  /* Prose Sections */
+  .prose-section {
+    margin-bottom: var(--space-10);
+  }
+
+  .prose-section p {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    color: var(--ink-body);
+    margin-bottom: var(--space-5);
+  }
+
+  .prose-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro-section {
+    margin-bottom: var(--space-8);
+  }
+
+  .intro-text {
+    font-size: var(--text-xl);
+    line-height: var(--leading-loose);
+    color: var(--ink-deep);
+  }
+
+  .section-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 400;
+    color: var(--ink-deep);
+    margin: 0 0 var(--space-5);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--rule-faint);
+  }
+
+  /* Ornament */
+  .section-ornament {
+    text-align: center;
+    margin: var(--space-8) 0;
+  }
+
+  .ornament-symbol {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    color: var(--ink-muted);
+    opacity: 0.6;
+  }
+
+  /* Statistics */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    background: var(--paper-cotton);
+    border: 1px solid var(--rule-faint);
+    border-radius: 2px;
+  }
+
+  .stat-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .stat-number {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 400;
+    font-variant-numeric: oldstyle-nums;
+    color: var(--ink-deep);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  /* Colophon */
+  .colophon-section {
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--rule-faint);
+  }
+
+  .meta-note {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-style: italic;
+    color: var(--ink-muted);
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule-faint);
+  }
+
+  /* Navigation */
+  .page-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-8);
+    padding: var(--space-10) 0 var(--space-6);
+    border-top: 1px solid var(--rule-faint);
+    margin-top: var(--space-10);
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    text-decoration: none;
+    letter-spacing: var(--tracking-wide);
+    transition: var(--transition-color);
+  }
+
+  .nav-link:hover {
+    color: var(--accent-stamp);
+  }
+
+  .nav-arrow {
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  .nav-link:hover .nav-arrow {
+    transform: translateX(4px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 0 var(--margin-page-narrow);
+    }
+
+    .page-title {
+      font-size: var(--text-3xl);
+    }
+
+    .prose-section p {
+      font-size: var(--text-base);
+    }
+
+    .intro-text {
+      font-size: var(--text-lg);
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+    }
+
+    .page-nav {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .page-header {
+      padding: var(--space-10) 0 var(--space-8);
+    }
+
+    .page-title {
+      font-size: var(--text-2xl);
+    }
+
+    .section-heading {
+      font-size: var(--text-xl);
+    }
+  }
+</style>

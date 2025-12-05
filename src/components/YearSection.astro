@@ -1,0 +1,160 @@
+---
+/**
+ * YearSection — The Archive
+ *
+ * Chapter-like year headings with weight and presence.
+ * Large numerals that mark each year as a distinct chapter in the archive.
+ */
+import type { Writer } from '../types/writer';
+import WriterCard from './WriterCard.astro';
+
+interface Props {
+  year: number;
+  writers: Writer[];
+  showWriterCards?: boolean;
+  size?: 'normal' | 'large' | 'hero';
+  delay?: number;
+}
+
+const { year, writers, showWriterCards = true, size = 'normal', delay = 0 } = Astro.props;
+---
+
+<section
+  class:list={['year-section', `size-${size}`]}
+  style={delay > 0 ? `animation-delay: ${delay}ms` : undefined}
+  id={`year-${year}`}
+>
+  <header class="year-header">
+    <a href={`/years/${year}`} class="year-link-wrap">
+      <span class="year-numeral">{year}</span>
+      <span class="year-count">
+        {writers.length} {writers.length === 1 ? 'writer' : 'writers'}
+      </span>
+    </a>
+  </header>
+
+  {showWriterCards && writers.length > 0 && (
+    <div class="year-writers">
+      {writers.map((writer, i) => (
+        <WriterCard
+          writer={writer}
+          size="small"
+          delay={50 + i * 50}
+        />
+      ))}
+    </div>
+  )}
+</section>
+
+<style>
+  .year-section {
+    margin-bottom: var(--space-12);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .year-header {
+    margin-bottom: var(--space-6);
+    position: relative;
+  }
+
+  .year-header::after {
+    content: '';
+    position: absolute;
+    bottom: calc(-1 * var(--space-3));
+    left: 0;
+    width: 100%;
+    max-width: 120px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      var(--rule-medium),
+      transparent
+    );
+  }
+
+  .year-link-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-color);
+  }
+
+  .year-link-wrap:hover .year-numeral {
+    color: var(--accent-stamp);
+  }
+
+  .year-numeral {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 300;
+    font-variant-numeric: oldstyle-nums;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1;
+    color: var(--ink-deep);
+    transition: var(--transition-color);
+  }
+
+  .year-count {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .year-writers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+
+  /* Size variants */
+  .size-large .year-numeral {
+    font-size: var(--text-5xl);
+  }
+
+  .size-hero .year-numeral {
+    font-size: var(--text-hero);
+    font-weight: 300;
+  }
+
+  .size-hero .year-header::after {
+    max-width: 200px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .year-numeral {
+      font-size: var(--text-3xl);
+    }
+
+    .size-large .year-numeral {
+      font-size: var(--text-4xl);
+    }
+
+    .size-hero .year-numeral {
+      font-size: var(--text-5xl);
+    }
+
+    .year-writers {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: var(--space-5);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .year-section {
+      margin-bottom: var(--space-10);
+    }
+
+    .year-writers {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+    }
+  }
+</style>

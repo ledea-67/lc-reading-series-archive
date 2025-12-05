@@ -1,0 +1,188 @@
+---
+/**
+ * WriterCard — The Archive
+ *
+ * Small portrait + name + genre for grid/list displays.
+ * Photo treatment: sepia-toned with subtle vignette, archival feel.
+ * The name is the focus; the portrait complements.
+ */
+import type { Writer } from '../types/writer';
+
+interface Props {
+  writer: Writer;
+  showYears?: boolean;
+  size?: 'small' | 'medium' | 'large';
+  delay?: number;
+}
+
+const { writer, showYears = false, size = 'medium', delay = 0 } = Astro.props;
+
+const knownYears = writer.years.filter(y => y !== 0);
+const yearDisplay = knownYears.length > 0 ? knownYears.join(', ') : null;
+const hasPhoto = writer.photo?.status === 'available';
+
+// Photo path — checking for WebP in images/writers/
+const photoPath = hasPhoto ? `/images/writers/${writer.id}.webp` : '/photos/placeholder.svg';
+---
+
+<article
+  class:list={['writer-card', `size-${size}`]}
+  style={delay > 0 ? `animation-delay: ${delay}ms` : undefined}
+>
+  <a href={`/writers/${writer.id}`} class="card-link">
+    <div class="card-portrait">
+      <div class="portrait-frame">
+        <img
+          src={photoPath}
+          alt={hasPhoto ? `Portrait of ${writer.name}` : ''}
+          loading="lazy"
+          class="portrait-image"
+        />
+        <div class="portrait-overlay"></div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3 class="card-name">{writer.name}</h3>
+      <p class="card-genre">{writer.genre}</p>
+      {showYears && yearDisplay && (
+        <p class="card-years">{yearDisplay}</p>
+      )}
+    </div>
+  </a>
+</article>
+
+<style>
+  .writer-card {
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-link:hover .card-name {
+    color: var(--accent-stamp);
+  }
+
+  .card-link:hover .portrait-frame {
+    transform: scale(1.02);
+  }
+
+  .card-link:hover .portrait-overlay {
+    opacity: 0;
+  }
+
+  /* Portrait container */
+  .card-portrait {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+
+  .portrait-frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: transform var(--duration-normal) var(--ease-out);
+    background: var(--rule-faint);
+  }
+
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+    /* Sepia/archival treatment */
+    filter: sepia(15%) saturate(90%) contrast(95%);
+    transition: filter var(--duration-normal) var(--ease-out);
+  }
+
+  .card-link:hover .portrait-image {
+    filter: sepia(5%) saturate(100%) contrast(100%);
+  }
+
+  /* Subtle vignette overlay */
+  .portrait-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 50%,
+      rgba(26, 22, 18, 0.15) 100%
+    );
+    pointer-events: none;
+    transition: opacity var(--duration-normal) var(--ease-out);
+  }
+
+  /* Content */
+  .card-content {
+    text-align: center;
+    padding: 0 var(--space-2);
+  }
+
+  .card-name {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: var(--leading-snug);
+    color: var(--ink-deep);
+    margin: 0;
+    transition: var(--transition-color);
+  }
+
+  .card-genre {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+    margin: var(--space-1) 0 0;
+  }
+
+  .card-years {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    font-variant-numeric: oldstyle-nums;
+    margin: var(--space-1) 0 0;
+  }
+
+  /* Size variants */
+  .size-small .card-name {
+    font-size: var(--text-base);
+  }
+
+  .size-small .portrait-frame {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+
+  .size-large .card-name {
+    font-size: var(--text-xl);
+  }
+
+  .size-large .portrait-frame {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-name {
+      font-size: var(--text-base);
+    }
+
+    .size-large .card-name {
+      font-size: var(--text-lg);
+    }
+  }
+</style>

@@ -1,0 +1,162 @@
+---
+/**
+ * Footer — The Archive
+ *
+ * A colophon: minimal, dignified, like the closing pages of a rare book.
+ * Credits and dates in quiet typography.
+ */
+import { metadata } from '../lib/data';
+---
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-colophon">
+      <p class="colophon-title">Lewis & Clark College Reading Series Archive</p>
+      <p class="colophon-span">2004 — 2026</p>
+    </div>
+
+    <div class="footer-meta">
+      <p class="footer-note">
+        {metadata.totalWriters} writers documented
+      </p>
+      <p class="footer-updated">
+        Archive last updated {metadata.lastUpdated}
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/about">About</a>
+      <span class="footer-divider">·</span>
+      <a href="/years">Timeline</a>
+      <span class="footer-divider">·</span>
+      <a href="/writers">Writers</a>
+    </nav>
+  </div>
+
+  <div class="footer-ornament">
+    <span class="ornament-symbol">§</span>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: auto;
+    padding: var(--space-12) 0 var(--space-8);
+    border-top: 1px solid var(--rule-faint);
+    background: var(--paper-aged);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-blend-mode: soft-light;
+    background-size: 200px;
+  }
+
+  .footer-container {
+    max-width: var(--width-content);
+    margin: 0 auto;
+    padding: 0 var(--margin-page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .footer-colophon {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .colophon-title {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--ink-deep);
+    letter-spacing: var(--tracking-tight);
+    margin: 0;
+  }
+
+  .colophon-span {
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-variant-numeric: oldstyle-nums;
+    color: var(--ink-soft);
+    letter-spacing: var(--tracking-wide);
+    margin: 0;
+  }
+
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .footer-note,
+  .footer-updated {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-style: italic;
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-2);
+  }
+
+  .footer-links a {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    text-decoration: none;
+    letter-spacing: var(--tracking-wide);
+    transition: var(--transition-color);
+  }
+
+  .footer-links a:hover {
+    color: var(--accent-stamp);
+  }
+
+  .footer-divider {
+    color: var(--ink-faint);
+    user-select: none;
+  }
+
+  .footer-ornament {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-8);
+  }
+
+  .ornament-symbol {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    color: var(--ink-faint);
+    opacity: 0.6;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .site-footer {
+      padding: var(--space-10) 0 var(--space-6);
+    }
+
+    .footer-container {
+      padding: 0 var(--margin-page-narrow);
+      gap: var(--space-5);
+    }
+
+    .colophon-title {
+      font-size: var(--text-base);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>

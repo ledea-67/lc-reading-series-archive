@@ -1,5 +1,12 @@
 ---
+/**
+ * Year Detail — The Archive
+ *
+ * A chapter in the archive. Year as prominent heading with writers arranged
+ * with care. Navigation feels like turning pages to adjacent years.
+ */
 import Base from '../../layouts/Base.astro';
+import WriterCard from '../../components/WriterCard.astro';
 import { getAllYears, getWritersByYear } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -21,31 +28,284 @@ const nextYear = currentIndex > 0 ? allYears[currentIndex - 1] : null;
 ---
 
 <Base
-  title={`${year} Writers`}
+  title={`${year}`}
   description={`Writers who visited the Lewis & Clark Reading Series in ${year}`}
 >
-  <!-- Design: year navigation -->
-  <nav>
-    {prevYear && <a href={`/years/${prevYear}`}>&larr; {prevYear}</a>}
-    <a href="/years">All Years</a>
-    {nextYear && <a href={`/years/${nextYear}`}>{nextYear} &rarr;</a>}
-  </nav>
-
-  <h1>{year}</h1>
-  <p>{writers.length} writer{writers.length !== 1 ? 's' : ''} visited the series</p>
-
-  <!-- Design: writer cards for this year -->
-  <section>
-    <ul>
-      {writers.map((writer) => (
-        <li>
-          <a href={`/writers/${writer.id}`}>
-            <strong>{writer.name}</strong>
+  <div class="year-page">
+    <!-- Year Navigation -->
+    <nav class="year-nav" aria-label="Year navigation">
+      <div class="nav-prev">
+        {prevYear ? (
+          <a href={`/years/${prevYear}`} class="nav-link nav-link-prev">
+            <span class="nav-arrow">&larr;</span>
+            <span class="nav-year">{prevYear}</span>
           </a>
-          <span>{writer.genre}</span>
-          <p>{writer.bio.slice(0, 150)}...</p>
-        </li>
-      ))}
-    </ul>
-  </section>
+        ) : (
+          <span class="nav-placeholder"></span>
+        )}
+      </div>
+
+      <a href="/years" class="nav-all">
+        <span class="nav-all-label">All Years</span>
+      </a>
+
+      <div class="nav-next">
+        {nextYear ? (
+          <a href={`/years/${nextYear}`} class="nav-link nav-link-next">
+            <span class="nav-year">{nextYear}</span>
+            <span class="nav-arrow">&rarr;</span>
+          </a>
+        ) : (
+          <span class="nav-placeholder"></span>
+        )}
+      </div>
+    </nav>
+
+    <!-- Year Header -->
+    <header class="year-header">
+      <h1 class="year-title">{year}</h1>
+      <p class="year-subtitle">
+        {writers.length} {writers.length === 1 ? 'writer' : 'writers'} visited the series
+      </p>
+    </header>
+
+    <!-- Writers Grid -->
+    <section class="writers-section">
+      <div class="writers-grid">
+        {writers.map((writer, i) => (
+          <WriterCard
+            writer={writer}
+            size="medium"
+            delay={100 + i * 60}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="year-nav year-nav-bottom" aria-label="Year navigation">
+      <div class="nav-prev">
+        {prevYear && (
+          <a href={`/years/${prevYear}`} class="nav-link nav-link-prev">
+            <span class="nav-arrow">&larr;</span>
+            <span class="nav-label">Previous year</span>
+            <span class="nav-year">{prevYear}</span>
+          </a>
+        )}
+      </div>
+
+      <div class="nav-next">
+        {nextYear && (
+          <a href={`/years/${nextYear}`} class="nav-link nav-link-next">
+            <span class="nav-label">Next year</span>
+            <span class="nav-year">{nextYear}</span>
+            <span class="nav-arrow">&rarr;</span>
+          </a>
+        )}
+      </div>
+    </nav>
+  </div>
 </Base>
+
+<style>
+  .year-page {
+    max-width: var(--width-wide);
+    margin: 0 auto;
+    padding: 0 var(--margin-page);
+  }
+
+  /* Navigation */
+  .year-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--rule-faint);
+    margin-bottom: var(--space-10);
+  }
+
+  .year-nav-bottom {
+    border-bottom: none;
+    border-top: 1px solid var(--rule-faint);
+    margin-bottom: 0;
+    margin-top: var(--space-12);
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .nav-prev,
+  .nav-next {
+    flex: 1;
+  }
+
+  .nav-next {
+    text-align: right;
+  }
+
+  .nav-placeholder {
+    display: block;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    text-decoration: none;
+    color: var(--ink-soft);
+    transition: var(--transition-color);
+  }
+
+  .nav-link:hover {
+    color: var(--accent-stamp);
+  }
+
+  .nav-link:hover .nav-arrow {
+    color: var(--accent-stamp);
+  }
+
+  .nav-link-prev {
+    flex-direction: row;
+  }
+
+  .nav-link-next {
+    flex-direction: row;
+  }
+
+  .nav-arrow {
+    font-size: var(--text-lg);
+    color: var(--ink-muted);
+    transition: var(--transition-color), transform var(--duration-fast) var(--ease-out);
+  }
+
+  .nav-link-prev:hover .nav-arrow {
+    transform: translateX(-4px);
+  }
+
+  .nav-link-next:hover .nav-arrow {
+    transform: translateX(4px);
+  }
+
+  .nav-year {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-variant-numeric: oldstyle-nums;
+  }
+
+  .nav-label {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+    margin-right: var(--space-2);
+  }
+
+  .nav-link-next .nav-label {
+    margin-right: 0;
+    margin-left: var(--space-2);
+  }
+
+  .nav-all {
+    text-decoration: none;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--rule-faint);
+    border-radius: 2px;
+    transition:
+      border-color var(--duration-normal) var(--ease-out),
+      background-color var(--duration-normal) var(--ease-out);
+  }
+
+  .nav-all:hover {
+    border-color: var(--rule-light);
+    background: var(--paper-cotton);
+  }
+
+  .nav-all-label {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  /* Year Header */
+  .year-header {
+    text-align: center;
+    padding: var(--space-8) 0 var(--space-12);
+  }
+
+  .year-title {
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: 300;
+    font-variant-numeric: oldstyle-nums;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1;
+    color: var(--ink-deep);
+    margin: 0 0 var(--space-4);
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .year-subtitle {
+    font-family: var(--font-ui);
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+    margin: 0;
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    animation-delay: 50ms;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  /* Writers Grid */
+  .writers-section {
+    padding-top: var(--space-6);
+  }
+
+  .writers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-8);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .year-page {
+      padding: 0 var(--margin-page-narrow);
+    }
+
+    .year-title {
+      font-size: var(--text-5xl);
+    }
+
+    .year-nav-bottom .nav-label {
+      display: none;
+    }
+
+    .writers-grid {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: var(--space-6);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .year-header {
+      padding: var(--space-6) 0 var(--space-10);
+    }
+
+    .year-title {
+      font-size: var(--text-4xl);
+    }
+
+    .nav-all {
+      display: none;
+    }
+
+    .writers-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+  }
+</style>
