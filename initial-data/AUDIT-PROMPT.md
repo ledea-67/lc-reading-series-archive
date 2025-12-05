@@ -28,7 +28,7 @@ Do NOT create separate batch files. Update `writers-sample.json` directly during
 ## PROMPT FOR CONTINUING
 
 ```
-Continue the writer data audit for the Lewis & Clark Reading Series Archive.
+Continue the writer data audit for the Lewis & Clark College Reading Series Archive.
 
 Project: `/Users/stephentoutonghi/projects/lewis-clark/author-series`
 

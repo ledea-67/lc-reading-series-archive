@@ -1,4 +1,4 @@
-# Lewis & Clark Reading Series - Writer Year Mapping
+# Lewis & Clark College Reading Series - Writer Year Mapping
 
 Extracted from `Lewis-Clark-for-Pauls-Sheet1.pdf`
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Photo Processing Script for Lewis & Clark Reading Series Archive
+ * Photo Processing Script for Lewis & Clark College Reading Series Archive
  *
  * Downloads author photos from source URLs, resizes them to standard dimensions,
  * converts to WebP format, and updates the writers-sample.json with local paths.

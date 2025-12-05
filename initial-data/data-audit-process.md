@@ -1,4 +1,4 @@
-# Lewis & Clark Reading Series - Data Audit Process
+# Lewis & Clark College Reading Series - Data Audit Process
 
 ## Problem Statement
 

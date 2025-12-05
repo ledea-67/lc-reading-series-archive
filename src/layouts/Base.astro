@@ -14,7 +14,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Archive of the Lewis & Clark College Reading Series (2004-2026)' } = Astro.props;
+  const { title, description = 'Archive of the Lewis & Clark College Reading Series (2004-2026)' } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
@@ -24,7 +24,7 @@ const currentPath = Astro.url.pathname;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title} | Lewis & Clark Reading Series</title>
+    <title>{title} | Lewis & Clark College Reading Series</title>
 
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

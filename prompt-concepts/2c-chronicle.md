@@ -1,4 +1,4 @@
-# Implement: Lewis & Clark Reading Series — Concept C: "The Chronicle"
+# Implement: Lewis & Clark College Reading Series — Concept C: "The Chronicle"
 
 ## Context
 This Astro project is set up with:

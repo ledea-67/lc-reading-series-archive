@@ -220,7 +220,7 @@ Research completed: 2025-12-04
   - University of Chicago Press: https://press.uchicago.edu/ucp/books/author/W/C/au217886727.html
   - Portland State University faculty page
 - **Attribution**: Lewis & Clark College
-- **Note**: Lewis & Clark alumna (BA '09)
+- **Note**: Lewis & Clark College alumna (BA '09)
 
 ### 21. Corey Van Landingham
 - **Primary Source**: https://www.coreyvanlandingham.com/
@@ -229,7 +229,7 @@ Research completed: 2025-12-04
   - National Endowment for the Arts: https://www.arts.gov/impact/literary-arts/creative-writing-fellows/corey-van-landingham
   - University of Illinois
 - **Attribution**: Anna Longworth
-- **Note**: Lewis & Clark alumna, originally from Ashland, Oregon
+- **Note**: Lewis & Clark College alumna, originally from Ashland, Oregon
 
 ---
 
@@ -336,7 +336,7 @@ Research completed: 2025-12-04
 - **Primary Source**: https://www.endiboguehartigan.com/about
 - **Alternate Sources**:
   - Academy of American Poets: https://poets.org/poet/endi-bogue-hartigan
-  - Lewis & Clark events page
+  - Lewis & Clark College events page
 - **Attribution**: Steven Bloch
 - **Note**: Reed College and Iowa Writers' Workshop graduate
 
@@ -344,9 +344,9 @@ Research completed: 2025-12-04
 - **Primary Source**: https://www.stlmag.com/The-Arts-Novelist-Eric-Lundgren-Author-of-The-Facades/
 - **Alternate Sources**:
   - LoveReading: https://www.lovereading.co.uk/author/6571/Eric-Lundgren.html
-  - Lewis & Clark Magazine: https://www.lclark.edu/live/profiles/3909-lundgren-the-facades
+  - Lewis & Clark College Magazine: https://www.lclark.edu/live/profiles/3909-lundgren-the-facades
 - **Attribution**: Kevin A. Roberts / Gena Brady
-- **Note**: Lewis & Clark alumnus
+- **Note**: Lewis & Clark College alumnus
 
 ### 31. Eric Schlosser
 - **Primary Source**: https://www.penguinrandomhouse.com/authors/27189/eric-schlosser/
@@ -672,7 +672,7 @@ Research completed: 2025-12-04
 | Julia Elliott | Available | Tin House | Forrest Clonts |
 | Julian May | Available | Goodreads | Goodreads |
 | Karla Kelsey | Available | Official website | Author website |
-| Katherine Dunn | Available | Oregon ArtsWatch / L&C Archives | Katherine Dunn Archives at Lewis & Clark |
+| Katherine Dunn | Available | Oregon ArtsWatch / L&C Archives | Katherine Dunn Archives at Lewis & Clark College |
 | Katrina Porteous | Available | Poetry Archive | Poetry Archive |
 | Kaui Hart Hemmings | Available | Goodreads | Goodreads |
 
@@ -723,7 +723,7 @@ Research completed: 2025-12-04
   - Katherine Dunn Archives at Lewis & Clark College
   - Wikimedia Commons (photo by Riccardo De Luca)
   - Portland Monthly: https://www.pdxmonthly.com/arts-and-culture/2023/02/katherine-dunn-archive-portland-author-lewis-and-clark
-- **Attribution**: Katherine Dunn Archives at Lewis & Clark
+- **Attribution**: Katherine Dunn Archives at Lewis & Clark College
 - **Note**: Deceased (1945-2016). National Book Award finalist for Geek Love. Papers archived at Lewis & Clark College.
 
 ### 61. Katrina Porteous
@@ -798,13 +798,13 @@ Research completed: 2025-12-04
   - Lewis & Clark College: https://www.lclark.edu/live/news/38837-professor-kim-stafford-chosen-as-oregons-ninth
   - Official website: https://www.kimstaffordpoet.com/
 - **Attribution**: Oregon Cultural Trust
-- **Note**: Oregon's 9th Poet Laureate (2018-2020), son of William Stafford, founded Northwest Writing Institute at Lewis & Clark
+- **Note**: Oregon's 9th Poet Laureate (2018-2020), son of William Stafford, founded Northwest Writing Institute at Lewis & Clark College
 
 ### 65. Laurel Nakanishi
 - **Primary Source**: https://poets.org/poet/laurel-nakanishi
 - **Alternate Sources**:
   - Tupelo Press: https://www.tupelopress.org/product/ashore/
-  - Lewis & Clark faculty page: https://college.lclark.edu/live/profiles/17375-laurel-nakanishi
+  - Lewis & Clark College faculty page: https://college.lclark.edu/live/profiles/17375-laurel-nakanishi
   - Discover Nikkei: https://discovernikkei.org/en/journal/2024/3/29/laurel-nakanishi/
 - **Attribution**: Courtesy of Laurel Nakanishi / Academy of American Poets
 - **Note**: Director of Hawaii Open Arts, Berkshire Prize winner for Ashore
@@ -850,7 +850,7 @@ Research completed: 2025-12-04
 - **Alternate Sources**:
   - Official website: https://www.lisawellswriter.com/
   - Macmillan: https://us.macmillan.com/author/lisawells
-  - Lewis & Clark Fir Acres: https://college.lclark.edu/live/profiles/24012-lisa-wells
+  - Lewis & Clark College Fir Acres: https://college.lclark.edu/live/profiles/24012-lisa-wells
 - **Attribution**: Jude Wilkinson-Wells / Four Way Books
 - **Note**: Iowa Poetry Prize winner, Levis Poetry Prize winner, PEN E.O. Wilson Literary Science Writing Award finalist
 
@@ -975,7 +975,7 @@ Research completed: 2025-12-04
 - **Alternate Sources**:
   - Lewis & Clark College (BA '14 alumna)
 - **Attribution**: Marlena Williams
-- **Note**: Lewis & Clark alumna, Night Mother: A Personal and Cultural History of the Exorcist is 2025 Oregon Book Award finalist
+- **Note**: Lewis & Clark College alumna, Night Mother: A Personal and Cultural History of the Exorcist is 2025 Oregon Book Award finalist
 
 ### 80. Martin Harries
 - **Primary Source**: https://www.faculty.uci.edu/profile/?facultyId=5943
@@ -1186,7 +1186,7 @@ Research completed: 2025-12-04
   - Official website: https://paulstoutonghi.com/
   - Wikipedia: https://en.wikipedia.org/wiki/Pauls_Toutonghi
 - **Attribution**: Lewis & Clark College
-- **Note**: Professor at Lewis & Clark. Dog Gone adapted to Netflix film. Author of The Refugee Ocean, Red Weather.
+- **Note**: Professor at Lewis & Clark College. Dog Gone adapted to Netflix film. Author of The Refugee Ocean, Red Weather.
 
 ### 94. Peter Ames Carlin
 - **Primary Source**: https://www.penguinrandomhouse.com/authors/2184550/peter-ames-carlin/
@@ -1195,7 +1195,7 @@ Research completed: 2025-12-04
   - Official website: https://www.peteramescarlin.com/
   - Wikipedia: https://en.wikipedia.org/wiki/Peter_Ames_Carlin
 - **Attribution**: Terry Allen / Penguin Random House
-- **Note**: Lewis & Clark alumnus (1985). NYT bestselling biographer of Bruce Springsteen, Paul Simon, Brian Wilson, R.E.M.
+- **Note**: Lewis & Clark College alumnus (1985). NYT bestselling biographer of Bruce Springsteen, Paul Simon, Brian Wilson, R.E.M.
 
 ### 95. Peyton Marshall
 - **Primary Source**: https://peytonmarshall.info/

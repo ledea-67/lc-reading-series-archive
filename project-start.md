@@ -1,4 +1,4 @@
-# Lewis & Clark Reading Series Archive - Project Start
+# Lewis & Clark College Reading Series Archive - Project Start
 
 **Created**: 2024-12-04
 **GitHub Repository**: https://github.com/ledea-67/lc-reading-series-archive

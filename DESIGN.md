@@ -2,7 +2,7 @@
 
 ## Concept
 
-"The Archive" treats the Lewis & Clark Reading Series website not as a typical website but as a **preserved collection**—a cabinet of literary voices. The design draws inspiration from rare books rooms, letterpress printing, and literary archives. Visitors should feel they've entered a space of quiet significance where words are sacred objects and each name carries weight.
+"The Archive" treats the Lewis & Clark College Reading Series website not as a typical website but as a **preserved collection**—a cabinet of literary voices. The design draws inspiration from rare books rooms, letterpress printing, and literary archives. Visitors should feel they've entered a space of quiet significance where words are sacred objects and each name carries weight.
 
 ---
 

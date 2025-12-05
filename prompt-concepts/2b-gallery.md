@@ -1,4 +1,4 @@
-# Implement: Lewis & Clark Reading Series — Concept B: "The Gallery"
+# Implement: Lewis & Clark College Reading Series — Concept B: "The Gallery"
 
 ## Context
 This Astro project is set up with:
