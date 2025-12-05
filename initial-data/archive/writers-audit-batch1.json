@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "batch": 1,
+    "created": "2025-12-04",
+    "totalWriters": 11,
+    "notes": "Batch 1 audit: Aamina Ahmad through Arthur Bradford"
+  },
+  "writers": [
+    {
+      "id": "ahmad-aamina",
+      "name": "Aamina Ahmad",
+      "years": [2025],
+      "genre": "fiction",
+      "bio": "Pakistani-American novelist and Iowa Writers' Workshop graduate. Her debut novel The Return of Faraz Ali won the L.A. Times Art Seidenbaum Award and was named a Best Book of the Year by The New York Times and NPR.",
+      "notableWorks": [
+        "The Return of Faraz Ali",
+        "The Dishonored (play)"
+      ],
+      "awards": ["L.A. Times Art Seidenbaum Award", "Stegner Fellowship", "Pushcart Prize", "Rona Jaffe Writer's Award", "Gordon Bowker Volcano Prize", "Writers' Guild of Great Britain First Book Prize"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Aamina_Ahmad",
+      "officialWebsite": "https://www.aaminaahmad.com/",
+      "photo": {
+        "source": "official",
+        "url": "https://www.aaminaahmad.com/",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "notes": "Photo available on official author website and Penguin Random House publisher page"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "bradley-adam",
+      "name": "Adam Bradley",
+      "years": [2010],
+      "genre": "criticism",
+      "bio": "Literary scholar and Lewis & Clark College alum who pioneered the academic study of hip-hop lyrics as poetry. Professor at UCLA and founding director of the Laboratory for Race & Popular Culture.",
+      "notableWorks": [
+        "Book of Rhymes: The Poetics of Hip Hop",
+        "The Anthology of Rap",
+        "The Poetry of Pop",
+        "Ralph Ellison in Progress"
+      ],
+      "awards": [],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Adam_Bradley_(literary_critic)",
+      "officialWebsite": "http://www.adamfbradley.com/",
+      "photo": {
+        "source": "university",
+        "url": "https://english.ucla.edu/people-faculty/bradley-adam/",
+        "license": "press",
+        "attribution": "UCLA / Stephanie Yantz",
+        "status": "available",
+        "notes": "Photo on UCLA faculty page; additional photos by Stephanie Yantz in UCLA College Magazine profile"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "limon-ada",
+      "name": "Ada Limón",
+      "years": [2016],
+      "genre": "poetry",
+      "bio": "The 24th U.S. Poet Laureate and the first Latina to hold the position. Her collection The Carrying won the National Book Critics Circle Award, and she was appointed to a historic two-year second term as laureate.",
+      "notableWorks": [
+        "The Carrying",
+        "Bright Dead Things",
+        "The Hurting Kind"
+      ],
+      "awards": ["National Book Critics Circle Award", "MacArthur Fellowship", "Guggenheim Fellowship"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ada_Lim%C3%B3n",
+      "officialWebsite": "https://adalimon.com/",
+      "photo": {
+        "source": "wikimedia",
+        "url": "https://commons.wikimedia.org/wiki/Category:Ada_Lim%C3%B3n",
+        "license": "CC BY 2.0",
+        "attribution": "Christopher Michel",
+        "status": "available",
+        "notes": "Multiple photos on Wikimedia Commons; also Library of Congress photos by Shawn Miller"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "shapiro-alan",
+      "name": "Alan Shapiro",
+      "years": [2012],
+      "genre": "poetry",
+      "bio": "American poet and former William R. Kenan Jr. Distinguished Professor at UNC Chapel Hill. His collection Night of the Republic was a finalist for both the National Book Award and the Griffin Poetry Prize.",
+      "notableWorks": [
+        "Night of the Republic",
+        "Tantalus in Love",
+        "Old War",
+        "Reel to Reel",
+        "Proceed to Checkout"
+      ],
+      "awards": ["Kingsley Tufts Award", "Los Angeles Book Prize", "Lila Wallace-Reader's Digest Writers' Award", "Ambassador Book Award"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alan_Shapiro_(poet)",
+      "officialWebsite": null,
+      "photo": {
+        "source": "university",
+        "url": "https://englishcomplit.unc.edu/2023/03/iah-retrospective-on-faculty-fellow-alan-shapiro/",
+        "license": "press",
+        "attribution": "UNC Dept. of English / Steve Exum",
+        "status": "available",
+        "notes": "Photos on UNC English department pages; photo by Steve Exum in Wilson Library; Griffin Poetry Prize page also has photo"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "arthurs-alexia",
+      "name": "Alexia Arthurs",
+      "years": [2026],
+      "genre": "fiction",
+      "bio": "Jamaican-American fiction writer and Iowa Writers' Workshop graduate. Her debut story collection How to Love a Jamaican won the Paris Review's Plimpton Prize and explores the Jamaican immigrant experience.",
+      "notableWorks": [
+        "How to Love a Jamaican"
+      ],
+      "awards": ["Plimpton Prize (Paris Review)"],
+      "wikipediaUrl": null,
+      "officialWebsite": "https://www.alexiaarthurs.com/",
+      "photo": {
+        "source": "official",
+        "url": "https://www.alexiaarthurs.com/about",
+        "license": "press",
+        "attribution": "Rose Marie Cromwell",
+        "status": "available",
+        "notes": "Author photo by Rose Marie Cromwell on official website and publisher pages"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "smith-alexis",
+      "name": "Alexis M. Smith",
+      "years": [2014],
+      "genre": "fiction",
+      "bio": "Pacific Northwest novelist whose debut Glaciers was an Oregon Book Award finalist. Her second novel Marrow Island won the Pacific Northwest Booksellers Association Award and a Lambda Literary Award.",
+      "notableWorks": [
+        "Glaciers",
+        "Marrow Island"
+      ],
+      "awards": ["Lambda Literary Award", "Pacific Northwest Booksellers Association Award"],
+      "wikipediaUrl": null,
+      "officialWebsite": null,
+      "photo": {
+        "source": "press",
+        "url": "https://tinhouse.com/author/alexis-m-smith/",
+        "license": "press",
+        "attribution": "Annie Beedy",
+        "status": "available",
+        "notes": "Photo by Annie Beedy on Tin House author page"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "ohlin-alix",
+      "name": "Alix Ohlin",
+      "years": [2017],
+      "genre": "fiction",
+      "bio": "Canadian novelist and short story writer. Her novel Dual Citizens was shortlisted for the Scotiabank Giller Prize, and her collection We Want What We Want won the Lambda Literary Award for Bisexual Literature.",
+      "notableWorks": [
+        "Dual Citizens",
+        "Inside",
+        "We Want What We Want"
+      ],
+      "awards": ["Lambda Literary Award", "Giller Prize shortlist", "Rogers Writers' Trust Fiction Prize shortlist"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alix_Ohlin",
+      "officialWebsite": "https://alixohlinauthor.com/",
+      "photo": {
+        "source": "official",
+        "url": "https://alixohlinauthor.com/",
+        "license": "press",
+        "attribution": "Emily Cooper / Stephanie Noritz",
+        "status": "available",
+        "notes": "Photos by Emily Cooper and Stephanie Noritz; available on official website, UBC Creative Writing faculty page, and Penguin Random House"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "codjoe-ama",
+      "name": "Ama Codjoe",
+      "years": [2023],
+      "genre": "poetry",
+      "bio": "American poet and dancer. Her collection Bluest Nude won the 2023 Lenore Marshall Poetry Prize and a Whiting Award. She was appointed the second Poet-in-Residence at the Guggenheim Museum.",
+      "notableWorks": [
+        "Bluest Nude",
+        "Blood of the Air"
+      ],
+      "awards": ["Lenore Marshall Poetry Prize", "Whiting Award", "NAACP Image Award finalist", "Drinking Gourd Chapbook Poetry Prize"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ama_Codjoe",
+      "officialWebsite": "https://www.amacodjoe.com/",
+      "photo": {
+        "source": "institution",
+        "url": "https://www.guggenheim.org/initiatives/guggenheim-public-engagement-poet-in-residence/ama-codjoe",
+        "license": "press",
+        "attribution": "David Heald / Solomon R. Guggenheim Foundation",
+        "status": "available",
+        "notes": "Photo by David Heald for Guggenheim Museum; also photos on Poetry Foundation and official website"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "mojgani-anis",
+      "name": "Anis Mojgani",
+      "years": [2026],
+      "genre": "poetry",
+      "bio": "Spoken word poet and Oregon's 10th Poet Laureate (2020-2024). He won back-to-back National Poetry Slam titles in 2005-2006, and his book The Feather Room was a National Book Award nominee.",
+      "notableWorks": [
+        "The Feather Room",
+        "The Tigers, They Let Me",
+        "Lifespans of a Rock"
+      ],
+      "awards": ["National Poetry Slam Champion (2x)", "Academy of American Poets Laureate Fellowship", "International World Cup Poetry Slam"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anis_Mojgani",
+      "officialWebsite": "https://www.thepianofarm.com/",
+      "photo": {
+        "source": "official",
+        "url": "https://www.thepianofarm.com/about",
+        "license": "press",
+        "attribution": "Opal Rockett / Hilde Franzsen",
+        "status": "available",
+        "notes": "Press photos available for download on official website (The Piano Farm); Oregon Cultural Trust also has photos from laureate tenure"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "keesey-anna",
+      "name": "Anna Keesey",
+      "years": [2015],
+      "genre": "fiction",
+      "bio": "Oregon-based novelist and Iowa Writers' Workshop graduate. Her debut Little Century, set in 1900 Central Oregon, was praised by The Washington Post as a work about 'who will inherit the earth.'",
+      "notableWorks": [
+        "Little Century"
+      ],
+      "awards": ["National Endowment for the Arts Fellowship"],
+      "wikipediaUrl": null,
+      "officialWebsite": "https://annakeesey.com/",
+      "photo": {
+        "source": "university",
+        "url": "https://www.linfield.edu/faculty/akeesey.html",
+        "license": "press",
+        "attribution": "Linfield University",
+        "status": "available",
+        "notes": "Photo on Linfield University faculty page; also available on Macmillan author page and MacDowell artist page"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "bradford-arthur",
+      "name": "Arthur Bradford",
+      "years": [2016],
+      "genre": "fiction",
+      "bio": "American writer and filmmaker whose debut story collection Dogwalker was praised by David Sedaris as the work of 'the most outlandish and energetic writer I can think of.' His stories have appeared in McSweeney's and Esquire.",
+      "notableWorks": [
+        "Dogwalker",
+        "Turtleface and Beyond",
+        "Benny's Brigade"
+      ],
+      "awards": ["O. Henry Award"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Arthur_Bradford",
+      "officialWebsite": null,
+      "photo": {
+        "source": "institution",
+        "url": "https://www.macdowell.org/artists/arthur-bradford",
+        "license": "press",
+        "attribution": "MacDowell / IMDB",
+        "status": "available",
+        "notes": "Photo on MacDowell artist page; also IMDB page and DC/DOX festival page"
+      },
+      "confidence": "high",
+      "needsReview": false
+    }
+  ]
+}

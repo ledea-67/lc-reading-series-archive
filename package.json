@@ -5,10 +5,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "process-photos": "node scripts/process-photos.js",
+    "process-photos:dry": "node scripts/process-photos.js --dry-run"
   },
   "dependencies": {
     "astro": "^5.16.4",
+    "sharp": "^0.33.5",
     "typescript": "^5.9.3"
   }
 }

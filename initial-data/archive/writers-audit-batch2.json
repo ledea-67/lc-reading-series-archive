@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "batch": 2,
+    "created": "2025-12-04",
+    "totalWriters": 10,
+    "notes": "Batch 2 audit: Betsy Amster through Corey Van Landingham"
+  },
+  "writers": [
+    {
+      "id": "amster-betsy",
+      "name": "Betsy Amster",
+      "years": [2013],
+      "genre": "nonfiction",
+      "bio": "Literary agent and former editor at Pantheon and Vintage. She founded Betsy Amster Literary Enterprises in 1992 and has been called 'a dogged prospector of literary talent' by the Los Angeles Times. A frequent panelist at the LA Times Festival of Books and instructor at UCLA Extension's Writers' Program.",
+      "notableWorks": [],
+      "awards": [],
+      "wikipediaUrl": null,
+      "officialWebsite": "https://amsterlit.com/",
+      "photo": {
+        "source": "press",
+        "url": "https://latimesfestivalofbooks2019.sched.com/speaker/betsy_amster.1zag0ii9",
+        "license": "press",
+        "attribution": "LA Times Festival of Books",
+        "status": "available",
+        "notes": "Photo available on LA Times Festival of Books speaker page; also on Publishers Marketplace profile"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "hillman-brenda",
+      "name": "Brenda Hillman",
+      "years": [2013],
+      "genre": "poetry",
+      "bio": "Award-winning poet and Chancellor of the Academy of American Poets. Her collection Seasonal Works with Letters on Fire won the 2014 Griffin Poetry Prize. She is the Olivia Filippi Professor of Poetry at Saint Mary's College of California and is married to fellow poet Robert Hass.",
+      "notableWorks": [
+        "Seasonal Works with Letters on Fire",
+        "Practical Water",
+        "Extra Hidden Life, Among the Days",
+        "In a Few Minutes Before Later",
+        "Loose Sugar"
+      ],
+      "awards": ["Griffin Poetry Prize", "LA Times Book Award", "William Carlos Williams Prize", "Academy of American Poets Fellowship", "Guggenheim Fellowship"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Brenda_Hillman",
+      "officialWebsite": "https://brendahillman.net/",
+      "photo": {
+        "source": "press",
+        "url": "https://blueflowerarts.com/artist/brenda-hillman/",
+        "license": "press",
+        "attribution": "Robert Hass",
+        "status": "available",
+        "notes": "Photo by Robert Hass available on Blue Flower Arts speaker page; also on Poetry Foundation, Academy of American Poets"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "barnett-catherine",
+      "name": "Catherine Barnett",
+      "years": [2023],
+      "genre": "poetry",
+      "bio": "Poet and educator whose collection The Game of Boxes won the James Laughlin Award. She is a recipient of a Guggenheim Fellowship and a 2022 Award in Literature from the American Academy of Arts and Letters. She teaches at NYU and serves as Distinguished Lecturer at Hunter College.",
+      "notableWorks": [
+        "Solutions for the Problem of Bodies in Space",
+        "Human Hours",
+        "The Game of Boxes",
+        "Into Perfect Spheres Such Holes Are Pierced"
+      ],
+      "awards": ["Guggenheim Fellowship", "James Laughlin Award", "American Academy of Arts and Letters Award in Literature", "Whiting Writers' Award", "Glasgow Prize for Emerging Writers"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_Barnett",
+      "officialWebsite": "https://www.catherinebarnett.com/",
+      "photo": {
+        "source": "official",
+        "url": "https://poets.org/poet/catherine-barnett",
+        "license": "press",
+        "attribution": "Jacqueline Mia Foster",
+        "status": "available",
+        "notes": "Photo by Jacqueline Mia Foster on Academy of American Poets, Poetry Foundation, and official website"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "ellis-catherine",
+      "name": "Catherine Ellis",
+      "years": [2025],
+      "genre": "nonfiction",
+      "bio": "Writer and oral historian. Co-editor with Sydney Lewis of Say It Plain: A Century of Great African American Speeches, preserving and publishing works from Studs Terkel's interview archive.",
+      "notableWorks": [
+        "Say It Plain: A Century of Great African American Speeches",
+        "Say It Loud: Great Speeches on Civil Rights and African American Identity"
+      ],
+      "awards": [],
+      "wikipediaUrl": null,
+      "officialWebsite": null,
+      "photo": {
+        "source": "press",
+        "url": "https://thenewpress.com/authors/catherine-ellis",
+        "license": "press",
+        "attribution": "The New Press",
+        "status": "needs_acquisition",
+        "notes": "Limited online presence. Photo may be available through The New Press publisher page. Requires further verification."
+      },
+      "confidence": "low",
+      "needsReview": true
+    },
+    {
+      "id": "shanahan-charif",
+      "name": "Charif Shanahan",
+      "years": [2024],
+      "genre": "poetry",
+      "bio": "Poet and translator whose collection Trace Evidence was a finalist for the National Book Critics Circle Award, longlisted for the National Book Award, and won the Lambda Literary Award for Gay Poetry. He is an assistant professor at Northwestern University.",
+      "notableWorks": [
+        "Trace Evidence",
+        "Into Each Room We Enter without Knowing"
+      ],
+      "awards": ["Lambda Literary Award for Gay Poetry", "Thom Gunn Award", "Whiting Award", "Wallace Stegner Fellowship", "National Endowment for the Arts Fellowship"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Charif_Shanahan",
+      "officialWebsite": "https://www.charifshanahan.com/",
+      "photo": {
+        "source": "university",
+        "url": "https://english.northwestern.edu/people/faculty/shanahan-charif.html",
+        "license": "press",
+        "attribution": "Rachel Eliza Griffiths",
+        "status": "available",
+        "notes": "Photo by Rachel Eliza Griffiths on Northwestern faculty page; also credited to Beowulf Sheehan on some pages"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "baxter-charles",
+      "name": "Charles Baxter",
+      "years": [2020],
+      "genre": "fiction",
+      "bio": "Novelist and short story writer whose The Feast of Love was a National Book Award finalist. He was the Edelstein-Keller Professor in Creative Writing at the University of Minnesota and has won the Rea Award and PEN/Malamud Award for Excellence in the Short Story.",
+      "notableWorks": [
+        "The Feast of Love",
+        "The Sun Collective",
+        "Saul and Patsy",
+        "There's Something I Want You to Do",
+        "Burning Down the House: Essays on Fiction"
+      ],
+      "awards": ["National Book Award finalist", "PEN/Malamud Award", "Rea Award", "American Academy of Arts and Letters Award", "Minnesota Book Award", "Guggenheim Fellowship"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Charles_Baxter_(author)",
+      "officialWebsite": null,
+      "photo": {
+        "source": "university",
+        "url": "https://cla.umn.edu/english/news/professor-charles-baxter-retires",
+        "license": "press",
+        "attribution": "University of Minnesota",
+        "status": "available",
+        "notes": "Photo on University of Minnesota English department page; additional photo by Aaron Lavinsky in Minneapolis Sculpture Garden for Star Tribune"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "deavel-christine",
+      "name": "Christine Deavel",
+      "years": [2008],
+      "genre": "poetry",
+      "bio": "Poet and playwright whose collection Woodnote won the Washington State Book Award and the Dorothy Brunsman Poetry Prize. She co-founded and ran Open Books, Seattle's poetry-only bookstore, with her husband J.W. Marshall from 1995 to 2016.",
+      "notableWorks": [
+        "Woodnote",
+        "Box of Little Spruce",
+        "Vicinity/Memoryall (play, with J.W. Marshall)",
+        "Blue to Blue (play)"
+      ],
+      "awards": ["Washington State Book Award", "Dorothy Brunsman Poetry Prize", "Artist Trust GAP Award"],
+      "wikipediaUrl": null,
+      "officialWebsite": null,
+      "photo": {
+        "source": "institution",
+        "url": "https://artisttrust.org/artists/christine-deavel-and-j-w-marshall/",
+        "license": "press",
+        "attribution": "Artist Trust / Photo courtesy of the artist",
+        "status": "available",
+        "notes": "Photo on Artist Trust page; also may have photos from KUOW interview and Seattle Arts & Lectures"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "watkins-claire-vaye",
+      "name": "Claire Vaye Watkins",
+      "years": [2022],
+      "genre": "fiction",
+      "bio": "Author whose debut story collection Battleborn won The Story Prize and Dylan Thomas Prize. Her novel Gold Fame Citrus explores the California drought. A National Book Foundation 5 Under 35 honoree and Guggenheim Fellow, she is a professor at UC Irvine.",
+      "notableWorks": [
+        "Battleborn",
+        "Gold Fame Citrus",
+        "I Love You but I've Chosen Darkness",
+        "Yellow Pine (forthcoming 2026)"
+      ],
+      "awards": ["Story Prize", "Dylan Thomas Prize", "NY Public Library Young Lions Fiction Award", "Rosenthal Family Foundation Award", "Guggenheim Fellowship", "Silver Pen Award"],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Claire_Vaye_Watkins",
+      "officialWebsite": "http://clairevayewatkins.com/",
+      "photo": {
+        "source": "press",
+        "url": "https://communityofwriters.org/bio/claire-vaye-watkins/",
+        "license": "press",
+        "attribution": "Lise Watkins",
+        "status": "available",
+        "notes": "Photo by Lise Watkins on Community of Writers bio page; also on Penguin Random House and Lannan Foundation pages"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "wise-consuelo",
+      "name": "Consuelo Wise",
+      "years": [2020, 2025],
+      "genre": "poetry",
+      "bio": "Guatemalan-American poet and Lewis & Clark alumna (BA '09). Her debut hybrid collection boy is a book-length poem confronting grief over the loss of her two brothers. She is a visiting scholar at Portland State University.",
+      "notableWorks": [
+        "boy"
+      ],
+      "awards": [],
+      "wikipediaUrl": null,
+      "officialWebsite": null,
+      "photo": {
+        "source": "institution",
+        "url": "https://college.lclark.edu/calendars/events/event/361590-an-evening-with-consuelo-wise-spring-2025",
+        "license": "press",
+        "attribution": "Lewis & Clark College",
+        "status": "available",
+        "notes": "Photo on Lewis & Clark Visiting Writers Series event page; also on New Orleans Poetry Festival and Portland State faculty pages"
+      },
+      "confidence": "high",
+      "needsReview": false
+    },
+    {
+      "id": "van-landingham-corey",
+      "name": "Corey Van Landingham",
+      "years": [2013, 2021],
+      "genre": "poetry",
+      "bio": "Poet and Lewis & Clark alumna from Ashland, Oregon. Her collection Love Letter to Who Owns the Heavens won the Levis Reading Prize. She is a recipient of a Guggenheim Fellowship, NEA Fellowship, and Wallace Stegner Fellowship, and teaches at the University of Illinois.",
+      "notableWorks": [
+        "Reader, I",
+        "Love Letter to Who Owns the Heavens",
+        "Antidote"
+      ],
+      "awards": ["Levis Reading Prize", "Guggenheim Fellowship", "NEA Fellowship", "Wallace Stegner Fellowship", "Ohio State University Press/The Journal Charles B. Wheeler Prize"],
+      "wikipediaUrl": null,
+      "officialWebsite": "https://www.coreyvanlandingham.com/",
+      "photo": {
+        "source": "official",
+        "url": "https://www.coreyvanlandingham.com/",
+        "license": "press",
+        "attribution": "Anna Longworth",
+        "status": "available",
+        "notes": "Photo by Anna Longworth on official website; also on Poetry Foundation, NEA, and University of Illinois pages"
+      },
+      "confidence": "high",
+      "needsReview": false
+    }
+  ]
+}
