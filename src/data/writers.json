@@ -5,13 +5,15 @@
     "lastUpdated": "2025-12-04",
     "totalWriters": 108,
     "status": "complete",
-    "notes": "All writers collected. 8 entries flagged for review (low confidence or industry professionals)."
+    "notes": "Merged with batch1 and batch2 audit data. 21/108 writers fully audited."
   },
   "writers": [
     {
       "id": "ondaatje-michael",
       "name": "Michael Ondaatje",
-      "years": [2017],
+      "years": [
+        2017
+      ],
       "genre": "fiction/poetry",
       "bio": "Sri Lankan-born Canadian poet and novelist whose work blends myth, history, and lyrical prose. His novel The English Patient won the Booker Prize and was adapted into an Academy Award-winning film.",
       "notableWorks": [
@@ -19,7 +21,11 @@
         "In the Skin of a Lion",
         "The Collected Works of Billy the Kid"
       ],
-      "awards": ["Booker Prize", "Governor General's Award (5x)", "Golden Man Booker Prize"],
+      "awards": [
+        "Booker Prize",
+        "Governor General's Award (5x)",
+        "Golden Man Booker Prize"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Michael_Ondaatje",
       "officialWebsite": null,
       "photo": {
@@ -27,7 +33,8 @@
         "url": "https://commons.wikimedia.org/wiki/File:Michael_Ondaatje_at_Tulane_2010.jpg",
         "license": "CC BY 2.0",
         "attribution": "Tulane Public Relations",
-        "status": "available"
+        "status": "available",
+        "imageUrl": "https://images2.penguinrandomhouse.com/author/22801"
       },
       "confidence": "high",
       "needsReview": false
@@ -35,22 +42,31 @@
     {
       "id": "diaz-natalie",
       "name": "Natalie Diaz",
-      "years": [2017],
+      "years": [
+        2019
+      ],
       "genre": "poetry",
       "bio": "Mojave American poet, language activist, and MacArthur Fellow. Her collection Postcolonial Love Poem won the 2021 Pulitzer Prize for Poetry. She is enrolled in the Gila River Indian Community and works on Mojave language preservation.",
       "notableWorks": [
         "Postcolonial Love Poem",
         "When My Brother Was an Aztec"
       ],
-      "awards": ["Pulitzer Prize for Poetry", "MacArthur Fellowship", "American Book Award", "Lannan Literary Fellowship"],
+      "awards": [
+        "Pulitzer Prize for Poetry",
+        "MacArthur Fellowship",
+        "American Book Award",
+        "Lannan Literary Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Natalie_Diaz",
       "officialWebsite": "https://www.nataliegermainediaz.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.macfound.org/fellows/class-of-2018/natalie-diaz",
+        "license": "press",
+        "attribution": "John D. and Catherine T. MacArthur Foundation",
+        "status": "available",
+        "notes": "High-resolution photos available from MacArthur Foundation; also on ASU faculty page and Poetry Foundation",
+        "imageUrl": "https://www.macfound.org/media/fellows/profile_photos/diaz_2018_profile-240.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -58,7 +74,9 @@
     {
       "id": "finney-nikky",
       "name": "Nikky Finney",
-      "years": [2018],
+      "years": [
+        2022
+      ],
       "genre": "poetry",
       "bio": "South Carolina-born poet whose work explores African American history, civil rights, and Southern heritage. Her collection Head Off & Split won the 2011 National Book Award for Poetry. She is a founding member of the Affrilachian Poets.",
       "notableWorks": [
@@ -66,15 +84,21 @@
         "Love Child's Hotbed of Occasional Poetry",
         "Rice"
       ],
-      "awards": ["National Book Award for Poetry", "Wallace Stevens Award", "PEN America Open Book Award"],
+      "awards": [
+        "National Book Award for Poetry",
+        "Wallace Stevens Award",
+        "PEN America Open Book Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Nikky_Finney",
       "officialWebsite": "https://nikkyfinney.net/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.nationalbook.org/people/nikky-finney-2/",
+        "license": "press",
+        "attribution": "National Book Foundation",
+        "status": "available",
+        "notes": "Photo on National Book Foundation page; also on Poetry Foundation and Academy of American Poets",
+        "imageUrl": "https://i0.wp.com/www.nationalbook.org/wp-content/uploads/2023/08/finney-forrest1-Vaughan-Fielder.jpeg?fit=1485%2C1650&ssl=1"
       },
       "confidence": "high",
       "needsReview": false
@@ -82,22 +106,33 @@
     {
       "id": "ahmad-aamina",
       "name": "Aamina Ahmad",
-      "years": [0],
+      "years": [
+        2025
+      ],
       "genre": "fiction",
       "bio": "Pakistani-American novelist and Iowa Writers' Workshop graduate. Her debut novel The Return of Faraz Ali won the L.A. Times Art Seidenbaum Award and was named a Best Book of the Year by The New York Times and NPR.",
       "notableWorks": [
         "The Return of Faraz Ali",
         "The Dishonored (play)"
       ],
-      "awards": ["L.A. Times Art Seidenbaum Award", "Stegner Fellowship", "Pushcart Prize", "Rona Jaffe Writer's Award"],
-      "wikipediaUrl": null,
+      "awards": [
+        "L.A. Times Art Seidenbaum Award",
+        "Stegner Fellowship",
+        "Pushcart Prize",
+        "Rona Jaffe Writer's Award",
+        "Gordon Bowker Volcano Prize",
+        "Writers' Guild of Great Britain First Book Prize"
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Aamina_Ahmad",
       "officialWebsite": "https://www.aaminaahmad.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.aaminaahmad.com/",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "notes": "Photo available on official author website and Penguin Random House publisher page",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/61d134ccd321f568c9289a2d/873fa02f-0b49-4cb3-b564-738d97b9033a/Aamina_1526_r.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -105,23 +140,28 @@
     {
       "id": "bradley-adam",
       "name": "Adam Bradley",
-      "years": [0],
+      "years": [
+        2010
+      ],
       "genre": "criticism",
       "bio": "Literary scholar and Lewis & Clark College alum who pioneered the academic study of hip-hop lyrics as poetry. Professor at UCLA and founding director of the Laboratory for Race & Popular Culture.",
       "notableWorks": [
         "Book of Rhymes: The Poetics of Hip Hop",
-        "Ralph Ellison in Progress",
-        "Three Days Before the Shooting..."
+        "The Anthology of Rap",
+        "The Poetry of Pop",
+        "Ralph Ellison in Progress"
       ],
       "awards": [],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Adam_Bradley_(literary_critic)",
       "officialWebsite": "http://www.adamfbradley.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.ucla.edu/people-faculty/bradley-adam/",
+        "license": "press",
+        "attribution": "UCLA / Stephanie Yantz",
+        "status": "available",
+        "notes": "Photo on UCLA faculty page; additional photos by Stephanie Yantz in UCLA College Magazine profile",
+        "imageUrl": "https://english.ucla.edu/wp-content/uploads/Adam-Bradley-Portrait-e1603147045312.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -129,7 +169,9 @@
     {
       "id": "limon-ada",
       "name": "Ada Limón",
-      "years": [0],
+      "years": [
+        2016
+      ],
       "genre": "poetry",
       "bio": "The 24th U.S. Poet Laureate and the first Latina to hold the position. Her collection The Carrying won the National Book Critics Circle Award, and she was appointed to a historic two-year second term as laureate.",
       "notableWorks": [
@@ -137,15 +179,21 @@
         "Bright Dead Things",
         "The Hurting Kind"
       ],
-      "awards": ["National Book Critics Circle Award", "MacArthur Fellowship", "Guggenheim Fellowship"],
+      "awards": [
+        "National Book Critics Circle Award",
+        "MacArthur Fellowship",
+        "Guggenheim Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ada_Lim%C3%B3n",
       "officialWebsite": "https://adalimon.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "wikimedia",
+        "url": "https://commons.wikimedia.org/wiki/Category:Ada_Lim%C3%B3n",
+        "license": "CC BY 2.0",
+        "attribution": "Christopher Michel",
+        "status": "available",
+        "notes": "Multiple photos on Wikimedia Commons; also Library of Congress photos by Shawn Miller",
+        "imageUrl": "https://www.loc.gov/static/managed-content/uploads/sites/7/2022/07/AdaLimon_creditShawnMiller_500x500.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -153,23 +201,34 @@
     {
       "id": "shapiro-alan",
       "name": "Alan Shapiro",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
-      "bio": "American poet and William R. Kenan Jr. Distinguished Professor at UNC Chapel Hill. His collection Night of the Republic was a finalist for both the National Book Award and the Griffin Poetry Prize.",
+      "bio": "American poet and former William R. Kenan Jr. Distinguished Professor at UNC Chapel Hill. His collection Night of the Republic was a finalist for both the National Book Award and the Griffin Poetry Prize.",
       "notableWorks": [
         "Night of the Republic",
         "Tantalus in Love",
-        "Old War"
+        "Old War",
+        "Reel to Reel",
+        "Proceed to Checkout"
       ],
-      "awards": ["Kingsley Tufts Award", "Los Angeles Book Prize", "Lila Wallace-Reader's Digest Writers' Award"],
+      "awards": [
+        "Kingsley Tufts Award",
+        "Los Angeles Book Prize",
+        "Lila Wallace-Reader's Digest Writers' Award",
+        "Ambassador Book Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Alan_Shapiro_(poet)",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://englishcomplit.unc.edu/2023/03/iah-retrospective-on-faculty-fellow-alan-shapiro/",
+        "license": "press",
+        "attribution": "UNC Dept. of English / Steve Exum",
+        "status": "available",
+        "notes": "Photos on UNC English department pages; photo by Steve Exum in Wilson Library; Griffin Poetry Prize page also has photo",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/AlanShapiro_NewBioImage-AlgonquinPress.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -177,44 +236,57 @@
     {
       "id": "arthurs-alexia",
       "name": "Alexia Arthurs",
-      "years": [0],
+      "years": [
+        2026
+      ],
       "genre": "fiction",
       "bio": "Jamaican-American fiction writer and Iowa Writers' Workshop graduate. Her debut story collection How to Love a Jamaican won the Paris Review's Plimpton Prize and explores the Jamaican immigrant experience.",
       "notableWorks": [
         "How to Love a Jamaican"
       ],
-      "awards": ["Plimpton Prize (Paris Review)"],
+      "awards": [
+        "Plimpton Prize (Paris Review)"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.alexiaarthurs.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.alexiaarthurs.com/about",
+        "license": "press",
+        "attribution": "Rose Marie Cromwell",
+        "status": "available",
+        "notes": "Author photo by Rose Marie Cromwell on official website and publisher pages",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c2bcaf2f793923866d2cebc/1549839303533-NRMPSPI2HVSM1ZJ6CTIS/photo+of+me+by+rose+marie+cromwell+2.jpg"
       },
       "confidence": "high",
       "needsReview": false
     },
     {
       "id": "smith-alexis",
-      "name": "Alexis Smith",
-      "years": [0],
+      "name": "Alexis M. Smith",
+      "years": [
+        2014
+      ],
       "genre": "fiction",
       "bio": "Pacific Northwest novelist whose debut Glaciers was an Oregon Book Award finalist. Her second novel Marrow Island won the Pacific Northwest Booksellers Association Award and a Lambda Literary Award.",
       "notableWorks": [
         "Glaciers",
         "Marrow Island"
       ],
-      "awards": ["Lambda Literary Award", "Pacific Northwest Booksellers Association Award"],
+      "awards": [
+        "Lambda Literary Award",
+        "Pacific Northwest Booksellers Association Award"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://tinhouse.com/author/alexis-m-smith/",
+        "license": "press",
+        "attribution": "Annie Beedy",
+        "status": "available",
+        "notes": "Photo by Annie Beedy on Tin House author page",
+        "imageUrl": "https://literary-arts.org/wp-content/uploads/2016/08/web_photo_Smith_Alexis-credit-Annie-Beedy-scaled.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -222,7 +294,9 @@
     {
       "id": "ohlin-alix",
       "name": "Alix Ohlin",
-      "years": [0],
+      "years": [
+        2017
+      ],
       "genre": "fiction",
       "bio": "Canadian novelist and short story writer. Her novel Dual Citizens was shortlisted for the Scotiabank Giller Prize, and her collection We Want What We Want won the Lambda Literary Award for Bisexual Literature.",
       "notableWorks": [
@@ -230,15 +304,21 @@
         "Inside",
         "We Want What We Want"
       ],
-      "awards": ["Lambda Literary Award"],
+      "awards": [
+        "Lambda Literary Award",
+        "Giller Prize shortlist",
+        "Rogers Writers' Trust Fiction Prize shortlist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Alix_Ohlin",
-      "officialWebsite": null,
+      "officialWebsite": "https://alixohlinauthor.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://alixohlinauthor.com/",
+        "license": "press",
+        "attribution": "Emily Cooper / Stephanie Noritz",
+        "status": "available",
+        "notes": "Photos by Emily Cooper and Stephanie Noritz; available on official website, UBC Creative Writing faculty page, and Penguin Random House",
+        "imageUrl": "https://crwr.cms.arts.ubc.ca/wp-content/uploads/sites/4/2018/11/alix_ohlin.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -246,21 +326,31 @@
     {
       "id": "codjoe-ama",
       "name": "Ama Codjoe",
-      "years": [0],
+      "years": [
+        2023
+      ],
       "genre": "poetry",
       "bio": "American poet and dancer. Her collection Bluest Nude won the 2023 Lenore Marshall Poetry Prize and a Whiting Award. She was appointed the second Poet-in-Residence at the Guggenheim Museum.",
       "notableWorks": [
-        "Bluest Nude"
+        "Bluest Nude",
+        "Blood of the Air"
       ],
-      "awards": ["Lenore Marshall Poetry Prize", "Whiting Award"],
+      "awards": [
+        "Lenore Marshall Poetry Prize",
+        "Whiting Award",
+        "NAACP Image Award finalist",
+        "Drinking Gourd Chapbook Poetry Prize"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ama_Codjoe",
       "officialWebsite": "https://www.amacodjoe.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.guggenheim.org/initiatives/guggenheim-public-engagement-poet-in-residence/ama-codjoe",
+        "license": "press",
+        "attribution": "David Heald / Solomon R. Guggenheim Foundation",
+        "status": "available",
+        "notes": "Photo by David Heald for Guggenheim Museum; also photos on Poetry Foundation and official website",
+        "imageUrl": "https://www.guggenheim.org/wp-content/uploads/2023/01/people-ama-codjoe.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -268,7 +358,9 @@
     {
       "id": "mojgani-anis",
       "name": "Anis Mojgani",
-      "years": [0],
+      "years": [
+        2026
+      ],
       "genre": "poetry",
       "bio": "Spoken word poet and Oregon's 10th Poet Laureate (2020-2024). He won back-to-back National Poetry Slam titles in 2005-2006, and his book The Feather Room was a National Book Award nominee.",
       "notableWorks": [
@@ -276,15 +368,21 @@
         "The Tigers, They Let Me",
         "Lifespans of a Rock"
       ],
-      "awards": ["National Poetry Slam Champion (2x)", "Academy of American Poets Laureate Fellowship"],
+      "awards": [
+        "National Poetry Slam Champion (2x)",
+        "Academy of American Poets Laureate Fellowship",
+        "International World Cup Poetry Slam"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Anis_Mojgani",
       "officialWebsite": "https://www.thepianofarm.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.thepianofarm.com/about",
+        "license": "press",
+        "attribution": "Opal Rockett / Hilde Franzsen",
+        "status": "available",
+        "notes": "Press photos available for download on official website (The Piano Farm); Oregon Cultural Trust also has photos from laureate tenure",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5d3946e72a72b00001af2683/1577991740933-9HUAP9K7UUEXVHRZN2DX/Hilde+little.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -292,21 +390,27 @@
     {
       "id": "keesey-anna",
       "name": "Anna Keesey",
-      "years": [0],
+      "years": [
+        2015
+      ],
       "genre": "fiction",
       "bio": "Oregon-based novelist and Iowa Writers' Workshop graduate. Her debut Little Century, set in 1900 Central Oregon, was praised by The Washington Post as a work about 'who will inherit the earth.'",
       "notableWorks": [
         "Little Century"
       ],
-      "awards": ["National Endowment for the Arts Fellowship"],
+      "awards": [
+        "National Endowment for the Arts Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://annakeesey.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://www.linfield.edu/faculty/akeesey.html",
+        "license": "press",
+        "attribution": "Linfield University",
+        "status": "available",
+        "notes": "Photo on Linfield University faculty page; also available on Macmillan author page and MacDowell artist page",
+        "imageUrl": "https://m.media-amazon.com/images/I/613rtiPQ66L._SX450_CR0%2C0%2C450%2C450_.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -314,7 +418,9 @@
     {
       "id": "bradford-arthur",
       "name": "Arthur Bradford",
-      "years": [0],
+      "years": [
+        2016
+      ],
       "genre": "fiction",
       "bio": "American writer and filmmaker whose debut story collection Dogwalker was praised by David Sedaris as the work of 'the most outlandish and energetic writer I can think of.' His stories have appeared in McSweeney's and Esquire.",
       "notableWorks": [
@@ -322,15 +428,19 @@
         "Turtleface and Beyond",
         "Benny's Brigade"
       ],
-      "awards": ["O. Henry Award"],
+      "awards": [
+        "O. Henry Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Arthur_Bradford",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.macdowell.org/artists/arthur-bradford",
+        "license": "press",
+        "attribution": "MacDowell / IMDB",
+        "status": "available",
+        "notes": "Photo on MacDowell artist page; also IMDB page and DC/DOX festival page",
+        "imageUrl": "https://literary-arts.org/wp-content/uploads/2016/09/03_Arthur-Bradford_Literary-Arts-Writers-in-the-Schools-800x1024.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -338,43 +448,59 @@
     {
       "id": "amster-betsy",
       "name": "Betsy Amster",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "nonfiction",
-      "bio": "Literary agent and former editor at Pantheon and Vintage Books. She founded Betsy Amster Literary Enterprises in 1992 and frequently teaches at UCLA Extension's Writers Program.",
+      "bio": "Literary agent and former editor at Pantheon and Vintage. She founded Betsy Amster Literary Enterprises in 1992 and has been called 'a dogged prospector of literary talent' by the Los Angeles Times. A frequent panelist at the LA Times Festival of Books and instructor at UCLA Extension's Writers' Program.",
       "notableWorks": [],
       "awards": [],
       "wikipediaUrl": null,
       "officialWebsite": "https://amsterlit.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://latimesfestivalofbooks2019.sched.com/speaker/betsy_amster.1zag0ii9",
+        "license": "press",
+        "attribution": "LA Times Festival of Books",
+        "status": "available",
+        "notes": "Photo available on LA Times Festival of Books speaker page; also on Publishers Marketplace profile",
+        "imageUrl": "https://avatars.sched.co/2/34/7491083/avatar.jpg.320x320px.jpg?90b"
       },
-      "confidence": "medium",
-      "needsReview": true
+      "confidence": "high",
+      "needsReview": false
     },
     {
       "id": "hillman-brenda",
       "name": "Brenda Hillman",
-      "years": [0],
-      "genre": "poetry",
-      "bio": "Chancellor of the Academy of American Poets and ecopoet whose tetralogy on the classical elements culminated in Seasonal Works with Letters on Fire, winner of the Griffin Poetry Prize. Married to Pulitzer winner Robert Hass.",
-      "notableWorks": [
-        "Practical Water",
-        "Seasonal Works with Letters on Fire",
-        "Cascadia"
+      "years": [
+        2013
       ],
-      "awards": ["Griffin Poetry Prize", "Academy of American Poets Fellowship", "William Carlos Williams Prize"],
+      "genre": "poetry",
+      "bio": "Award-winning poet and Chancellor of the Academy of American Poets. Her collection Seasonal Works with Letters on Fire won the 2014 Griffin Poetry Prize. She is the Olivia Filippi Professor of Poetry at Saint Mary's College of California and is married to fellow poet Robert Hass.",
+      "notableWorks": [
+        "Seasonal Works with Letters on Fire",
+        "Practical Water",
+        "Extra Hidden Life, Among the Days",
+        "In a Few Minutes Before Later",
+        "Loose Sugar"
+      ],
+      "awards": [
+        "Griffin Poetry Prize",
+        "LA Times Book Award",
+        "William Carlos Williams Prize",
+        "Academy of American Poets Fellowship",
+        "Guggenheim Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Brenda_Hillman",
-      "officialWebsite": null,
+      "officialWebsite": "https://brendahillman.net/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://blueflowerarts.com/artist/brenda-hillman/",
+        "license": "press",
+        "attribution": "Robert Hass",
+        "status": "available",
+        "notes": "Photo by Robert Hass available on Blue Flower Arts speaker page; also on Poetry Foundation, Academy of American Poets",
+        "imageUrl": "https://blueflowerarts.com/wp-content/uploads/2014/07/Hillman-pls-credit-Robert-Hass.jpeg"
       },
       "confidence": "high",
       "needsReview": false
@@ -382,23 +508,34 @@
     {
       "id": "barnett-catherine",
       "name": "Catherine Barnett",
-      "years": [0],
+      "years": [
+        2023
+      ],
       "genre": "poetry",
-      "bio": "New York-based poet whose collection The Game of Boxes won the James Laughlin Award. Human Hours was a New York Times Best Poetry selection and won the Believer Book Award.",
+      "bio": "Poet and educator whose collection The Game of Boxes won the James Laughlin Award. She is a recipient of a Guggenheim Fellowship and a 2022 Award in Literature from the American Academy of Arts and Letters. She teaches at NYU and serves as Distinguished Lecturer at Hunter College.",
       "notableWorks": [
+        "Solutions for the Problem of Bodies in Space",
         "Human Hours",
         "The Game of Boxes",
-        "Solutions for the Problem of Bodies in Space"
+        "Into Perfect Spheres Such Holes Are Pierced"
       ],
-      "awards": ["James Laughlin Award", "Believer Book Award", "Guggenheim Fellowship"],
+      "awards": [
+        "Guggenheim Fellowship",
+        "James Laughlin Award",
+        "American Academy of Arts and Letters Award in Literature",
+        "Whiting Writers' Award",
+        "Glasgow Prize for Emerging Writers"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_Barnett",
       "officialWebsite": "https://www.catherinebarnett.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://poets.org/poet/catherine-barnett",
+        "license": "press",
+        "attribution": "Jacqueline Mia Foster",
+        "status": "available",
+        "notes": "Photo by Jacqueline Mia Foster on Academy of American Poets, Poetry Foundation, and official website",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/Catherine%20Barnett_NewBioImage_1.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -406,19 +543,26 @@
     {
       "id": "ellis-catherine",
       "name": "Catherine Ellis",
-      "years": [0],
-      "genre": "poetry",
-      "bio": "Information not found. May be a local/regional writer or the name may need verification.",
-      "notableWorks": [],
+      "years": [
+        2025
+      ],
+      "genre": "nonfiction",
+      "bio": "Writer and oral historian. Co-editor with Sydney Lewis of Say It Plain: A Century of Great African American Speeches, preserving and publishing works from Studs Terkel's interview archive.",
+      "notableWorks": [
+        "Say It Plain: A Century of Great African American Speeches",
+        "Say It Loud: Great Speeches on Civil Rights and African American Identity"
+      ],
       "awards": [],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://thenewpress.com/authors/catherine-ellis",
+        "license": "press",
+        "attribution": "The New Press",
+        "status": "needs_acquisition",
+        "notes": "Limited online presence. Photo may be available through The New Press publisher page. Requires further verification.",
+        "imageUrl": "https://thenewpress.org/wp-content/uploads/2025/03/ellis_catherine.jpg"
       },
       "confidence": "low",
       "needsReview": true
@@ -426,22 +570,32 @@
     {
       "id": "shanahan-charif",
       "name": "Charif Shanahan",
-      "years": [0],
+      "years": [
+        2024
+      ],
       "genre": "poetry",
-      "bio": "Moroccan-Irish American poet and Northwestern professor. His collection Trace Evidence won the Lambda Literary Award and was longlisted for the National Book Award. Recipient of the Whiting Award.",
+      "bio": "Poet and translator whose collection Trace Evidence was a finalist for the National Book Critics Circle Award, longlisted for the National Book Award, and won the Lambda Literary Award for Gay Poetry. He is an assistant professor at Northwestern University.",
       "notableWorks": [
         "Trace Evidence",
         "Into Each Room We Enter without Knowing"
       ],
-      "awards": ["Lambda Literary Award", "Whiting Award", "NEA Fellowship", "Stegner Fellowship"],
-      "wikipediaUrl": null,
+      "awards": [
+        "Lambda Literary Award for Gay Poetry",
+        "Thom Gunn Award",
+        "Whiting Award",
+        "Wallace Stegner Fellowship",
+        "National Endowment for the Arts Fellowship"
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Charif_Shanahan",
       "officialWebsite": "https://www.charifshanahan.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.northwestern.edu/people/faculty/shanahan-charif.html",
+        "license": "press",
+        "attribution": "Rachel Eliza Griffiths",
+        "status": "available",
+        "notes": "Photo by Rachel Eliza Griffiths on Northwestern faculty page; also credited to Beowulf Sheehan on some pages",
+        "imageUrl": "https://english.northwestern.edu/images/people/faculty/charif-shanahan.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -449,23 +603,36 @@
     {
       "id": "baxter-charles",
       "name": "Charles Baxter",
-      "years": [0],
+      "years": [
+        2020
+      ],
       "genre": "fiction",
-      "bio": "American novelist and short story writer whose novel The Feast of Love was a National Book Award finalist. Winner of the PEN/Malamud Award for Excellence in the Short Story.",
+      "bio": "Novelist and short story writer whose The Feast of Love was a National Book Award finalist. He was the Edelstein-Keller Professor in Creative Writing at the University of Minnesota and has won the Rea Award and PEN/Malamud Award for Excellence in the Short Story.",
       "notableWorks": [
         "The Feast of Love",
         "The Sun Collective",
-        "Saul and Patsy"
+        "Saul and Patsy",
+        "There's Something I Want You to Do",
+        "Burning Down the House: Essays on Fiction"
       ],
-      "awards": ["PEN/Malamud Award", "Rea Award for the Short Story", "Guggenheim Fellowship"],
-      "wikipediaUrl": null,
+      "awards": [
+        "National Book Award finalist",
+        "PEN/Malamud Award",
+        "Rea Award",
+        "American Academy of Arts and Letters Award",
+        "Minnesota Book Award",
+        "Guggenheim Fellowship"
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Charles_Baxter_(author)",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://cla.umn.edu/english/news/professor-charles-baxter-retires",
+        "license": "press",
+        "attribution": "University of Minnesota",
+        "status": "available",
+        "notes": "Photo on University of Minnesota English department page; additional photo by Aaron Lavinsky in Minneapolis Sculpture Garden for Star Tribune",
+        "imageUrl": "https://cla.umn.edu/sites/cla.umn.edu/files/styles/feature_image/public/unsorted/images/d4a10f-20110105-charles-baxter.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -473,22 +640,32 @@
     {
       "id": "deavel-christine",
       "name": "Christine Deavel",
-      "years": [0],
+      "years": [
+        2008
+      ],
       "genre": "poetry",
-      "bio": "Seattle poet and former co-owner of Open Books: A Poem Emporium. Her collection Woodnote won the 2012 Washington State Book Award for poetry and the Dorothy Brunsman Poetry Prize.",
+      "bio": "Poet and playwright whose collection Woodnote won the Washington State Book Award and the Dorothy Brunsman Poetry Prize. She co-founded and ran Open Books, Seattle's poetry-only bookstore, with her husband J.W. Marshall from 1995 to 2016.",
       "notableWorks": [
         "Woodnote",
-        "Box of Little Spruce"
+        "Box of Little Spruce",
+        "Vicinity/Memoryall (play, with J.W. Marshall)",
+        "Blue to Blue (play)"
       ],
-      "awards": ["Washington State Book Award"],
+      "awards": [
+        "Washington State Book Award",
+        "Dorothy Brunsman Poetry Prize",
+        "Artist Trust GAP Award"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://artisttrust.org/artists/christine-deavel-and-j-w-marshall/",
+        "license": "press",
+        "attribution": "Artist Trust / Photo courtesy of the artist",
+        "status": "available",
+        "notes": "Photo on Artist Trust page; also may have photos from KUOW interview and Seattle Arts & Lectures",
+        "imageUrl": "https://media.artisttrust.org/assets/artists/combined_headshot-1024x606.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -496,23 +673,35 @@
     {
       "id": "watkins-claire-vaye",
       "name": "Claire Vaye Watkins",
-      "years": [0],
+      "years": [
+        2022
+      ],
       "genre": "fiction",
-      "bio": "American author whose debut story collection Battleborn won The Story Prize and the Dylan Thomas Prize. Named a National Book Foundation '5 under 35' honoree and recipient of a Guggenheim Fellowship.",
+      "bio": "Author whose debut story collection Battleborn won The Story Prize and Dylan Thomas Prize. Her novel Gold Fame Citrus explores the California drought. A National Book Foundation 5 Under 35 honoree and Guggenheim Fellow, she is a professor at UC Irvine.",
       "notableWorks": [
         "Battleborn",
         "Gold Fame Citrus",
-        "I Love You but I've Chosen Darkness"
+        "I Love You but I've Chosen Darkness",
+        "Yellow Pine (forthcoming 2026)"
       ],
-      "awards": ["The Story Prize", "Dylan Thomas Prize", "Guggenheim Fellowship"],
+      "awards": [
+        "Story Prize",
+        "Dylan Thomas Prize",
+        "NY Public Library Young Lions Fiction Award",
+        "Rosenthal Family Foundation Award",
+        "Guggenheim Fellowship",
+        "Silver Pen Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Claire_Vaye_Watkins",
-      "officialWebsite": null,
+      "officialWebsite": "http://clairevayewatkins.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://communityofwriters.org/bio/claire-vaye-watkins/",
+        "license": "press",
+        "attribution": "Lise Watkins",
+        "status": "available",
+        "notes": "Photo by Lise Watkins on Community of Writers bio page; also on Penguin Random House and Lannan Foundation pages",
+        "imageUrl": "https://communityofwriters.org/wp-content/uploads/2021/12/Watkins-Author-photo-BW.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -520,21 +709,26 @@
     {
       "id": "wise-consuelo",
       "name": "Consuelo Wise",
-      "years": [0],
+      "years": [
+        2020,
+        2025
+      ],
       "genre": "poetry",
-      "bio": "Guatemalan-American poet and Lewis & Clark alumna (BA '09). Her debut book-length poem b o y is an elegy written in fragments about the loss of her two brothers.",
+      "bio": "Guatemalan-American poet and Lewis & Clark alumna (BA '09). Her debut hybrid collection boy is a book-length poem confronting grief over the loss of her two brothers. She is a visiting scholar at Portland State University.",
       "notableWorks": [
-        "b o y"
+        "boy"
       ],
       "awards": [],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://college.lclark.edu/calendars/events/event/361590-an-evening-with-consuelo-wise-spring-2025",
+        "license": "press",
+        "attribution": "Lewis & Clark College",
+        "status": "available",
+        "notes": "Photo on Lewis & Clark Visiting Writers Series event page; also on New Orleans Poetry Festival and Portland State faculty pages",
+        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/600/height/600/crop/1/src_region/0,204,1545,1748/105515_2025.04.01_ENG_Consuelo_Wise_Visiting_Writers_Series.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -542,23 +736,34 @@
     {
       "id": "van-landingham-corey",
       "name": "Corey Van Landingham",
-      "years": [0],
-      "genre": "poetry",
-      "bio": "Lewis & Clark alumna whose debut Antidote won the Ohio State University Press/The Journal Wheeler Prize. Her collection Love Letter to Who Owns the Heavens won the Levis Reading Prize.",
-      "notableWorks": [
-        "Antidote",
-        "Love Letter to Who Owns the Heavens",
-        "Reader, I"
+      "years": [
+        2013,
+        2021
       ],
-      "awards": ["Levis Reading Prize", "NEA Fellowship", "Stegner Fellowship"],
+      "genre": "poetry",
+      "bio": "Poet and Lewis & Clark alumna from Ashland, Oregon. Her collection Love Letter to Who Owns the Heavens won the Levis Reading Prize. She is a recipient of a Guggenheim Fellowship, NEA Fellowship, and Wallace Stegner Fellowship, and teaches at the University of Illinois.",
+      "notableWorks": [
+        "Reader, I",
+        "Love Letter to Who Owns the Heavens",
+        "Antidote"
+      ],
+      "awards": [
+        "Levis Reading Prize",
+        "Guggenheim Fellowship",
+        "NEA Fellowship",
+        "Wallace Stegner Fellowship",
+        "Ohio State University Press/The Journal Charles B. Wheeler Prize"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.coreyvanlandingham.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.coreyvanlandingham.com/",
+        "license": "press",
+        "attribution": "Anna Longworth",
+        "status": "available",
+        "notes": "Photo by Anna Longworth on official website; also on Poetry Foundation, NEA, and University of Illinois pages",
+        "imageUrl": "https://www.poets.org/sites/default/files/cdsn9odz_400x400.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -566,23 +771,34 @@
     {
       "id": "powell-d-a",
       "name": "D.A. Powell",
-      "years": [0],
+      "years": [
+        2009,
+        2012
+      ],
       "genre": "poetry",
-      "bio": "American poet whose book Useless Landscape won the National Book Critics Circle Award. His trilogy on the AIDS epidemic (Tea, Lunch, Cocktails) established him as a major voice in contemporary poetry.",
+      "bio": "American poet whose book Useless Landscape won the National Book Critics Circle Award. His trilogy on the AIDS epidemic (Tea, Lunch, Cocktails) established him as a major voice in contemporary poetry. Professor at University of San Francisco.",
       "notableWorks": [
         "Useless Landscape, or A Guide for Boys",
         "Chronic",
-        "Cocktails"
+        "Cocktails",
+        "Tea",
+        "Lunch"
       ],
-      "awards": ["National Book Critics Circle Award"],
+      "awards": [
+        "National Book Critics Circle Award",
+        "Kingsley Tufts Poetry Award",
+        "John Updike Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/D._A._Powell",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.poetryfoundation.org/poets/d-a-powell",
+        "license": "press",
+        "attribution": "Ben Decastro",
+        "status": "available",
+        "notes": "Photo by Ben Decastro on Poetry Foundation; also on USF faculty page and Academy of American Poets",
+        "imageUrl": "https://writersworkshop.uiowa.edu/sites/writersworkshop.uiowa.edu/files/styles/large/public/2024-03/d-a-powell.jpeg?itok=-KcEhGic"
       },
       "confidence": "high",
       "needsReview": false
@@ -590,23 +806,32 @@
     {
       "id": "baker-david",
       "name": "David Baker",
-      "years": [0],
+      "years": [
+        2015
+      ],
       "genre": "poetry",
-      "bio": "Poet of the American Midwest who served as poetry editor of the Kenyon Review for over 25 years. Won the Theodore Roethke Memorial Poetry Prize for Never-Ending Birds.",
+      "bio": "Poet of the American Midwest who served as poetry editor of the Kenyon Review for over 25 years. Emeritus Professor of English at Denison University. His poems explore an individual's sense of engagement with their natural surroundings.",
       "notableWorks": [
         "Swift: New and Selected Poems",
         "Never-Ending Birds",
         "Whale Fall"
       ],
-      "awards": ["Theodore Roethke Memorial Poetry Prize", "Guggenheim Fellowship", "NEA Fellowship"],
+      "awards": [
+        "Theodore Roethke Memorial Poetry Prize",
+        "Guggenheim Fellowship",
+        "NEA Fellowship",
+        "Pushcart Prize"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/David_Baker_(poet)",
       "officialWebsite": "https://www.davidbaker.website/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://denison.edu/people/david-baker",
+        "license": "press",
+        "attribution": "Denison University",
+        "status": "available",
+        "notes": "Photo on Denison University faculty page; also on Kenyon Review contributor page and Poetry Foundation",
+        "imageUrl": "https://denison.edu/sites/default/files/contacts/baker_david_rs.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -614,22 +839,32 @@
     {
       "id": "austin-derrick",
       "name": "Derrick Austin",
-      "years": [0],
+      "years": [
+        2016
+      ],
       "genre": "poetry",
-      "bio": "Poet whose debut Trouble the Water was selected by Mary Szybist for the A. Poulin Jr. Poetry Prize. His collection Tenderness won the Isabella Gardner Poetry Award.",
+      "bio": "Poet from Homestead, Florida whose debut Trouble the Water was selected by Mary Szybist for the A. Poulin Jr. Poetry Prize. His collection Tenderness won the Isabella Gardner Poetry Award. Cave Canem fellow and former Stegner Fellow at Stanford.",
       "notableWorks": [
         "Trouble the Water",
-        "Tenderness"
+        "Tenderness",
+        "This Elegance"
       ],
-      "awards": ["A. Poulin Jr. Poetry Prize", "Isabella Gardner Poetry Award"],
+      "awards": [
+        "A. Poulin Jr. Poetry Prize",
+        "Isabella Gardner Poetry Award",
+        "Amy Lowell Poetry Traveling Scholarship",
+        "Stegner Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://derricklynnaustin.wixsite.com/authorpage",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://derricklynnaustin.wixsite.com/authorpage/about-me",
+        "license": "press",
+        "attribution": "Danny Montemayor",
+        "status": "available",
+        "notes": "Author photo by Danny Montemayor on official website; also on Poetry Foundation, Stanford Creative Writing, and BOA Editions",
+        "imageUrl": "https://creativewriting.stanford.edu/sites/creativewriting/files/styles/hs_small_square_200x200/public/media/people/derrickaustin_0.jpg.webp?itok=3q2J3uX-"
       },
       "confidence": "high",
       "needsReview": false
@@ -637,23 +872,32 @@
     {
       "id": "waters-don",
       "name": "Don Waters",
-      "years": [0],
+      "years": [
+        2010,
+        2025
+      ],
       "genre": "fiction",
-      "bio": "Reno-born fiction writer whose debut collection Desert Gothic won the Iowa Short Fiction Award. Praised by Percival Everett for prose 'as sneaky as the landscape it depicts.'",
+      "bio": "Reno-born fiction writer whose debut collection Desert Gothic won the Iowa Short Fiction Award. Iowa Writers' Workshop graduate who teaches at Lewis & Clark College. Lives in Portland with partner Robin Romm.",
       "notableWorks": [
         "Desert Gothic",
         "Sunland",
-        "The Saints of Rattlesnake Mountain"
+        "The Saints of Rattlesnake Mountain",
+        "These Boys and Their Fathers"
       ],
-      "awards": ["Iowa Short Fiction Award"],
+      "awards": [
+        "Iowa Short Fiction Award",
+        "McGinnis-Ritchie Award"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.donwaters.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.donwaters.com/",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "notes": "Photo on official author website; also on University of Iowa Press and Narrative Magazine",
+        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/268/height/340/crop/1/src_region/0,0,2133,3200/85762_Waters_Don.rev.1602785044.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -661,22 +905,30 @@
     {
       "id": "passarello-elena",
       "name": "Elena Passarello",
-      "years": [0],
+      "years": [
+        2020
+      ],
       "genre": "nonfiction",
-      "bio": "Essayist and actor whose Animals Strike Curious Poses was a New York Times Editor's Choice. First woman to win the Stella Screaming Contest in New Orleans and recipient of a Whiting Award.",
+      "bio": "Essayist and actor whose Animals Strike Curious Poses was a New York Times Editor's Choice. First woman to win the Stella Screaming Contest in New Orleans. Directs the MFA program at Oregon State University and lives in Corvallis, Oregon.",
       "notableWorks": [
         "Animals Strike Curious Poses",
         "Let Me Clear My Throat"
       ],
-      "awards": ["Whiting Award", "Independent Publisher Book Award (Gold)"],
+      "awards": [
+        "Whiting Award",
+        "Independent Publisher Book Award (Gold)",
+        "Oregon Book Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Elena_Passarello",
-      "officialWebsite": null,
+      "officialWebsite": "https://www.elenapassarello.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.elenapassarello.com/bio-photos",
+        "license": "press",
+        "attribution": "Hannah O'Leary",
+        "status": "available",
+        "notes": "Bio and photos page on official website; also on Oregon State University faculty page and Literary Arts",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/58cdd2c58419c2ea93236b2b/1490048667382-V60ZXQ91QBQ7K1ASR7BJ/elena1.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -684,21 +936,29 @@
     {
       "id": "chenoweth-emily",
       "name": "Emily Chenoweth",
-      "years": [0],
-      "genre": "fiction",
-      "bio": "Portland novelist and former Publishers Weekly fiction editor. Her debut Hello Goodbye explores a family's struggle with loss. Also ghostwrites YA novels with James Patterson under the name Emily Raymond.",
-      "notableWorks": [
-        "Hello Goodbye"
+      "years": [
+        2013
       ],
-      "awards": ["Oregon Literary Fellowship"],
+      "genre": "fiction",
+      "bio": "Portland novelist and former Publishers Weekly fiction editor. Her debut Hello Goodbye was an Oregon Book Award finalist. Co-author of the Klawde middle-grade series and collaborator with James Patterson. Lives in Portland with partner Jon Raymond.",
+      "notableWorks": [
+        "Hello Goodbye",
+        "Klawde: Evil Alien Warlord Cat"
+      ],
+      "awards": [
+        "Oregon Literary Fellowship",
+        "Oregon Book Award finalist"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://literary-arts.org/bio/emily-chenoweth/",
+        "license": "press",
+        "attribution": "Literary Arts",
+        "status": "available",
+        "notes": "Photo on Literary Arts page; also on Penguin Random House author page and PDX Book Fest",
+        "imageUrl": "https://literary-arts.org/wp-content/uploads/2014/04/CHENOWETH-1536x1024.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -706,23 +966,31 @@
     {
       "id": "wilson-emily",
       "name": "Emily Wilson",
-      "years": [0],
+      "years": [
+        2015
+      ],
       "genre": "nonfiction/criticism",
-      "bio": "British-American classicist and the first woman to translate Homer's Odyssey into English. Her translation became a cultural landmark and earned her a MacArthur Fellowship.",
+      "bio": "British-American classicist and the first woman to translate Homer's Odyssey into English. Department Chair and Professor of Classical Studies at University of Pennsylvania. Her landmark Odyssey translation was a New York Times 100 Notable Book.",
       "notableWorks": [
         "The Odyssey (translation)",
         "The Iliad (translation)",
         "The Greatest Empire: A Life of Seneca"
       ],
-      "awards": ["MacArthur Fellowship", "Guggenheim Fellowship"],
+      "awards": [
+        "MacArthur Fellowship",
+        "Guggenheim Fellowship",
+        "National Translation Award shortlist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Emily_Wilson_(classicist)",
       "officialWebsite": "https://www.emilyrcwilson.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://www.english.upenn.edu/people/emily-wilson",
+        "license": "press",
+        "attribution": "Imogen Roth",
+        "status": "available",
+        "notes": "Photo by Imogen Roth; available on UPenn faculty page, MacArthur Foundation, and Literary Arts",
+        "imageUrl": "https://www.english.upenn.edu/sites/default/files/people/photo/2016-12-05%2017.44.32.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -730,23 +998,32 @@
     {
       "id": "hartigan-endi-bogue",
       "name": "Endi Bogue Hartigan",
-      "years": [0],
+      "years": [
+        2009,
+        2015
+      ],
       "genre": "poetry",
-      "bio": "Portland poet and Iowa Writers' Workshop graduate. Her collection Pool [5 choruses] won the Omnidawn Open Poetry Book Prize, and One Sun Storm won the Colorado Prize for Poetry.",
+      "bio": "Portland poet, Iowa Writers' Workshop graduate, and Truman Capote Fellow. Her collection Pool [5 choruses] won the Omnidawn Open Poetry Book Prize, and One Sun Storm won the Colorado Prize for Poetry. Graduate of Reed College.",
       "notableWorks": [
         "oh orchid o'clock",
         "Pool [5 choruses]",
         "One Sun Storm"
       ],
-      "awards": ["Omnidawn Open Poetry Book Prize", "Colorado Prize for Poetry"],
+      "awards": [
+        "Omnidawn Open Poetry Book Prize",
+        "Colorado Prize for Poetry",
+        "Oregon Book Award finalist"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.endiboguehartigan.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.endiboguehartigan.com/about",
+        "license": "press",
+        "attribution": "Steven Bloch",
+        "status": "available",
+        "notes": "Photo by Steven Bloch; available on official website and Academy of American Poets",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/629506316df6af2046ce03c4/7e23aee4-8839-4665-bfb6-911a96dc114c/hartigan3dcrop.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -754,21 +1031,28 @@
     {
       "id": "lundgren-eric",
       "name": "Eric Lundgren",
-      "years": [0],
+      "years": [
+        2014
+      ],
       "genre": "fiction",
-      "bio": "Lewis & Clark alumnus whose Borgesian debut The Facades was a Barnes & Noble Discover Great New Writers pick and finalist for the William Saroyan International Prize.",
+      "bio": "Lewis & Clark alumnus whose Borgesian debut The Facades was a Barnes & Noble Discover Great New Writers pick and finalist for the William Saroyan International Prize. MFA from Washington University; works at a public library in St. Louis.",
       "notableWorks": [
         "The Facades"
       ],
-      "awards": [],
+      "awards": [
+        "Barnes & Noble Discover Great New Writers",
+        "William Saroyan International Prize finalist"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.stlmag.com/The-Arts-Novelist-Eric-Lundgren-Author-of-The-Facades/",
+        "license": "press",
+        "attribution": "Kevin A. Roberts / Gena Brady",
+        "status": "available",
+        "notes": "Photo by Kevin A. Roberts in St. Louis Magazine; additional photo by Gena Brady on publisher pages",
+        "imageUrl": "https://www.stlmag.com/wp-content/uploads/slm_mp/slm_208620__lungren.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -776,23 +1060,31 @@
     {
       "id": "schlosser-eric",
       "name": "Eric Schlosser",
-      "years": [0],
+      "years": [
+        2019
+      ],
       "genre": "nonfiction",
-      "bio": "Investigative journalist whose Fast Food Nation became a landmark exposé of the American food industry. His Command and Control was a Pulitzer Prize finalist.",
+      "bio": "Investigative journalist whose Fast Food Nation became a landmark exposé of the American food industry. His Command and Control was a Pulitzer Prize finalist. Correspondent for The Atlantic and appeared in Food, Inc. documentaries.",
       "notableWorks": [
         "Fast Food Nation",
         "Command and Control",
         "Reefer Madness"
       ],
-      "awards": ["National Magazine Award"],
+      "awards": [
+        "National Magazine Award",
+        "Sidney Hillman Foundation Award",
+        "Pulitzer Prize finalist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Eric_Schlosser",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.penguinrandomhouse.com/authors/27189/eric-schlosser/",
+        "license": "press",
+        "attribution": "Jim Scherer",
+        "status": "available",
+        "notes": "Photo by Jim Scherer; available on Penguin Random House author page and Harry Walker Agency speaker page",
+        "imageUrl": "https://images3.penguinrandomhouse.com/author/27189"
       },
       "confidence": "high",
       "needsReview": false
@@ -800,21 +1092,28 @@
     {
       "id": "ergenbright-erin",
       "name": "Erin Ergenbright",
-      "years": [0],
+      "years": [
+        2010
+      ],
       "genre": "fiction/nonfiction",
-      "bio": "Portland writer, Iowa Writers' Workshop graduate, and co-founder of the Loggernaut Reading Series. Has taught at Lewis & Clark and co-authored The Ex-Boyfriend Cookbook.",
+      "bio": "Portland writer, Iowa Writers' Workshop graduate (James Michener-Paul Engle Fellow), and co-founder of the Loggernaut Reading Series. Has taught at Lewis & Clark and Portland Community College, and co-authored The Ex-Boyfriend Cookbook. Also hosts the Portland Spelling Bee.",
       "notableWorks": [
         "The Ex-Boyfriend Cookbook"
       ],
-      "awards": ["Oregon Arts Commission Grant"],
+      "awards": [
+        "Oregon Arts Commission Grant",
+        "James Michener-Paul Engle Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.lclark.edu/live/news/8340-fiction-reading-by-erin-ergenbright",
+        "license": "press",
+        "attribution": "Lewis & Clark College",
+        "status": "available",
+        "notes": "Photo on Lewis & Clark event page; also featured on Literary Hub Loggernaut anniversary article",
+        "imageUrl": "https://www.lclark.edu/live/image/gid/271/width/192/height/173/crop/1/14575_13547_erin_ergenbright_2_20a42fa370ebf178b092ca8c41dadaf5.rev.1373935911.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -822,23 +1121,34 @@
     {
       "id": "joudah-fady",
       "name": "Fady Joudah",
-      "years": [0],
+      "years": [
+        2019
+      ],
       "genre": "poetry",
-      "bio": "Palestinian-American poet and physician whose debut The Earth in the Attic won the Yale Series of Younger Poets. His translations of Mahmoud Darwish introduced Palestinian poetry to American readers.",
+      "bio": "Palestinian-American poet and physician whose debut The Earth in the Attic won the Yale Series of Younger Poets. His translations of Mahmoud Darwish introduced Palestinian poetry to American readers. Winner of the 2024 Jackson Poetry Prize and 2024 National Book Award finalist.",
       "notableWorks": [
         "The Earth in the Attic",
         "Footnotes in the Order of Disappearance",
+        "Tethered to Stars",
         "The Butterfly's Burden (translation)"
       ],
-      "awards": ["Yale Series of Younger Poets", "Griffin International Poetry Prize", "Guggenheim Fellowship"],
+      "awards": [
+        "Yale Series of Younger Poets",
+        "Griffin International Poetry Prize",
+        "Guggenheim Fellowship",
+        "Jackson Poetry Prize",
+        "National Book Award finalist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Fady_Joudah",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/fady-joudah",
+        "license": "press",
+        "attribution": "Cybele Knowles",
+        "status": "available",
+        "notes": "Photo by Cybele Knowles on Academy of American Poets; also on Poetry Foundation and Milkweed Editions",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/fadyjoudah_newbioimage2018_photocredit_cybeleknowles_0.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -846,23 +1156,31 @@
     {
       "id": "hudson-genevieve",
       "name": "Geneviève Hudson",
-      "years": [0],
+      "years": [
+        2017
+      ],
       "genre": "fiction",
-      "bio": "Portland fiction writer and essayist whose novel Boys of Alabama was a finalist for the Oregon Book Award and shortlisted for the Stonewall Book Award. Recipient of MacDowell and Fulbright fellowships.",
+      "bio": "Portland fiction writer and essayist whose novel Boys of Alabama was a finalist for the Oregon Book Award and shortlisted for the Stonewall Book Award. Recipient of MacDowell, Fulbright, Caldera Arts, and Vermont Studio Center fellowships. Originally from Alabama.",
       "notableWorks": [
         "Boys of Alabama",
         "Pretend We Live Here",
         "A Little in Love with Everyone"
       ],
-      "awards": ["MacDowell Fellowship", "Fulbright Fellowship"],
+      "awards": [
+        "MacDowell Fellowship",
+        "Fulbright Fellowship",
+        "Lambda Literary Award finalist"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.genevieve-hudson.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.genevieve-hudson.com/",
+        "license": "press",
+        "attribution": "Thomas Teal",
+        "status": "available",
+        "notes": "Photo by Thomas Teal on official author website; also on Liveright/W.W. Norton publisher page",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/66707d3fe6276a4d15f51f86/bc0c1c5a-db43-4153-bb12-d2cc6f24cea9/IMG_4468.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -870,23 +1188,29 @@
     {
       "id": "obrien-geoffrey-g",
       "name": "Geoffrey G. O'Brien",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "poetry",
-      "bio": "Poet and UC Berkeley professor whose meditative work explores perception and public space. Also teaches for the Prison University Project at San Quentin.",
+      "bio": "Professor at UC Berkeley whose meditative poetry explores perception and public space. Educated at Harvard and the University of Iowa, former Holloway Lecturer in Poetry. Also teaches at San Quentin State Prison through the Prison University Project.",
       "notableWorks": [
         "Experience in Groups",
         "People on Sunday",
-        "Green and Gray"
+        "Metropole",
+        "Green and Gray",
+        "The Guns and Flags Project"
       ],
       "awards": [],
-      "wikipediaUrl": null,
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Geoffrey_G._O%27Brien",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.berkeley.edu/users/59",
+        "license": "press",
+        "attribution": "UC Berkeley",
+        "status": "available",
+        "notes": "Faculty photo on UC Berkeley English Department page; also on Wave Books author page",
+        "imageUrl": "https://english.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/people/wheeler.jpg?itok=DF9_axFr&timestamp=1692510459"
       },
       "confidence": "high",
       "needsReview": false
@@ -894,23 +1218,32 @@
     {
       "id": "conoley-gillian",
       "name": "Gillian Conoley",
-      "years": [0],
+      "years": [
+        2015
+      ],
       "genre": "poetry",
-      "bio": "Poet-in-Residence at Sonoma State University and founder-editor of VOLT Magazine. Her collection Tall Stranger was a finalist for the National Book Critics Circle Award.",
+      "bio": "Poet-in-Residence at Sonoma State University and founder-editor of VOLT Magazine. Her collection Tall Stranger was a finalist for the National Book Critics Circle Award. Recipient of the Shelley Memorial Award for her body of work.",
       "notableWorks": [
         "Notes from the Passenger",
         "Peace",
-        "Profane Halo"
+        "Profane Halo",
+        "Tall Stranger"
       ],
-      "awards": ["Jerome J. Shestack Poetry Prize", "NEA Grant"],
-      "wikipediaUrl": null,
-      "officialWebsite": null,
+      "awards": [
+        "Shelley Memorial Award",
+        "Jerome J. Shestack Poetry Prize",
+        "NEA Grant"
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gillian_Conoley",
+      "officialWebsite": "https://www.gillianconoley.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.sonoma.edu/faculty-staff/gillian-conoley",
+        "license": "press",
+        "attribution": "Sonoma State University",
+        "status": "available",
+        "notes": "Faculty photo on Sonoma State English Department; also photo by Heather Conley on Poets & Writers profile",
+        "imageUrl": "https://english.sonoma.edu/sites/english/files/styles/square_800_x_800/public/gilliancon-thumb.jpg?h=653d7163&itok=sJPGl9YV"
       },
       "confidence": "high",
       "needsReview": false
@@ -918,23 +1251,32 @@
     {
       "id": "ismailov-hamid",
       "name": "Hamid Ismailov",
-      "years": [0],
+      "years": [
+        2014
+      ],
       "genre": "fiction",
-      "bio": "Uzbek novelist exiled to the UK whose works remain banned in Uzbekistan. Former BBC World Service Writer in Residence. His novel The Devils' Dance won the EBRD Literary Prize.",
+      "bio": "Uzbek novelist exiled to the UK whose works remain banned in Uzbekistan. Former BBC World Service Writer in Residence for 25 years. His novel The Devils' Dance won the EBRD Literary Prize. Born in Tokmok, Kyrgyzstan in 1954.",
       "notableWorks": [
         "The Railway",
         "The Devils' Dance",
-        "The Dead Lake"
+        "The Dead Lake",
+        "Of Strangers and Bees",
+        "The Underground"
       ],
-      "awards": ["EBRD Literary Prize", "AATSEEL Prize"],
+      "awards": [
+        "EBRD Literary Prize",
+        "AATSEEL Prize"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Hamid_Ismailov",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.tiltedaxispress.com/hamid-ismailov",
+        "license": "press",
+        "attribution": "Soraya Gilanni Viljoen (illustration) / Dani Ismailov (photo)",
+        "status": "available",
+        "notes": "Author illustration by Soraya Gilanni Viljoen on Tilted Axis Press; photo by Dani Ismailov on The National News",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/565a42a7e4b0f06765f7b528/1568038070665-JJ5ANGMTT8FTOTIYE45Y/Hamid+drawing.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -942,23 +1284,29 @@
     {
       "id": "carlisle-henry",
       "name": "Henry Carlisle",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "fiction",
-      "bio": "San Francisco-born novelist descended from Nantucket whalers. With his wife Olga, he smuggled and translated Solzhenitsyn's manuscripts. The Jonah Man fictionalizes the Essex disaster.",
+      "bio": "San Francisco-born novelist (1926-2011) descended from Nantucket whalers. With his wife Olga Andreyeva Carlisle, he smuggled and translated Solzhenitsyn's manuscripts. The Jonah Man fictionalizes the Essex disaster. Former PEN American Center president and taught fiction at Squaw Valley Community of Writers for 20 years.",
       "notableWorks": [
         "The Jonah Man",
         "Voyage to the First of December",
-        "The Idealists"
+        "The Idealists",
+        "The Contract",
+        "The Land Where the Sun Dies"
       ],
       "awards": [],
-      "wikipediaUrl": null,
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Henry_Carlisle",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.sfgate.com/bayarea/article/henry-carlisle-jr-editor-and-novelist-dies-2354034.php",
+        "license": "press",
+        "attribution": "Chris Hardy / The Chronicle",
+        "status": "available",
+        "notes": "Photo by Chris Hardy in SF Chronicle obituary; taught at Squaw Valley for 20 years",
+        "imageUrl": "https://www.historicnavalfiction.com/images/stories/images/Henry_Carlisle.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -966,23 +1314,29 @@
     {
       "id": "schwartz-hillel",
       "name": "Hillel Schwartz",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "nonfiction",
-      "bio": "Cultural historian and poet whose Never Satisfied traces America's obsession with dieting. Also authored The Culture of the Copy and Making Noise, and translates Korean poetry.",
+      "bio": "Cultural historian (born 1948) and poet whose Never Satisfied traces America's obsession with dieting. Also authored The Culture of the Copy and Making Noise. Recipient of the 2014 Berlin Prize in Cultural History from the American Academy in Berlin. Degrees from Brandeis, Yale, and UC Berkeley.",
       "notableWorks": [
         "Never Satisfied: A Cultural History of Diets, Fantasies and Fat",
         "The Culture of the Copy",
-        "Making Noise"
+        "Making Noise: From Babel to the Big Bang, and Beyond"
       ],
-      "awards": [],
+      "awards": [
+        "Berlin Prize in Cultural History"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Hillel_Schwartz_(historian)",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.americanacademy.de/person/hillel-schwartz/",
+        "license": "press",
+        "attribution": "Annette Hornischer",
+        "status": "available",
+        "notes": "Photo by Annette Hornischer on American Academy in Berlin page",
+        "imageUrl": "https://www.americanacademy.de/wp-content/uploads/2016/12/hillelschwarz.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -990,21 +1344,31 @@
     {
       "id": "prcic-ismet",
       "name": "Ismet Prcic",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "fiction",
-      "bio": "Bosnian-American novelist who fled his war-torn homeland in 1996. His debut Shards won the Sue Kaufman Prize, LA Times Art Seidenbaum Award, and Oregon Book Award.",
+      "bio": "Bosnian-American novelist (born 1977 in Tuzla) who fled his war-torn homeland in 1996. His debut Shards won the Sue Kaufman Prize, LA Times Art Seidenbaum Award, and Oregon Book Award. Also a Sundance and Jerusalem Screenwriting Lab fellow. Lives in Portland, Oregon.",
       "notableWorks": [
         "Shards"
       ],
-      "awards": ["Sue Kaufman Prize for First Fiction", "LA Times Art Seidenbaum Award", "Oregon Book Award", "NEA Fellowship"],
+      "awards": [
+        "Sue Kaufman Prize for First Fiction",
+        "LA Times Art Seidenbaum Award",
+        "Oregon Book Award",
+        "NEA Fellowship",
+        "Glenn Schaeffer Award in Fiction"
+      ],
       "wikipediaUrl": null,
-      "officialWebsite": null,
+      "officialWebsite": "http://www.ismetprcic.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://communityofwriters.org/bio/ismet-prcic/",
+        "license": "press",
+        "attribution": "Community of Writers",
+        "status": "available",
+        "notes": "Photo on Community of Writers bio page; also on BOMB Magazine interview and Simon & Schuster author page",
+        "imageUrl": "https://communityofwriters.org/wp-content/uploads/2015/09/Prcic_Ismet.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1012,23 +1376,30 @@
     {
       "id": "miller-j-hillis",
       "name": "J. Hillis Miller",
-      "years": [0],
+      "years": [
+        2007
+      ],
       "genre": "criticism",
-      "bio": "Major American literary critic and last surviving member of the Yale School of Deconstruction. Wrote over 50 books analyzing literature through deconstructionist principles.",
+      "bio": "Major American literary critic (1928-2021) and last surviving member of the Yale School of Deconstruction alongside Paul de Man, Jacques Derrida, and Geoffrey Hartman. Former MLA president (1986) and wrote over 50 books analyzing literature through deconstructionist principles. Taught at Johns Hopkins, Yale, and UC Irvine.",
       "notableWorks": [
         "The Critic as Host",
         "Fiction and Repetition",
-        "Topographies"
+        "Topographies",
+        "The Ethics of Reading"
       ],
-      "awards": [],
+      "awards": [
+        "MLA Lifetime Achievement Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/J._Hillis_Miller",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://humanities.uci.edu/SOH/calendar/story_details.php?recid=2401",
+        "license": "press",
+        "attribution": "Jeremy Maryott / UCI",
+        "status": "available",
+        "notes": "Photo by Jeremy Maryott on UCI School of Humanities memorial page; J. Hillis Miller papers including photos at UCI",
+        "imageUrl": "https://www.humanities.uci.edu/sites/default/files/styles/article_image_891x504/public/article/HillisStory_0.png"
       },
       "confidence": "high",
       "needsReview": false
@@ -1036,23 +1407,30 @@
     {
       "id": "rancourt-jacques",
       "name": "Jacques J. Rancourt",
-      "years": [0],
+      "years": [
+        2020
+      ],
       "genre": "poetry",
-      "bio": "Maine-raised, San Francisco-based poet and former Stegner Fellow. His debut Novena won the Lena-Miles Wever Todd Prize and explores coming-of-age and coming out.",
+      "bio": "Maine-raised, San Francisco-based poet and former Stegner Fellow. His debut Novena won the Lena-Miles Wever Todd Prize and explores coming-of-age and coming out. Brocken Spectre was named one of Oprah Daily's best LGBTQ books of 2021. Currently works as a middle school principal.",
       "notableWorks": [
         "Brocken Spectre",
         "Novena",
         "In the Time of PrEP"
       ],
-      "awards": ["Lena-Miles Wever Todd Prize", "Stegner Fellowship"],
+      "awards": [
+        "Lena-Miles Wever Todd Prize",
+        "Stegner Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.jacquesrancourt.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.poetryfoundation.org/poets/jacques-j-rancourt",
+        "license": "press",
+        "attribution": "Danny Chung",
+        "status": "available",
+        "notes": "Photo by Danny Chung on Michigan Quarterly Review; courtesy photo on Poetry Foundation",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5fe8db577b743f626b43be66/130a688c-2413-4361-b470-5ef4de3876d5/Jacques+Headshots-0013.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1060,22 +1438,28 @@
     {
       "id": "anderson-james",
       "name": "James Anderson",
-      "years": [0],
+      "years": [
+        2018
+      ],
       "genre": "fiction",
-      "bio": "Reed College graduate whose debut The Never-Open Desert Diner was praised by The Washington Post as 'outstanding in every regard.' Also co-produced an award-winning documentary on Tibetan refugees.",
+      "bio": "Reed College graduate whose debut The Never-Open Desert Diner was praised by The Washington Post as 'outstanding in every regard.' Former publisher and Editor-in-Chief of Breitenbush Books (1975-1991). Also co-produced Tara's Daughters, narrated by Susan Sarandon, which won Best Documentary at the New York Film Festival. Divides time between Colorado and Oregon.",
       "notableWorks": [
         "The Never-Open Desert Diner",
         "Lullaby Road"
       ],
-      "awards": [],
+      "awards": [
+        "Western States Book Awards (as publisher)"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://jamesandersonauthor.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://jamesandersonauthor.com/",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "notes": "Photo on official author website; also on Penguin Random House and Goodreads author pages",
+        "imageUrl": "https://jamesandersonauthor.com/wp-content/uploads/James_Anderson_Painted_Hills.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1083,23 +1467,31 @@
     {
       "id": "wong-jane",
       "name": "Jane Wong",
-      "years": [0],
+      "years": [
+        2022
+      ],
       "genre": "poetry/nonfiction",
-      "bio": "Chinese American poet whose How to Not Be Afraid of Everything was longlisted for the PEN/Voelcker Award. Also authored the memoir Meet Me Tonight in Atlantic City about growing up in her family's restaurant.",
+      "bio": "Chinese American poet whose How to Not Be Afraid of Everything was longlisted for the PEN/Voelcker Award. Her memoir Meet Me Tonight in Atlantic City won the 2024 PNBA Award. Associate Professor of Creative Writing at Western Washington University.",
       "notableWorks": [
         "Meet Me Tonight in Atlantic City",
         "How to Not Be Afraid of Everything",
         "Overpour"
       ],
-      "awards": ["Pushcart Prize", "Fulbright Fellowship"],
+      "awards": [
+        "PNBA Award",
+        "Pushcart Prize",
+        "Fulbright Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://janewongwriter.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://janewongwriter.com/bio",
+        "license": "press",
+        "attribution": "Gritchelle Fallesgon",
+        "status": "available",
+        "notes": "Author headshot by Gritchelle Fallesgon on official website; header photo by Helene Christensen",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5b3ebef39f87702e755d679e/4f9ee229-91d6-4ef0-b9fb-f952bf737be5/JaneW+headshot.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1107,23 +1499,34 @@
     {
       "id": "grotz-jennifer",
       "name": "Jennifer Grotz",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
-      "bio": "Director of the Bread Loaf Writers' Conferences and Guggenheim Fellow. Her translations of Jerzy Ficowski won the PEN Award for Best Book of Poetry in Translation.",
+      "bio": "Director of the Bread Loaf Writers' Conferences (first woman to hold the position) and Guggenheim Fellow. Her translations of Jerzy Ficowski won the PEN Award for Best Book of Poetry in Translation. Teaches poetry and translation at the University of Rochester.",
       "notableWorks": [
         "Still Falling",
         "Window Left Open",
-        "The Needle"
+        "The Needle",
+        "Cusp"
       ],
-      "awards": ["Guggenheim Fellowship", "PEN Translation Award", "Katherine Bakeless Nason Poetry Prize"],
-      "wikipediaUrl": null,
+      "awards": [
+        "Guggenheim Fellowship",
+        "PEN Translation Award",
+        "Katherine Bakeless Nason Poetry Prize",
+        "NEA Fellowship",
+        "Rona Jaffe Foundation Fellowship"
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jennifer_Grotz",
       "officialWebsite": "https://www.jennifergrotz.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.middlebury.edu/writers-conferences/people/jennifer-grotz",
+        "license": "press",
+        "attribution": "Middlebury Bread Loaf Writers' Conferences",
+        "status": "available",
+        "notes": "Photo on Bread Loaf director page; also on University of Rochester faculty page (photo by J. Adam Fenster)",
+        "imageUrl": "https://www.middlebury.edu/writers-conferences/sites/default/files/styles/432x576/public/2020-06/JenniferGrotz.jpg?fv=1-NYR7ca&itok=Pw0ybyJx"
       },
       "confidence": "high",
       "needsReview": false
@@ -1131,23 +1534,31 @@
     {
       "id": "galvin-james",
       "name": "James Galvin",
-      "years": [0],
+      "years": [
+        2016
+      ],
       "genre": "poetry",
-      "bio": "Iowa Writers' Workshop faculty member whose Resurrection Update was a finalist for the Los Angeles Times Book Award. His prose meditation The Meadow chronicles life on the Wyoming-Colorado border.",
+      "bio": "Iowa Writers' Workshop faculty member whose Resurrection Update was a finalist for the Los Angeles Times Book Award. His prose meditation The Meadow chronicles life on the Wyoming-Colorado border. Professor Emeritus at Iowa, he divides time between Iowa City and his ranch in Laramie, Wyoming.",
       "notableWorks": [
         "Resurrection Update: Collected Poems",
         "The Meadow",
-        "Fencing the Sky"
+        "Fencing the Sky",
+        "Everything We Always Knew Was True"
       ],
-      "awards": ["National Poetry Series"],
+      "awards": [
+        "National Poetry Series",
+        "Lannan Literary Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Galvin_(poet)",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://writersworkshop.uiowa.edu/people/james-galvin",
+        "license": "press",
+        "attribution": "University of Iowa Writers' Workshop",
+        "status": "available",
+        "notes": "Photo on Iowa Writers' Workshop faculty page; also on Poetry Foundation and Academy of American Poets",
+        "imageUrl": "https://writersworkshop.uiowa.edu/sites/writersworkshop.uiowa.edu/files/styles/large/public/2024-02/James_Galvin.jpg?itok=qTG9vUHp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1155,23 +1566,35 @@
     {
       "id": "wilkins-joe",
       "name": "Joe Wilkins",
-      "years": [0],
+      "years": [
+        2021,
+        2025
+      ],
       "genre": "poetry/fiction/nonfiction",
-      "bio": "Montana-raised writer now at Linfield University in Oregon. His poetry collection When We Were Birds won the Oregon Book Award; his novel The Entire Sky won the Montana Book Award.",
+      "bio": "Montana-raised writer and English Department Chair at Linfield University in Oregon. His poetry collection When We Were Birds won the Oregon Book Award; his novel The Entire Sky won the Montana Book Award. Oregon Literary Arts fellowship recipient.",
       "notableWorks": [
         "The Mountain and the Fathers",
         "Fall Back Down When I Die",
-        "When We Were Birds"
+        "When We Were Birds",
+        "The Entire Sky",
+        "Pastoral, 1994"
       ],
-      "awards": ["Oregon Book Award", "Montana Book Award", "GLCA New Writers Award"],
+      "awards": [
+        "Oregon Book Award",
+        "Montana Book Award",
+        "GLCA New Writers Award",
+        "Oregon Literary Arts Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://joewilkins.org/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://www.linfield.edu/faculty/jwilkins.html",
+        "license": "press",
+        "attribution": "Linfield University",
+        "status": "available",
+        "notes": "Photo on Linfield University faculty page; also on Academy of American Poets",
+        "imageUrl": "https://linfield.edu/assets/images/bio_images/jwilkins.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1179,22 +1602,28 @@
     {
       "id": "beer-john",
       "name": "John Beer",
-      "years": [0],
+      "years": [
+        2016
+      ],
       "genre": "poetry",
-      "bio": "Iowa Writers' Workshop graduate whose The Waste Land and Other Poems won the Norma Farber First Book Award. Formerly Robert Lax's literary assistant on the Greek island of Patmos.",
+      "bio": "Iowa Writers' Workshop graduate whose The Waste Land and Other Poems won the Norma Farber First Book Award. Formerly Robert Lax's literary assistant on the Greek island of Patmos. Teaches creative writing at Portland State University and lives in Portland, Oregon.",
       "notableWorks": [
         "The Waste Land and Other Poems",
         "Lucinda"
       ],
-      "awards": ["Norma Farber First Book Award"],
+      "awards": [
+        "Norma Farber First Book Award"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.wavepoetry.com/products/john-beer",
+        "license": "press",
+        "attribution": "Wave Books",
+        "status": "available",
+        "notes": "Photo on Wave Books author page; also on Canarium Books and Poetry Foundation",
+        "imageUrl": "https://www.wavepoetry.com/cdn/shop/products/web-beer.jpg?v=1663705255"
       },
       "confidence": "high",
       "needsReview": false
@@ -1202,9 +1631,11 @@
     {
       "id": "casteen-john",
       "name": "John Casteen",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "poetry",
-      "bio": "Virginia poet and Iowa Writers' Workshop graduate who teaches at University of Virginia. Former custom furniture builder whose poems explore physical work and Appalachian landscape.",
+      "bio": "Virginia poet (John T. Casteen IV) and Iowa Writers' Workshop graduate. Associate Professor in UVA's Writing and Rhetoric Program. Former custom furniture builder for ten years whose poems explore physical work and Appalachian landscape.",
       "notableWorks": [
         "For the Mountain Laurel",
         "Free Union"
@@ -1213,11 +1644,13 @@
       "wikipediaUrl": null,
       "officialWebsite": "http://johncasteen.net/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.as.virginia.edu/people/john-t-casteen-iv",
+        "license": "press",
+        "attribution": "University of Virginia",
+        "status": "available",
+        "notes": "Photo on UVA English department faculty page; also on personal website johncasteen.net",
+        "imageUrl": "https://as.virginia.edu/sites/uva-as-d10-english/files/styles/large/public/2024-07/John%20Casteen_0.png?itok=4VuchuEz"
       },
       "confidence": "high",
       "needsReview": false
@@ -1225,23 +1658,30 @@
     {
       "id": "farrell-john",
       "name": "John Farrell",
-      "years": [0],
+      "years": [
+        2007
+      ],
       "genre": "criticism",
-      "bio": "Professor of Literature at Claremont McKenna College. His book The Varieties of Authorial Intention has been called 'potentially the most important statement of literary theory to have emerged in this century.'",
+      "bio": "Waldo W. Neikirk Professor of Literature at Claremont McKenna College and NEH Fellowship recipient. His book The Varieties of Authorial Intention has been called 'potentially the most important statement of literary theory to have emerged in this century.'",
       "notableWorks": [
         "The Varieties of Authorial Intention",
         "Paranoia and Modernity",
-        "Freud's Paranoid Quest"
+        "Freud's Paranoid Quest",
+        "The Utopian Dilemma in the Western Political Imagination"
       ],
-      "awards": [],
+      "awards": [
+        "NEH Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.johnfarrellonline.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://www.cmc.edu/academic/faculty/profile/john-farrell",
+        "license": "press",
+        "attribution": "Claremont McKenna College",
+        "status": "available",
+        "notes": "Photo on CMC faculty profile page",
+        "imageUrl": "https://www.cmc.edu/sites/default/files/styles/crop_3_4/public/pictures/2025-03/john-farrell.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1249,9 +1689,11 @@
     {
       "id": "gill-john-freeman",
       "name": "John Freeman Gill",
-      "years": [0],
+      "years": [
+        2017
+      ],
       "genre": "fiction",
-      "bio": "Yale summa cum laude graduate and longtime New York Times contributor. His debut The Gargoyle Hunters was a Barnes & Noble Discover Great New Writers Selection, praised by Annie Proulx as 'extraordinary.'",
+      "bio": "Yale summa cum laude (Phi Beta Kappa) graduate and longtime New York Times contributor who writes the Streetscapes column. His debut The Gargoyle Hunters was a Barnes & Noble Discover Great New Writers Selection, praised by Annie Proulx as 'extraordinary.' Architecture and real estate editor at Avenue magazine.",
       "notableWorks": [
         "The Gargoyle Hunters"
       ],
@@ -1259,11 +1701,13 @@
       "wikipediaUrl": null,
       "officialWebsite": "https://johnfreemangill.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://johnfreemangill.com/",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "notes": "Photo on official author website; also on Penguin Random House and NYS Writers Institute page",
+        "imageUrl": "https://johnfreemangill.com/images/John_Freeman_Gill.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1271,43 +1715,56 @@
     {
       "id": "marshall-john",
       "name": "John Marshall",
-      "years": [0],
+      "years": [
+        2008
+      ],
       "genre": "poetry",
-      "bio": "Pacific Northwest poet and co-owner of Open Books poetry bookstore in Seattle. Commentator on regional literary history.",
+      "bio": "Pacific Northwest poet and co-founder of Open Books: A Poem Emporium in Seattle (opened 1995), one of only two poetry-only bookstores in the U.S. at the time. Married to fellow poet Christine Deavel. Retired in 2016 after 29 years in the book business.",
       "notableWorks": [],
       "awards": [],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://historylink.org/File/3649",
+        "license": "press",
+        "attribution": "HistoryLink.org / Graceguts.com",
+        "status": "available",
+        "notes": "Photos available on HistoryLink.org article about Open Books; also referenced in Graceguts.com interview with photos from January 2008",
+        "imageUrl": "https://lectures.org/wp-content/uploads/Screen-Shot-2019-07-01-at-11.29.28-AM-480x267-1.jpg"
       },
-      "confidence": "medium",
-      "needsReview": true
+      "confidence": "high",
+      "needsReview": false
     },
     {
       "id": "raymond-jon",
       "name": "Jon Raymond",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "fiction",
-      "bio": "Portland novelist and screenwriter who co-wrote HBO's Mildred Pierce (Emmy-nominated) and collaborates with filmmaker Kelly Reichardt on Old Joy, Wendy and Lucy, and First Cow. His collection Livability won the Oregon Book Award.",
+      "bio": "Portland novelist and screenwriter who co-wrote HBO's Mildred Pierce (Emmy-nominated) and collaborates with filmmaker Kelly Reichardt on Old Joy, Wendy and Lucy, and First Cow. His collection Livability won the Oregon Book Award. Former editor at Plazm and Tin House magazines.",
       "notableWorks": [
         "The Half-Life",
         "Livability",
-        "Freebird"
+        "Rain Dragon",
+        "Denial",
+        "God and Sex"
       ],
-      "awards": ["Oregon Book Award", "Emmy Nomination"],
+      "awards": [
+        "Oregon Book Award",
+        "Emmy Nomination"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Jonathan_Raymond",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.orartswatch.org/jon-raymond-to-oregon-and-beyond/",
+        "license": "press",
+        "attribution": "K.B. Dixon",
+        "status": "available",
+        "notes": "Photo by K.B. Dixon on Oregon ArtsWatch and Portland Monthly; also on Literary Arts bio page",
+        "imageUrl": "https://i0.wp.com/www.orartswatch.org/wp-content/uploads/2022/07/Jon-Raymond-PC-K.B.-Dixon-1.jpg"
       },
       "confidence": "high",
       "needsReview": false
@@ -1315,7 +1772,9 @@
     {
       "id": "katz-joy",
       "name": "Joy Katz",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
       "bio": "Pittsburgh poet and former Stegner Fellow who transitioned from industrial design to poetry. Her collection All You Do Is Perceive was a National Poetry Series finalist. Co-edited Dark Horses: Poets on Overlooked Poems.",
       "notableWorks": [
@@ -1323,15 +1782,20 @@
         "The Garden Room",
         "Fabulae"
       ],
-      "awards": ["Stegner Fellowship", "NEA Fellowship"],
+      "awards": [
+        "Stegner Fellowship",
+        "NEA Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Joy_Katz",
       "officialWebsite": "https://joykatz.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/joy-katz",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/joy_katz_0.png",
+        "license": "press",
+        "attribution": "Star Black",
+        "status": "available",
+        "localPath": "writers/katz-joy.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1339,22 +1803,29 @@
     {
       "id": "elliott-julia",
       "name": "Julia Elliott",
-      "years": [0],
+      "years": [
+        2025
+      ],
       "genre": "fiction",
       "bio": "South Carolina fiction writer whose story collection The Wilds was a New York Times Editors' Choice. Her novel The New and Improved Romie Futch blends Southern Gothic with dystopian satire.",
       "notableWorks": [
         "The New and Improved Romie Futch",
         "The Wilds"
       ],
-      "awards": ["Rona Jaffe Writers' Award", "Pushcart Prize"],
+      "awards": [
+        "Rona Jaffe Writers' Award",
+        "Pushcart Prize"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "http://www.juliaelliott.net/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "publisher",
+        "url": "https://tinhouse.com/book/the-wilds/",
+        "imageUrl": "https://tinhouse.com/wp-content/uploads/2017/05/ElliottJulia_CreditForrestClonts_LoRes-1.jpg",
+        "license": "press",
+        "attribution": "Forrest Clonts",
+        "status": "available",
+        "localPath": "writers/elliott-julia.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1362,7 +1833,9 @@
     {
       "id": "may-julian",
       "name": "Julian May",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "fiction",
       "bio": "Pioneering science fiction author who chaired the first worldcon led by a woman (1952). Her Saga of Pliocene Exile series blends time travel with Celtic mythology. Lived in Oregon from the 1970s until her death.",
       "notableWorks": [
@@ -1374,11 +1847,14 @@
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Julian_May",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "goodreads",
+        "url": "https://www.goodreads.com/author/show/23284.Julian_May",
+        "imageUrl": "https://images.gr-assets.com/authors/1340457886p5/23284.jpg",
+        "license": "press",
+        "attribution": "Goodreads",
+        "status": "available",
+        "localPath": "writers/may-julian.webp",
+        "notes": "Deceased (1931-2017). Historic Worldcon '52 photo also available on Wikimedia Commons."
       },
       "confidence": "high",
       "needsReview": false
@@ -1386,7 +1862,9 @@
     {
       "id": "kelsey-karla",
       "name": "Karla Kelsey",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "poetry",
       "bio": "Experimental poet whose A Conjoined Book weaves lyric with philosophy. Editor of Lost Writings: Two Novels by Mina Loy for Yale University Press. Her first book won the Sawtooth Poetry Prize.",
       "notableWorks": [
@@ -1394,15 +1872,20 @@
         "A Conjoined Book",
         "Blood Feather"
       ],
-      "awards": ["Sawtooth Poetry Prize", "Essay Press Prize"],
+      "awards": [
+        "Sawtooth Poetry Prize",
+        "Essay Press Prize"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://karlakelsey.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://karlakelsey.com/about",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/5975f4cfff7c509e1d311a41/1501007226193-VPB3PIXWCT91ANA8UKZV/KarlaKelseyAuthor.jpg",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "localPath": "writers/kelsey-karla.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1410,7 +1893,9 @@
     {
       "id": "dunn-katherine",
       "name": "Katherine Dunn",
-      "years": [0],
+      "years": [
+        2009
+      ],
       "genre": "fiction",
       "bio": "Portland novelist whose cult classic Geek Love was a National Book Award finalist and has been named one of the Great American Novels by The Atlantic. She taught creative writing at Lewis & Clark College and wrote extensively about boxing.",
       "notableWorks": [
@@ -1418,15 +1903,20 @@
         "Attic",
         "Toad"
       ],
-      "awards": ["National Book Award Finalist"],
+      "awards": [
+        "National Book Award Finalist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Katherine_Dunn",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.orartswatch.org/near-flesh-showcases-short-stories-by-katherine-dunn-author-of-geek-love/",
+        "imageUrl": "https://i0.wp.com/www.orartswatch.org/wp-content/uploads/2022/10/Katherine.Dunn_-2.png",
+        "license": "press",
+        "attribution": "Katherine Dunn Archives at Lewis & Clark",
+        "status": "available",
+        "localPath": "writers/dunn-katherine.webp",
+        "notes": "Deceased (1945-2016). Papers archived at Lewis & Clark College."
       },
       "confidence": "high",
       "needsReview": false
@@ -1434,7 +1924,9 @@
     {
       "id": "porteous-katrina",
       "name": "Katrina Porteous",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
       "bio": "Scottish poet and historian based on the Northumberland coast. Her collection Rhizodont won the 2025 Laurel Prize and was shortlisted for the T.S. Eliot Prize. She writes in both English and Northumbrian dialect.",
       "notableWorks": [
@@ -1442,15 +1934,22 @@
         "The Lost Music",
         "Edge"
       ],
-      "awards": ["Laurel Prize", "Cholmondeley Award", "Eric Gregory Award"],
+      "awards": [
+        "Laurel Prize",
+        "Cholmondeley Award",
+        "Eric Gregory Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Katrina_Porteous",
       "officialWebsite": "https://katrinaporteousdotcodotuk.wordpress.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poetryarchive.org/poet/katrina-porteous/",
+        "imageUrl": "https://poetryarchive.org/wp-content/uploads/2019/11/Katrina-Porteous-Large.jpg",
+        "license": "press",
+        "attribution": "Poetry Archive",
+        "status": "available",
+        "localPath": "writers/porteous-katrina.webp",
+        "notes": "Also: Bloodaxe Books (photo by Tony Griffiths)"
       },
       "confidence": "high",
       "needsReview": false
@@ -1458,7 +1957,9 @@
     {
       "id": "hemmings-kaui-hart",
       "name": "Kaui Hart Hemmings",
-      "years": [0],
+      "years": [
+        2021
+      ],
       "genre": "fiction",
       "bio": "Hawaii-born novelist whose debut The Descendants was adapted into an Oscar-winning film starring George Clooney. A former Stegner Fellow, she descends from both Hawaiian royalty and American missionaries.",
       "notableWorks": [
@@ -1466,15 +1967,19 @@
         "The Possibilities",
         "House of Thieves"
       ],
-      "awards": ["Stegner Fellowship"],
+      "awards": [
+        "Stegner Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Kaui_Hart_Hemmings",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "goodreads",
+        "url": "https://www.goodreads.com/author/show/489673.Kaui_Hart_Hemmings",
+        "imageUrl": "https://images.gr-assets.com/authors/1391108937p5/489673.jpg",
+        "license": "press",
+        "attribution": "Goodreads",
+        "status": "available",
+        "localPath": "writers/hemmings-kaui-hart.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1482,7 +1987,9 @@
     {
       "id": "prufer-kevin",
       "name": "Kevin Prufer",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "poetry",
       "bio": "Named 2026-2027 Texas Poet Laureate. His collection Churches was named one of ten best poetry books of the year by The New York Times, and How He Loved Them was longlisted for the Pulitzer Prize.",
       "notableWorks": [
@@ -1490,15 +1997,21 @@
         "How He Loved Them",
         "The Fears"
       ],
-      "awards": ["UNT Rilke Prize", "Lannan Fellowship", "NEA Fellowship"],
+      "awards": [
+        "UNT Rilke Prize",
+        "Lannan Fellowship",
+        "NEA Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Kevin_Prufer",
       "officialWebsite": "https://kdp8106.wixsite.com/kevinprufer",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/kevin-prufer",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/kevin_prufer.png",
+        "license": "press",
+        "attribution": "Wyatt McSpadden / Academy of American Poets",
+        "status": "available",
+        "localPath": "writers/prufer-kevin.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1506,7 +2019,9 @@
     {
       "id": "stafford-kim",
       "name": "Kim Stafford",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "poetry/nonfiction",
       "bio": "Oregon's 9th Poet Laureate (2018-2020) and son of Poet Laureate William Stafford. Founding director of Lewis & Clark College's Northwest Writing Institute, where he has taught since 1979.",
       "notableWorks": [
@@ -1514,15 +2029,21 @@
         "100 Tricks Every Boy Can Do",
         "Singer Come from Afar"
       ],
-      "awards": ["Governor's Arts Award", "Stewart Holbrook Award", "NEA Fellowship"],
+      "awards": [
+        "Governor's Arts Award",
+        "Stewart Holbrook Award",
+        "NEA Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Kim_Stafford",
-      "officialWebsite": null,
+      "officialWebsite": "https://www.kimstaffordpoet.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.culturaltrust.org/oregon-poet-laureate/kim-stafford/",
+        "imageUrl": "https://www.culturaltrust.org/wp-content/uploads/Kim-Stafford-at-Eagle-Creek-web-bio.jpg",
+        "license": "press",
+        "attribution": "Oregon Cultural Trust",
+        "status": "available",
+        "localPath": "writers/stafford-kim.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1530,22 +2051,29 @@
     {
       "id": "nakanishi-laurel",
       "name": "Laurel Nakanishi",
-      "years": [0],
+      "years": [
+        2019
+      ],
       "genre": "poetry/nonfiction",
       "bio": "Hawaii-born poet and educator. Her collection Ashore was published by Tupelo Press. She directs Hawaii Open Arts and has received grants from the Fulbright Foundation and NEA.",
       "notableWorks": [
         "Ashore",
         "Mānoa | Makai"
       ],
-      "awards": ["Fulbright Fellowship", "NEA Fellowship"],
+      "awards": [
+        "Fulbright Fellowship",
+        "NEA Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.laurelnakanishi.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/laurel-nakanishi",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/Laurel%20Nakanishi_BioImage_0.png",
+        "license": "press",
+        "attribution": "Courtesy of Laurel Nakanishi / Academy of American Poets",
+        "status": "available",
+        "localPath": "writers/nakanishi-laurel.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1553,7 +2081,9 @@
     {
       "id": "inada-lawson",
       "name": "Lawson Fusao Inada",
-      "years": [0],
+      "years": [
+        2007
+      ],
       "genre": "poetry",
       "bio": "Oregon's 5th Poet Laureate (2006-2010) and Japanese American poet interned during WWII. Co-edited the landmark anthology Aiiieeeee!, which helped establish Asian American literature as a field.",
       "notableWorks": [
@@ -1561,15 +2091,21 @@
         "Drawing the Line",
         "Before the War"
       ],
-      "awards": ["American Book Award", "Oregon Book Award", "Guggenheim Fellowship"],
+      "awards": [
+        "American Book Award",
+        "Oregon Book Award",
+        "Guggenheim Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Lawson_Fusao_Inada",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://scalar.lehigh.edu/asian-american-little-magazines/lawson-fusao-inada-1938---bio-and-resources",
+        "imageUrl": "https://scalar.lehigh.edu/asian-american-little-magazines/media/lawson%20inada%20poetry%20foundation.jpg",
+        "license": "press",
+        "attribution": "Poetry Foundation / Lehigh University Digital Archive",
+        "status": "available",
+        "localPath": "writers/inada-lawson.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1577,21 +2113,30 @@
     {
       "id": "long-soldier-layli",
       "name": "Layli Long Soldier",
-      "years": [0],
+      "years": [
+        2017
+      ],
       "genre": "poetry",
       "bio": "Oglala Lakota poet whose debut Whereas won the National Book Critics Circle Award and was a National Book Award finalist. The collection responds to the U.S. government's 2009 apology to Native Americans.",
       "notableWorks": [
         "Whereas"
       ],
-      "awards": ["National Book Critics Circle Award", "PEN/Jean Stein Book Award", "Whiting Award", "Lannan Literary Fellowship"],
+      "awards": [
+        "National Book Critics Circle Award",
+        "PEN/Jean Stein Book Award",
+        "Whiting Award",
+        "Lannan Literary Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Layli_Long_Soldier",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "publisher",
+        "url": "https://www.graywolfpress.org/books/whereas",
+        "imageUrl": "https://www.graywolfpress.org/sites/default/files/styles/350x350_2x/public/authorphotos/875348.jpg?itok=XL00V2H8",
+        "license": "press",
+        "attribution": "Graywolf Press",
+        "status": "available",
+        "localPath": "writers/long-soldier-layli.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1599,22 +2144,29 @@
     {
       "id": "montgomery-lee",
       "name": "Lee Montgomery",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "fiction/nonfiction",
       "bio": "Founding editorial director of Tin House Books and executive editor of Tin House magazine. Her memoir The Things Between Us won the Oregon Book Award, and her story collection Whose World Is This? won the Iowa Short Fiction Award.",
       "notableWorks": [
         "The Things Between Us",
         "Whose World Is This?"
       ],
-      "awards": ["Oregon Book Award", "John Simmons Iowa Short Fiction Award"],
+      "awards": [
+        "Oregon Book Award",
+        "John Simmons Iowa Short Fiction Award"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.leemontgomeryeditorial.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "publisher",
+        "url": "https://uipress.uiowa.edu/people/lee-montgomery",
+        "imageUrl": "https://uipress.uiowa.edu/sites/uipress.uiowa.edu/files/styles/large/public/2022-04/attached_images/Montgomery_KristinaWright.jpg?itok=_W3k-3pW",
+        "license": "press",
+        "attribution": "Kristina Wright / University of Iowa Press",
+        "status": "available",
+        "localPath": "writers/montgomery-lee.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1622,7 +2174,9 @@
     {
       "id": "bierds-linda",
       "name": "Linda Bierds",
-      "years": [0],
+      "years": [
+        2014
+      ],
       "genre": "poetry",
       "bio": "MacArthur Fellow (1998) known for elegant historiographic poetry. Taught at University of Washington for over 30 years and her collection Roget's Illusion was longlisted for the National Book Award.",
       "notableWorks": [
@@ -1630,15 +2184,21 @@
         "The Hardy Tree",
         "Flight: New and Selected Poems"
       ],
-      "awards": ["MacArthur Fellowship", "Guggenheim Fellowship", "PEN/West Poetry Prize"],
+      "awards": [
+        "MacArthur Fellowship",
+        "Guggenheim Fellowship",
+        "PEN/West Poetry Prize"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Linda_Bierds",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/linda-bierds",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/lindabierds_bioimage_2017_0.png",
+        "license": "press",
+        "attribution": "Academy of American Poets",
+        "status": "available",
+        "localPath": "writers/bierds-linda.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1646,7 +2206,9 @@
     {
       "id": "wells-lisa",
       "name": "Lisa Wells",
-      "years": [0],
+      "years": [
+        2024
+      ],
       "genre": "poetry/nonfiction",
       "bio": "Portland poet and essayist whose collection The Fix won the Iowa Poetry Prize. Her nonfiction book Believers was a finalist for the PEN E.O. Wilson Literary Science Writing Award.",
       "notableWorks": [
@@ -1654,15 +2216,20 @@
         "The Fix",
         "The Fire Passage"
       ],
-      "awards": ["Iowa Poetry Prize", "Levis Poetry Prize"],
+      "awards": [
+        "Iowa Poetry Prize",
+        "Levis Poetry Prize"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.lisawellswriter.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "publisher",
+        "url": "https://fourwaybooks.com/site/lisa-wells/",
+        "imageUrl": "https://fourwaybooks.com/site/wp-content/uploads/2025/01/Wells-Author-Photo_Jude-Wilkinson-Wells.jpg",
+        "license": "press",
+        "attribution": "Jude Wilkinson-Wells / Four Way Books",
+        "status": "available",
+        "localPath": "writers/wells-lisa.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1670,7 +2237,9 @@
     {
       "id": "leveen-lois",
       "name": "Lois Leveen",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "fiction",
       "bio": "Portland historical novelist. Her debut The Secrets of Mary Bowser was named one of The Oregonian's Top Ten Northwest Books, and Juliet's Nurse became an international bestseller. She has taught at Reed College.",
       "notableWorks": [
@@ -1681,11 +2250,13 @@
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Lois_Leveen",
       "officialWebsite": "http://loisleveen.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "http://loisleveen.com/",
+        "imageUrl": "http://loisleveen.com/assets-2014/lois-leveen.png",
+        "license": "press",
+        "attribution": "Lois Leveen",
+        "status": "available",
+        "localPath": "writers/leveen-lois.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1693,7 +2264,9 @@
     {
       "id": "jackson-major",
       "name": "Major Jackson",
-      "years": [0],
+      "years": [
+        2004
+      ],
       "genre": "poetry",
       "bio": "Poetry Editor of The Harvard Review and 2023 inductee to the Academy of Arts & Sciences. His debut Leaving Saturn won the Cave Canem Poetry Prize, and he received an Academy of American Poets fellowship.",
       "notableWorks": [
@@ -1701,15 +2274,21 @@
         "Hoops",
         "Leaving Saturn"
       ],
-      "awards": ["Guggenheim Fellowship", "Whiting Award", "Academy of American Poets Fellowship"],
+      "awards": [
+        "Guggenheim Fellowship",
+        "Whiting Award",
+        "Academy of American Poets Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Major_Jackson",
       "officialWebsite": "https://www.majorjackson.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://blueflowerarts.com/artist/major-jackson/",
+        "imageUrl": "https://blueflowerarts.com/wp-content/uploads/2014/07/MajorJackson121222_060BeowulfSheehan-1-1-scaled-1.jpg",
+        "license": "press",
+        "attribution": "Beowulf Sheehan",
+        "status": "available",
+        "localPath": "writers/jackson-major.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1717,21 +2296,29 @@
     {
       "id": "pierce-marian",
       "name": "Marian Pierce",
-      "years": [0],
+      "years": [
+        2018
+      ],
       "genre": "fiction",
       "bio": "Portland fiction writer and Iowa Writers' Workshop graduate who received the James Michener Fellowship. Her collection Finding Land: Stories of Japan draws on her experience working for Japan's National Public Radio.",
       "notableWorks": [
         "Finding Land: Stories of Japan"
       ],
-      "awards": ["James Michener Fellowship", "Oregon Literary Fellowship", "MacDowell Fellowship"],
+      "awards": [
+        "James Michener Fellowship",
+        "Oregon Literary Fellowship",
+        "MacDowell Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://marianpierce.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.ooliganpress.com/interview-with-author-marian-pierce/",
+        "imageUrl": "https://www.ooliganpress.com/wp-content/uploads/2022/03/marian-1.jpg",
+        "license": "press",
+        "attribution": "Ooligan Press",
+        "status": "available",
+        "localPath": "writers/pierce-marian.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1739,7 +2326,9 @@
     {
       "id": "boruch-marianne",
       "name": "Marianne Boruch",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
       "bio": "Founded Purdue's MFA program and taught there for 31 years. Her collection The Book of Hours won the $100,000 Kingsley Tufts Poetry Award, one of the largest poetry prizes in the U.S.",
       "notableWorks": [
@@ -1747,15 +2336,21 @@
         "Cadaver, Speak",
         "Bestiary Dark"
       ],
-      "awards": ["Kingsley Tufts Poetry Award", "Guggenheim Fellowship", "NEA Fellowship"],
+      "awards": [
+        "Kingsley Tufts Poetry Award",
+        "Guggenheim Fellowship",
+        "NEA Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Marianne_Boruch",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/marianne-boruch",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/MarianneBoruch_NewBioImage_Credit-WillDunlap.png",
+        "license": "press",
+        "attribution": "Will Dunlap",
+        "status": "available",
+        "localPath": "writers/boruch-marianne.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1763,7 +2358,9 @@
     {
       "id": "chin-marilyn",
       "name": "Marilyn Chin",
-      "years": [0],
+      "years": [
+        2014
+      ],
       "genre": "poetry",
       "bio": "Pioneering Asian American feminist poet who grew up in Portland after emigrating from Hong Kong. Chancellor of the Academy of American Poets and winner of the Ruth Lilly Poetry Prize.",
       "notableWorks": [
@@ -1771,15 +2368,20 @@
         "Hard Love Province",
         "Rhapsody in Plain Yellow"
       ],
-      "awards": ["Ruth Lilly Poetry Prize", "Anisfield-Wolf Book Award"],
+      "awards": [
+        "Ruth Lilly Poetry Prize",
+        "Anisfield-Wolf Book Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Marilyn_Chin",
       "officialWebsite": "https://www.marilynchin.org/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.marilynchin.org/",
+        "imageUrl": "https://i0.wp.com/www.marilynchin.org/wp-content/uploads/2013/08/marilyn.jpg",
+        "license": "press",
+        "attribution": "Marilyn Chin",
+        "status": "available",
+        "localPath": "writers/chin-marilyn.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1787,7 +2389,9 @@
     {
       "id": "garber-marjorie",
       "name": "Marjorie Garber",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "criticism",
       "bio": "Harvard Shakespeare scholar and cultural critic. Her book Shakespeare After All was named one of Newsweek's ten best nonfiction books of the year, and Vested Interests: Cross-Dressing and Cultural Anxiety became a landmark in gender studies.",
       "notableWorks": [
@@ -1795,15 +2399,19 @@
         "Vested Interests",
         "Profiling Shakespeare"
       ],
-      "awards": ["Guggenheim Fellowship"],
+      "awards": [
+        "Guggenheim Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Marjorie_Garber",
       "officialWebsite": "https://marjoriegarber.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://marjoriegarber.com/",
+        "imageUrl": "https://marjoriegarber.com/i/Marjorie-Garber.jpg",
+        "license": "press",
+        "attribution": "Juliana Johnston",
+        "status": "available",
+        "localPath": "writers/garber-marjorie.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1811,7 +2419,9 @@
     {
       "id": "edmundson-mark",
       "name": "Mark Edmundson",
-      "years": [0],
+      "years": [
+        2009
+      ],
       "genre": "criticism/nonfiction",
       "bio": "University of Virginia professor whose Harper's essay 'On the Uses of the Liberal Arts' became one of the most photocopied essays on American campuses. His book Why Read? argues passionately for literature's power to transform lives.",
       "notableWorks": [
@@ -1819,15 +2429,19 @@
         "Why Teach?",
         "Self and Soul"
       ],
-      "awards": ["Guggenheim Fellowship"],
+      "awards": [
+        "Guggenheim Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Mark_Edmundson",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.as.virginia.edu/people/mark-edmundson",
+        "imageUrl": "https://www.virginia.edu/sites/uva-as-d10-english/files/styles/large/public/2024-07/Mark_Edmundson.jpg?itok=ZLHmfn_u",
+        "license": "press",
+        "attribution": "University of Virginia",
+        "status": "available",
+        "localPath": "writers/edmundson-mark.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1835,22 +2449,29 @@
     {
       "id": "sarvas-mark",
       "name": "Mark Sarvas",
-      "years": [0],
+      "years": [
+        2008
+      ],
       "genre": "fiction",
       "bio": "Los Angeles novelist whose Memento Park won the American Book Award and the American Jewish Library Association Fiction Award. Creator of the influential literary blog The Elegant Variation.",
       "notableWorks": [
         "Memento Park",
         "Harry, Revised"
       ],
-      "awards": ["American Book Award", "American Jewish Library Association Fiction Award"],
+      "awards": [
+        "American Book Award",
+        "American Jewish Library Association Fiction Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Mark_Sarvas",
       "officialWebsite": "https://www.marksarvas.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.marksarvas.com/about",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/53e96f33e4b010c8e0f8c4e8/1591915149946-BHQJ1XZ90RVR5DCKRVC3/mark-sarvas-photo.jpg",
+        "license": "press",
+        "attribution": "Yanina Gotsulsky",
+        "status": "available",
+        "localPath": "writers/sarvas-mark.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1858,7 +2479,9 @@
     {
       "id": "williams-marlena",
       "name": "Marlena Williams",
-      "years": [0],
+      "years": [
+        2025
+      ],
       "genre": "nonfiction",
       "bio": "Lewis & Clark alumna (BA '14) and Portland writer. Her essay collection Night Mother: A Personal and Cultural History of the Exorcist is a 2025 Oregon Book Award finalist.",
       "notableWorks": [
@@ -1868,11 +2491,13 @@
       "wikipediaUrl": null,
       "officialWebsite": "https://www.marlywilliams.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.marlywilliams.com/",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/63a26d839cc79b0e0a9586df/a93860f8-b577-4041-839c-21fb8d69f487/image0+%281%29.jpeg",
+        "license": "press",
+        "attribution": "Marlena Williams",
+        "status": "available",
+        "localPath": "writers/williams-marlena.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1880,7 +2505,9 @@
     {
       "id": "harries-martin",
       "name": "Martin Harries",
-      "years": [0],
+      "years": [
+        2009
+      ],
       "genre": "criticism",
       "bio": "UC Irvine professor specializing in twentieth-century theater and modernism. His book Theater After Film examines how postwar theater remade itself in response to cinema and mass culture.",
       "notableWorks": [
@@ -1888,15 +2515,19 @@
         "Forgetting Lot's Wife",
         "Scare Quotes from Shakespeare"
       ],
-      "awards": ["Frederick Burkhardt Fellowship"],
+      "awards": [
+        "Frederick Burkhardt Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://www.faculty.uci.edu/profile/?facultyId=5943",
+        "imageUrl": "https://faculty.uci.edu/get_image?facultyId=5943",
+        "license": "press",
+        "attribution": "UC Irvine",
+        "status": "available",
+        "localPath": "writers/harries-martin.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1904,7 +2535,9 @@
     {
       "id": "bell-marvin",
       "name": "Marvin Bell",
-      "years": [0],
+      "years": [
+        2007
+      ],
       "genre": "poetry",
       "bio": "Iowa's first Poet Laureate and creator of the Dead Man poems. Taught at the Iowa Writers' Workshop for 40 years, mentoring Pulitzer winners Rita Dove, Jorie Graham, and Joy Harjo.",
       "notableWorks": [
@@ -1912,15 +2545,20 @@
         "The Book of the Dead Man",
         "Nightworks"
       ],
-      "awards": ["Lamont Poetry Prize", "National Book Award Finalist"],
+      "awards": [
+        "Lamont Poetry Prize",
+        "National Book Award Finalist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Marvin_Bell",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/marvin-bell",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/MarvinBell_NewBioImage_Credit-JamesMorgan.png",
+        "license": "press",
+        "attribution": "James Morgan / Academy of American Poets",
+        "status": "available",
+        "localPath": "writers/bell-marvin.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1928,59 +2566,73 @@
     {
       "id": "bisbee-beek-mary",
       "name": "Mary Bisbee-Beek",
-      "years": [0],
+      "years": [
+        2016
+      ],
       "genre": "nonfiction",
-      "bio": "Portland-based book publicist and marketing consultant with over 35 years in publishing. Teaches in Portland State's graduate publishing program and advises Ooligan Press.",
+      "bio": "Portland-based book publicist and marketing consultant with over 35 years in publishing. Owner of READ! A Unique Perspective and Publishing Sherpa. Previously owned Beeksbee Books and worked at University of Michigan Press.",
       "notableWorks": [],
       "awards": [],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.marybisbeebeek.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://lenscratch.com/2015/03/the-mary-bisbee-beek-mixtape/",
+        "imageUrl": "http://lenscratch.com/wp-content/uploads/2015/03/10421163_10204534873956972_5380875773927003016_n-651x504.jpg",
+        "license": "press",
+        "attribution": "MK Brown / Lenscratch",
+        "status": "available",
+        "localPath": "writers/bisbee-beek-mary.webp"
       },
-      "confidence": "medium",
-      "needsReview": true
+      "confidence": "high",
+      "needsReview": false
     },
     {
       "id": "wagner-matt",
       "name": "Matt Wagner",
-      "years": [0],
+      "years": [
+        2008
+      ],
       "genre": "nonfiction",
       "bio": "Literary agent at Fresh Books Literary Agency specializing in nonfiction. Previously sold over a thousand books at Waterside Productions. UC Santa Cruz graduate in Creative Writing.",
       "notableWorks": [],
       "awards": [],
       "wikipediaUrl": null,
-      "officialWebsite": null,
+      "officialWebsite": "https://fresh-books.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.publishersmarketplace.com/members/MattWagner/",
+        "imageUrl": "https://www.publishersmarketplace.com/members/MattWagner/main.jpg",
+        "license": "press",
+        "attribution": "Publishers Marketplace",
+        "status": "available",
+        "localPath": "writers/wagner-matt.webp"
       },
-      "confidence": "medium",
-      "needsReview": true
+      "confidence": "high",
+      "needsReview": false
     },
     {
       "id": "korfhage-matthew",
       "name": "Matthew Korfhage",
-      "years": [0],
+      "years": [
+        2015
+      ],
       "genre": "nonfiction",
       "bio": "Portland native and award-winning food critic who wrote for Willamette Week for a decade. Named best food critic in North America (2017) by the Association of Alternative Newsmedia. Holds an MFA in fiction. Now writes for WIRED.",
       "notableWorks": [],
-      "awards": ["Best Food Critic in North America (2017)"],
+      "awards": [
+        "Best Food Critic in North America (2017)"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.vpa.net/articles/qa-matthew-korfhage-virginian-pilot/",
+        "imageUrl": "https://www.vpa.net/wp-content/uploads/images/2018-12-20/matthew-korfhage.jpg",
+        "license": "press",
+        "attribution": "Virginia Press Association",
+        "status": "available",
+        "localPath": "writers/korfhage-matthew.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -1988,23 +2640,32 @@
     {
       "id": "mcgriff-michael",
       "name": "Michael McGriff",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
-      "bio": "Oregon poet raised in Coos Bay whose Eternal Sentences won the 2021 Miller Williams Poetry Prize. Founding editor of Tavern Books and recipient of NEA and Lannan fellowships.",
+      "bio": "Oregon poet raised in Coos Bay whose Eternal Sentences won the 2021 Miller Williams Poetry Prize. Founding editor of Tavern Books and recipient of NEA and Lannan fellowships. Currently teaches creative writing at the University of Idaho.",
       "notableWorks": [
         "Eternal Sentences",
         "Dismantling the Hills",
         "Our Secret Life in the Movies"
       ],
-      "awards": ["Miller Williams Poetry Prize", "Agnes Lynch Starrett Prize", "NEA Fellowship", "Lannan Fellowship"],
+      "awards": [
+        "Miller Williams Poetry Prize",
+        "Agnes Lynch Starrett Prize",
+        "NEA Fellowship",
+        "Lannan Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Michael_McGriff",
       "officialWebsite": "https://michaelmcgriff.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://michaelmcgriff.com/",
+        "imageUrl": "https://michaelmcgriff.com/wp-content/uploads/2019/07/Author-Photo-McGriff-Jackson.jpg",
+        "license": "press",
+        "attribution": "Marcus Jackson",
+        "status": "available",
+        "localPath": "writers/mcgriff-michael.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2012,43 +2673,60 @@
     {
       "id": "rankin-heald-michael",
       "name": "Michael Rankin-Heald",
-      "years": [0],
-      "genre": "poetry",
-      "bio": "Limited information available. May be a regional or emerging writer.",
-      "notableWorks": [],
+      "years": [
+        2020
+      ],
+      "genre": "nonfiction",
+      "bio": "Portland essayist and owner of Perfect Day Publishing, an independent press that has published works by Martha Grover, Nick Jaina, Lisa Wells, and others. Author of Goodbye to the Nervous Apprehension. Also writes for Runner's World.",
+      "notableWorks": [
+        "Goodbye to the Nervous Apprehension"
+      ],
       "awards": [],
       "wikipediaUrl": null,
-      "officialWebsite": null,
+      "officialWebsite": "https://www.perfectdaybooks.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://elevenpdx.com/community/literary-arts/portland-author-michael-heald/",
+        "imageUrl": "https://i0.wp.com/elevenpdx.com/wp-content/uploads/2017/01/Screen-Shot-2017-01-02-at-4.49.52-PM.png",
+        "license": "press",
+        "attribution": "Mercy McNab / Eleven PDX",
+        "status": "available",
+        "localPath": "writers/rankin-heald-michael.webp"
       },
-      "confidence": "low",
-      "needsReview": true
+      "confidence": "high",
+      "needsReview": false
     },
     {
       "id": "glazer-michele",
       "name": "Michele Glazer",
-      "years": [0],
+      "years": [
+        2011,
+        2019
+      ],
       "genre": "poetry",
-      "bio": "Portland poet who directs the MFA program at Portland State University. Her collection fretwork (2021) followed three previous Iowa University Press collections, and she won the Iowa Poetry Prize.",
+      "bio": "Portland poet who teaches in the MFA and BFA programs at Portland State University. Her collection fretwork (2021) followed three previous Iowa University Press collections. Won the Iowa Poetry Prize and AWP Prize. Work has appeared in The New Yorker and Ploughshares.",
       "notableWorks": [
         "fretwork",
         "On Tact, & the Made Up World",
-        "Aggregate of Disturbances"
+        "Aggregate of Disturbances",
+        "It Is Hard to Look at What We Came to Think We'd Come to See"
       ],
-      "awards": ["Iowa Poetry Prize", "NEA Fellowship", "Oregon Arts Commission Fellowship"],
+      "awards": [
+        "Iowa Poetry Prize",
+        "AWP Prize",
+        "NEA Fellowship",
+        "Oregon Arts Commission Fellowship"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://poets.org/poet/michele-glazer",
+        "imageUrl": "https://www.poets.org/sites/default/files/images/biographies/michele-glazer_newbioimage2016_0.png",
+        "license": "press",
+        "attribution": "Academy of American Poets",
+        "status": "available",
+        "localPath": "writers/glazer-michele.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2056,9 +2734,11 @@
     {
       "id": "asem-mohamed",
       "name": "Mohamed Asem",
-      "years": [0],
+      "years": [
+        2019
+      ],
       "genre": "nonfiction",
-      "bio": "Kuwaiti-American memoirist born in the U.S. and raised in Paris. His memoir Stranger in the Pen, published by Portland's Perfect Day Publishing, chronicles his detention at Gatwick Airport and explores identity across cultures.",
+      "bio": "Kuwaiti-American memoirist born in the U.S. and raised in Paris. His memoir Stranger in the Pen, published by Portland's Perfect Day Publishing, chronicles his detention at Gatwick Airport and explores identity across cultures. Holds an MFA in Creative Writing from Kingston University, London.",
       "notableWorks": [
         "Stranger in the Pen"
       ],
@@ -2066,11 +2746,13 @@
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://literary-arts.org/organizer/mohamed-asem-2/",
+        "imageUrl": "https://literary-arts.org/wp-content/uploads/2018/09/photo_Asem_Mohamed-cJasonQuigley-683x1024.jpg",
+        "license": "press",
+        "attribution": "Jason Quigley / Literary Arts",
+        "status": "available",
+        "localPath": "writers/asem-mohamed.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2078,21 +2760,33 @@
     {
       "id": "antopol-molly",
       "name": "Molly Antopol",
-      "years": [0],
+      "years": [
+        2014
+      ],
       "genre": "fiction",
-      "bio": "Stanford professor and former Stegner Fellow whose debut collection The UnAmericans was a National Book Award nominee and won the New York Public Library Young Lions Fiction Award.",
+      "bio": "Stanford professor and former Stegner Fellow whose debut collection The UnAmericans was a National Book Award nominee and won the New York Public Library Young Lions Fiction Award. Also received the French-American Prize, Ribalow Prize, and California Book Award Silver Medal.",
       "notableWorks": [
         "The UnAmericans"
       ],
-      "awards": ["National Book Award Nominee", "New York Public Library Young Lions Fiction Award", "Stegner Fellowship", "Radcliffe Fellowship"],
+      "awards": [
+        "National Book Award Nominee",
+        "New York Public Library Young Lions Fiction Award",
+        "French-American Prize",
+        "Ribalow Prize",
+        "California Book Award Silver Medal",
+        "Stegner Fellowship",
+        "Radcliffe Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Molly_Antopol",
       "officialWebsite": "https://mollyantopol.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://english.stanford.edu/people/molly-antopol",
+        "imageUrl": "https://english.stanford.edu/sites/english/files/styles/hs_medium_square_360x360/public/media/image/antopol_photo_0.jpg.webp",
+        "license": "press",
+        "attribution": "Stanford Department of English",
+        "status": "available",
+        "localPath": "writers/antopol-molly.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2100,22 +2794,30 @@
     {
       "id": "saint-amour-paul",
       "name": "Paul K. Saint-Amour",
-      "years": [0],
+      "years": [
+        2015
+      ],
       "genre": "criticism",
       "bio": "Annenberg Professor in the Humanities and Chair of English at University of Pennsylvania. His book The Copywrights won the MLA Prize for a First Book, and Tense Future won the Matei Calinescu Prize. 2022 Guggenheim Fellow.",
       "notableWorks": [
         "Tense Future: Modernism, Total War, Encyclopedic Form",
         "The Copywrights: Intellectual Property and the Literary Imagination"
       ],
-      "awards": ["Guggenheim Fellowship", "MLA Prize for a First Book", "Matei Calinescu Prize"],
+      "awards": [
+        "Guggenheim Fellowship",
+        "MLA Prize for a First Book",
+        "Matei Calinescu Prize"
+      ],
       "wikipediaUrl": null,
-      "officialWebsite": null,
+      "officialWebsite": "https://www.english.upenn.edu/people/paul-saint-amour",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://www.english.upenn.edu/people/paul-saint-amour",
+        "imageUrl": "https://www.english.upenn.edu/sites/default/files/people/photo/PSA%20Big%20Sur.jpg",
+        "license": "press",
+        "attribution": "University of Pennsylvania",
+        "status": "available",
+        "localPath": "writers/saint-amour-paul.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2123,7 +2825,9 @@
     {
       "id": "merchant-paul",
       "name": "Paul Merchant",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "poetry",
       "bio": "Welsh-born poet and translator who was Director of the William Stafford Archives at Lewis & Clark College. His Some Business of Affinity was an Oregon Book Award finalist. Co-edited two books of William Stafford's meditations with Vincent Wixon.",
       "notableWorks": [
@@ -2137,17 +2841,21 @@
       "photo": {
         "source": "needs_research",
         "url": null,
+        "imageUrl": null,
         "license": null,
         "attribution": null,
-        "status": "needs_acquisition"
+        "status": "needs_acquisition",
+        "notes": "Limited online presence - may need to contact Lewis & Clark College archives for photo"
       },
       "confidence": "high",
-      "needsReview": false
+      "needsReview": true
     },
     {
       "id": "toutonghi-pauls",
       "name": "Pauls Toutonghi",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "fiction/nonfiction",
       "bio": "Professor of English at Lewis & Clark College. His memoir Dog Gone was adapted into a 2023 Netflix film. His novels include Red Weather and Evel Knievel Days. Married to novelist Peyton Marshall.",
       "notableWorks": [
@@ -2155,15 +2863,21 @@
         "The Refugee Ocean",
         "Red Weather"
       ],
-      "awards": ["Pushcart Prize", "Fulbright Grant", "Andrew W. Mellon Fellowship"],
+      "awards": [
+        "Pushcart Prize",
+        "Fulbright Grant",
+        "Andrew W. Mellon Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Pauls_Toutonghi",
       "officialWebsite": "https://paulstoutonghi.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "university",
+        "url": "https://college.lclark.edu/live/profiles/58-pauls-toutonghi",
+        "imageUrl": "https://college.lclark.edu/live/image/gid/4/width/268/height/340/crop/1/src_region/1478,0,2444,965/95675_Pauls_Toutonghi.rev.1662674293.jpg",
+        "license": "press",
+        "attribution": "Lewis & Clark College",
+        "status": "available",
+        "localPath": "writers/toutonghi-pauls.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2171,7 +2885,9 @@
     {
       "id": "carlin-peter-ames",
       "name": "Peter Ames Carlin",
-      "years": [0],
+      "years": [
+        2013
+      ],
       "genre": "nonfiction",
       "bio": "Lewis & Clark College graduate (1985) and Portland-based biographer. His New York Times bestseller Bruce was the first Springsteen biography written with the artist's cooperation. Also authored biographies of Paul Simon, Brian Wilson, and R.E.M.",
       "notableWorks": [
@@ -2183,11 +2899,13 @@
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Ames_Carlin",
       "officialWebsite": "https://www.peteramescarlin.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "publisher",
+        "url": "https://www.penguinrandomhouse.com/authors/2184550/peter-ames-carlin/",
+        "imageUrl": "https://images2.penguinrandomhouse.com/author/2184550",
+        "license": "press",
+        "attribution": "Terry Allen / Penguin Random House",
+        "status": "available",
+        "localPath": "writers/carlin-peter-ames.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2195,21 +2913,29 @@
     {
       "id": "marshall-peyton",
       "name": "Peyton Marshall",
-      "years": [0],
+      "years": [
+        2014
+      ],
       "genre": "fiction",
       "bio": "Reed College and Iowa Writers' Workshop graduate whose debut novel Goodhouse was a Dashiell Hammett Prize finalist. She received an NEA Prose Writing Fellowship (2022-23) and lives in Portland with her husband, novelist Pauls Toutonghi.",
       "notableWorks": [
         "Goodhouse"
       ],
-      "awards": ["NEA Fellowship", "Richard Yates Short Fiction Award", "Dashiell Hammett Prize Finalist"],
+      "awards": [
+        "NEA Fellowship",
+        "Richard Yates Short Fiction Award",
+        "Dashiell Hammett Prize Finalist"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://peytonmarshall.info/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://peytonmarshall.info/",
+        "imageUrl": "https://peytonmarshall.info/images/862af2e1db186db012b154b1b1524bc9.jpg",
+        "license": "press",
+        "attribution": "Peyton Marshall",
+        "status": "available",
+        "localPath": "writers/marshall-peyton.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2217,22 +2943,31 @@
     {
       "id": "clarren-rebecca",
       "name": "Rebecca Clarren",
-      "years": [0],
+      "years": [
+        2024
+      ],
       "genre": "nonfiction/fiction",
       "bio": "Portland journalist and 2021 Whiting Nonfiction Grant winner. Her book The Cost of Free Land won the 2025 Oregon Book Award (Frances Fuller Victor Award). Has written investigative stories about the American West for over twenty years.",
       "notableWorks": [
         "The Cost of Free Land: Jews, Lakota and an American Inheritance",
         "Kickdown"
       ],
-      "awards": ["Oregon Book Award", "Whiting Nonfiction Grant", "Hillman Prize", "Will Rogers Medallion Award"],
+      "awards": [
+        "Oregon Book Award",
+        "Whiting Nonfiction Grant",
+        "Hillman Prize",
+        "Will Rogers Medallion Award"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": "https://www.rebecca-clarren.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.whiting.org/content/rebecca-clarren",
+        "imageUrl": "https://www.rebeccaclarren.com/sites/default/files/styles/large/public/Rebecca%20Clarren%20-%20photo%20credit%20Shelby%20Brakken.jpg?itok=U0Ikd5hb",
+        "license": "press",
+        "attribution": "Shelby Brakken",
+        "status": "available",
+        "localPath": "writers/clarren-rebecca.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2240,7 +2975,9 @@
     {
       "id": "barot-rick",
       "name": "Rick Barot",
-      "years": [0],
+      "years": [
+        2023
+      ],
       "genre": "poetry",
       "bio": "Filipino American poet born in the Philippines, raised in the San Francisco Bay Area. Poetry editor of New England Review and director of Pacific Lutheran University's Rainier Writing Workshop MFA program.",
       "notableWorks": [
@@ -2248,15 +2985,21 @@
         "The Galleons",
         "The Darker Fall"
       ],
-      "awards": [],
+      "awards": [
+        "Guggenheim Fellowship",
+        "NEA Fellowship",
+        "PEN Open Book Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Rick_Barot",
-      "officialWebsite": null,
+      "officialWebsite": "https://www.rickbarot.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.rickbarot.com/about/",
+        "imageUrl": "https://rickbarot.com/wp-content/uploads/2020/01/rick-about1.jpg",
+        "license": "press",
+        "attribution": "Rachel McCauley",
+        "status": "available",
+        "localPath": "writers/barot-rick.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2264,21 +3007,27 @@
     {
       "id": "lazebnik-rob",
       "name": "Rob LaZebnik",
-      "years": [0],
+      "years": [
+        2021
+      ],
       "genre": "fiction",
       "bio": "Harvard Lampoon alumnus and longtime writer/co-executive producer on The Simpsons. Has won five Primetime Emmy Awards for Outstanding Animated Program. His episode 'The Burns Cage' marked Smithers' coming out.",
       "notableWorks": [
         "The Simpsons (22+ episodes)"
       ],
-      "awards": ["Primetime Emmy Award (5x)"],
+      "awards": [
+        "Primetime Emmy Award (5x)"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Rob_LaZebnik",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "wikimedia",
+        "url": "https://simpsons.fandom.com/wiki/Rob_LaZebnik",
+        "imageUrl": "https://static.wikia.nocookie.net/simpsons/images/b/b6/Rob_LaZebnik.jpg/revision/latest?cb=20170706012001",
+        "license": "fair use",
+        "attribution": "Simpsons Wiki",
+        "status": "available",
+        "localPath": "writers/lazebnik-rob.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2286,22 +3035,28 @@
     {
       "id": "white-ryan",
       "name": "Ryan White",
-      "years": [0],
+      "years": [
+        2017
+      ],
       "genre": "nonfiction",
       "bio": "Portland music critic and journalist who spent nearly 16 years at The Oregonian. Twice named one of the top feature writers in the country by the Society for Features Journalism. Author of books on Jimmy Buffett and Bruce Springsteen.",
       "notableWorks": [
         "Jimmy Buffett: A Good Life All the Way",
         "Bruce Springsteen: Album by Album"
       ],
-      "awards": [],
+      "awards": [
+        "Society for Features Journalism Award (2x)"
+      ],
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "publisher",
+        "url": "https://www.goodreads.com/author/show/17672156.Ryan_White",
+        "imageUrl": "https://images.gr-assets.com/authors/1517540255p5/17672156.jpg",
+        "license": "press",
+        "attribution": "Goodreads",
+        "status": "available",
+        "localPath": "writers/white-ryan.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2309,7 +3064,9 @@
     {
       "id": "bashir-samiya",
       "name": "Samiya Bashir",
-      "years": [0],
+      "years": [
+        2012
+      ],
       "genre": "poetry",
       "bio": "First Black woman to receive the Joseph Brodsky Rome Prize in Literature. Her collection Field Theories won the Oregon Book Award. Former Reed College professor; currently June Jordan Visiting Scholar at Columbia.",
       "notableWorks": [
@@ -2317,15 +3074,21 @@
         "I Hope This Helps",
         "Gospel"
       ],
-      "awards": ["Joseph Brodsky Rome Prize", "Oregon Book Award", "Pushcart Prize"],
+      "awards": [
+        "Joseph Brodsky Rome Prize",
+        "Oregon Book Award",
+        "Pushcart Prize"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Samiya_Bashir",
       "officialWebsite": "https://samiyabashir.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://samiyabashir.com/bio",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/54d7dae6e4b00f5068c0ae32/a4813146-7128-400d-843d-ad1d08a8edcf/Samiya+Bashir+-+Jes+Neal+-+2025.png",
+        "license": "press",
+        "attribution": "Jes Neal",
+        "status": "available",
+        "localPath": "writers/bashir-samiya.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2333,7 +3096,9 @@
     {
       "id": "gallagher-tess",
       "name": "Tess Gallagher",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "poetry/fiction",
       "bio": "Washington poet, essayist, and playwright born in Port Angeles. Widow of Raymond Carver and literary executor of his estate. Only American to receive the Fondazione Roma lifetime achievement award for poetry (2023).",
       "notableWorks": [
@@ -2341,15 +3106,21 @@
         "Instructions to the Double",
         "Dear Ghosts,"
       ],
-      "awards": ["Elliston Book Award", "NEA Fellowship", "Guggenheim Fellowship"],
+      "awards": [
+        "Elliston Book Award",
+        "NEA Fellowship",
+        "Guggenheim Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Tess_Gallagher",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "press",
+        "url": "https://www.narrativemagazine.com/authors/tess-gallagher",
+        "imageUrl": "https://www.narrativemagazine.com/files/styles/258x258/public/images/GallagherTess_258x258.jpg",
+        "license": "press",
+        "attribution": "Photo by Brian Farrell",
+        "status": "available",
+        "localPath": "writers/gallagher-tess.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2357,7 +3128,9 @@
     {
       "id": "rutsala-vern",
       "name": "Vern Rutsala",
-      "years": [0],
+      "years": [
+        2010
+      ],
       "genre": "poetry",
       "bio": "Taught at Lewis & Clark College for over 40 years and helped start its creative writing program with William Stafford. His collection The Moment's Equation was a National Book Award finalist. Won the 2014 C.E.S. Wood Distinguished Writer Award.",
       "notableWorks": [
@@ -2365,15 +3138,22 @@
         "Selected Poems",
         "Paragraphs"
       ],
-      "awards": ["National Book Award Finalist", "Guggenheim Fellowship", "Oregon Book Award", "Carolyn Kizer Prize (2x)"],
+      "awards": [
+        "National Book Award Finalist",
+        "Guggenheim Fellowship",
+        "Oregon Book Award",
+        "Carolyn Kizer Prize (2x)"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Vern_Rutsala",
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.poetryfoundation.org/poets/vern-rutsala",
+        "imageUrl": null,
+        "license": "press",
+        "attribution": "Poetry Foundation",
+        "status": "available",
+        "localPath": "writers/rutsala-vern.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2381,7 +3161,9 @@
     {
       "id": "wixon-vince",
       "name": "Vince Wixon",
-      "years": [0],
+      "years": [
+        2018
+      ],
       "genre": "poetry",
       "bio": "Ashland poet who co-produced documentary films on William Stafford and Lawson Inada. Co-edited two books on William Stafford for University of Michigan Press with Paul Merchant. Helped establish the William Stafford Archives.",
       "notableWorks": [
@@ -2393,11 +3175,13 @@
       "wikipediaUrl": null,
       "officialWebsite": null,
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://oregonpoeticvoices.org/poet/83/",
+        "imageUrl": "https://oregonpoeticvoices.org/images/large/200_Vince%20Wixon.jpg",
+        "license": "press",
+        "attribution": "Oregon Poetic Voices",
+        "status": "available",
+        "localPath": "writers/wixon-vince.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2405,21 +3189,28 @@
     {
       "id": "tran-vu",
       "name": "Vu Tran",
-      "years": [0],
+      "years": [
+        2018
+      ],
       "genre": "fiction",
       "bio": "Vietnamese American novelist who directs undergraduate creative writing at University of Chicago. His debut novel Dragonfish explores Vietnamese refugees in Las Vegas. Winner of a Whiting Award.",
       "notableWorks": [
         "Dragonfish"
       ],
-      "awards": ["Whiting Award", "NEA Fellowship"],
+      "awards": [
+        "Whiting Award",
+        "NEA Fellowship"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Vu_Tran",
-      "officialWebsite": null,
+      "officialWebsite": "https://www.vutranwriter.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://www.vutranwriter.com/",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/648d0dfb380e4d2cc27f0f52/6db8d240-fc28-4b8a-8392-8d536967b9c2/7F793666-C101-4492-95F0-7AB6543E42BD.jpg",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "localPath": "writers/tran-vu.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2427,27 +3218,35 @@
     {
       "id": "aime-will",
       "name": "Will Aimé",
-      "years": [0],
+      "years": [
+        2021
+      ],
       "genre": "poetry",
-      "bio": "Limited information available. May be a regional or emerging writer.",
+      "bio": "Portland-based poet.",
       "notableWorks": [],
       "awards": [],
       "wikipediaUrl": null,
-      "officialWebsite": null,
+      "officialWebsite": "https://www.instagram.com/wilaime/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "social",
+        "url": "https://www.instagram.com/wilaime/",
+        "imageUrl": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/140308228_1043662909463931_2039332609950698525_n.jpg?stp=dst-jpg_s320x320_tt6",
+        "license": "social_media",
+        "attribution": "Instagram @wilaime",
+        "status": "available",
+        "localPath": "writers/aime-will.webp",
+        "notes": "Instagram CDN URL - may need manual download as CDN URLs can expire"
       },
-      "confidence": "low",
-      "needsReview": true
+      "confidence": "medium",
+      "needsReview": false
     },
     {
       "id": "clegg-william",
       "name": "Bill Clegg",
-      "years": [0],
+      "years": [
+        2014,
+        2017
+      ],
       "genre": "fiction/nonfiction",
       "bio": "Literary agent and author. His debut novel Did You Ever Have a Family was longlisted for the Man Booker Prize. Founder of The Clegg Agency representing major literary fiction authors.",
       "notableWorks": [
@@ -2455,15 +3254,19 @@
         "Portrait of an Addict as a Young Man",
         "Ninety Days"
       ],
-      "awards": ["Man Booker Prize Longlist"],
+      "awards": [
+        "Man Booker Prize Longlist"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Bill_Clegg",
       "officialWebsite": "http://www.thecleggagency.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "institution",
+        "url": "https://www.nationalbook.org/people/bill-clegg/",
+        "imageUrl": "https://i0.wp.com/www.nationalbook.org/wp-content/uploads/2015/12/Bill-Clegg-e1553091712839.jpg?fit=480%2C650&ssl=1",
+        "license": "press",
+        "attribution": "National Book Foundation",
+        "status": "available",
+        "localPath": "writers/clegg-william.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2471,7 +3274,9 @@
     {
       "id": "deresiewicz-william",
       "name": "William Deresiewicz",
-      "years": [0],
+      "years": [
+        2011
+      ],
       "genre": "criticism/nonfiction",
       "bio": "Former Yale English professor and National Book Critics Circle Award winner for reviewing. His bestseller Excellent Sheep critiques elite education; The Death of the Artist examines creative work in the digital age.",
       "notableWorks": [
@@ -2479,15 +3284,19 @@
         "The Death of the Artist",
         "A Jane Austen Education"
       ],
-      "awards": ["National Book Critics Circle Award"],
+      "awards": [
+        "National Book Critics Circle Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/William_Deresiewicz",
       "officialWebsite": "https://billderesiewicz.com/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://billderesiewicz.com/about/",
+        "imageUrl": "https://billderesiewicz.com/wp/wp-content/uploads/2020/04/IMG_2240.jpeg",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "localPath": "writers/deresiewicz-william.webp"
       },
       "confidence": "high",
       "needsReview": false
@@ -2495,7 +3304,9 @@
     {
       "id": "rakha-youssef",
       "name": "Youssef Rakha",
-      "years": [0],
+      "years": [
+        2022
+      ],
       "genre": "fiction",
       "bio": "Egyptian novelist and essayist who writes in both Arabic and English. His first novel The Book of the Sultan's Seal won the Banipal Prize. Selected for Hay Festival Beirut39 as one of the best Arab writers under 40.",
       "notableWorks": [
@@ -2503,15 +3314,20 @@
         "The Dissenters",
         "The Crocodiles"
       ],
-      "awards": ["Banipal Prize", "Sawiris Award"],
+      "awards": [
+        "Banipal Prize",
+        "Sawiris Award"
+      ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Youssef_Rakha",
       "officialWebsite": "https://therakha.org/",
       "photo": {
-        "source": "needs_research",
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "needs_acquisition"
+        "source": "official",
+        "url": "https://therakha.org/",
+        "imageUrl": "https://therakha.org/wp-content/uploads/2025/09/cropped-2022-04-10-08.18.47-2.jpg",
+        "license": "press",
+        "attribution": "Author website",
+        "status": "available",
+        "localPath": "writers/rakha-youssef.webp"
       },
       "confidence": "high",
       "needsReview": false

@@ -1,12 +1,16 @@
 # Implement: Lewis & Clark Reading Series — Concept B: "The Gallery"
 
+## Prerequisites
+Ensure the worktree is set up per `prompt-concepts/1-setup.md` before starting. Run `npm run dev` to verify the site loads.
+
 ## Context
 You're working in a git worktree branched from the base project. The Astro project is already set up with:
-- Writer data loaded from `src/data/writers.json` via functions in `src/lib/data.ts`
-- TypeScript types in `src/types/writer.ts` (includes `Writer`, `WriterPhoto` with `localPath` field)
+- **108 writers** with full data (bios, works, awards, years) in `src/data/writers.json`
+- Data functions in `src/lib/data.ts`: `getWriterById()`, `getWritersByYear()`, `getAllYears()`, `getWritersByGenre()`, `getAllGenres()`
+- TypeScript types in `src/types/writer.ts` (includes `Writer`, `WriterPhoto`)
 - Page routes: index, about, writers/[id], writers/index, years/[year], years/index
 - Base layout in `src/layouts/Base.astro`
-- Photos at `public/images/writers/{id}.webp` (400×500px, 4:5 portrait ratio)
+- **106 photos** at `public/images/writers/{id}.webp` (400×500px, 4:5 portrait ratio)
 
 Your job is to **implement the visual design** for this concept.
 
