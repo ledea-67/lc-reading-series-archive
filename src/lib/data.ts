@@ -14,9 +14,16 @@ import type { Writer, WritersData, WritersMetadata } from '../types/writer';
 // Vercel's build-time environment variables.
 const rawUseSanity = import.meta.env?.USE_SANITY ?? process.env.USE_SANITY;
 
-const useSanity =
-  typeof rawUseSanity === 'string' &&
-  ['true', '1', 'yes', 'on'].includes(rawUseSanity.toLowerCase());
+// Normalize USE_SANITY. Accept:
+// - boolean true/false
+// - strings: "true", "1", "yes", "on" (case-insensitive, trimmed)
+let useSanity = false;
+if (typeof rawUseSanity === 'boolean') {
+  useSanity = rawUseSanity;
+} else if (typeof rawUseSanity === 'string') {
+  const normalized = rawUseSanity.trim().toLowerCase();
+  useSanity = ['true', '1', 'yes', 'on'].includes(normalized);
+}
 
 // Log how USE_SANITY is resolved at build time for debugging.
 // This will appear in Astro/Vercel build logs.
@@ -24,6 +31,7 @@ const buildMode = import.meta.env?.MODE ?? process.env.NODE_ENV ?? 'unknown';
 console.log(
   '[data] USE_SANITY:',
   rawUseSanity,
+  `(${typeof rawUseSanity})`,
   '→ useSanity =',
   useSanity,
   '| mode =',
