@@ -9,11 +9,29 @@ import Base from '../../layouts/Base.astro';
 import { writers, getAllGenres } from '../../lib/data';
 
 const genres = getAllGenres();
-const sortedWriters = [...writers].sort((a, b) => a.name.localeCompare(b.name));
 
-// Group writers by first letter
+// Derive a last-name sort key. Prefer structured lastName when available
+// (Sanity-backed data), but fall back to the last word of the display name
+// for legacy JSON data.
+const sortedWriters = [...writers].sort((a, b) => {
+  const aLast =
+    a.lastName ??
+    (a.name.split(' ').pop() ?? a.name);
+  const bLast =
+    b.lastName ??
+    (b.name.split(' ').pop() ?? b.name);
+
+  const lastCompare = aLast.localeCompare(bLast);
+  if (lastCompare !== 0) return lastCompare;
+  return a.name.localeCompare(b.name);
+});
+
+// Group writers by first letter of last name (or fallback)
 const writersByLetter = sortedWriters.reduce((acc, writer) => {
-  const letter = writer.name[0].toUpperCase();
+  const last =
+    writer.lastName ??
+    (writer.name.split(' ').pop() ?? writer.name);
+  const letter = last[0]?.toUpperCase() ?? '#';
   if (!acc[letter]) acc[letter] = [];
   acc[letter].push(writer);
   return acc;

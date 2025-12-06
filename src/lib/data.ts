@@ -38,6 +38,15 @@ console.log(
   buildMode,
 );
 
+// In production builds, require Sanity as the canonical data source.
+// If USE_SANITY is not enabled, fail the build rather than silently
+// falling back to the JSON data path.
+if (buildMode === 'production' && !useSanity) {
+  throw new Error(
+    'In production, USE_SANITY must be enabled; JSON data fallback is no longer allowed.',
+  );
+}
+
 // Module-level state populated at load time
 let _writers: Writer[] = [];
 let _metadata: WritersMetadata;

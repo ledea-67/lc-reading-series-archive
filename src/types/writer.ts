@@ -10,6 +10,12 @@ export interface WriterPhoto {
 export interface Writer {
   id: string;
   name: string;
+  /**
+   * Optional structured name parts for sorting.
+   * Present for Sanity-backed data; omitted in legacy JSON.
+   */
+  lastName?: string;
+  firstNames?: string | null;
   years: number[];
   genre: string;
   bio: string;

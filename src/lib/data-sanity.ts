@@ -14,6 +14,8 @@ import type { Writer, WritersMetadata } from '../types/writer';
 const writerProjection = `{
   "id": slug.current,
   "name": displayName,
+  lastName,
+  firstNames,
   years,
   "genre": array::join(genres, "/"),
   bio,
