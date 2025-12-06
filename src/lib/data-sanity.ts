@@ -35,6 +35,15 @@ const writerProjection = `{
     "status": select(
       defined(photo.asset) => "available",
       "needs_acquisition"
+    ),
+    "imageRef": select(
+      defined(photo.asset) => {
+        "_type": "image",
+        "asset": photo.asset,
+        "hotspot": photo.hotspot,
+        "crop": photo.crop
+      },
+      null
     )
   },
   "confidence": coalesce(confidence, "medium"),

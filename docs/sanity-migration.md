@@ -388,3 +388,113 @@ See `scripts/export-to-sanity.ts` for the `nameOverrides` object.
 4. Build with `npm run build` to test static generation
 
 Rollback: Set `USE_SANITY=false` or remove the variable to fall back to JSON.
+
+---
+
+## 9. Automatic Deployments via Webhooks
+
+The archive is a static Astro site, so content changes in Sanity must trigger a new Vercel build. This is accomplished using a **Vercel Deploy Hook** and a **Sanity Webhook**.
+
+### 9.1 Architecture
+
+```
+┌─────────────────┐     Publish/Update     ┌─────────────────────┐
+│  Sanity Studio  │ ─────────────────────► │  Sanity Webhook     │
+│  (production)   │                        │  (HTTP POST)        │
+└─────────────────┘                        └──────────┬──────────┘
+                                                      │
+                                                      │ POST request
+                                                      ▼
+                                           ┌─────────────────────┐
+                                           │  Vercel Deploy Hook │
+                                           │  (triggers build)   │
+                                           └──────────┬──────────┘
+                                                      │
+                                                      │ New deployment
+                                                      ▼
+                                           ┌─────────────────────┐
+                                           │  lc-reading-series  │
+                                           │  -archive (Vercel)  │
+                                           └─────────────────────┘
+```
+
+### 9.2 Vercel Deploy Hook
+
+**Location:** Vercel Dashboard → `lc-reading-series-archive` → Settings → Git → Deploy Hooks
+
+**Configuration:**
+- **Name:** `sanity-content-update`
+- **Branch:** `main`
+
+**URL format:** `https://api.vercel.com/v1/integrations/deploy/prj_XXXXXXXXXX/YYYYYYYYYYYY`
+
+The URL is stored securely in Vercel and used by the Sanity webhook.
+
+### 9.3 Sanity Webhook
+
+**Location:** Sanity Manage → Project `o7465upq` → API → Webhooks
+
+**Configuration:**
+
+| Setting | Value |
+|---------|-------|
+| Name | `vercel-deploy-trigger` |
+| URL | (Vercel Deploy Hook URL) |
+| Dataset | `production` |
+| Trigger on | Create, Update, Delete |
+| Filter | `_type in ["writer", "siteSettings", "aboutPage"]` |
+| Draft/Published | **Only published documents** |
+| HTTP method | POST |
+| Status | Enabled |
+
+**Key points:**
+- The filter ensures only relevant document types trigger builds
+- Draft changes do **not** trigger builds — only publishing does
+- The webhook only fires for the `production` dataset, not staging/dev datasets
+
+### 9.4 Document Types That Trigger Rebuilds
+
+| Document Type | Triggers Rebuild | Affects Pages |
+|--------------|-----------------|---------------|
+| `writer` | Yes | Homepage (featured), `/writers/*`, `/years/*` |
+| `siteSettings` | Yes | Homepage (hero, teaser) |
+| `aboutPage` | Yes | `/about` |
+
+### 9.5 Admin Workflow
+
+For content editors, the workflow is simple:
+
+1. **Edit** content in Sanity Studio (https://lc-reading-series.sanity.studio/)
+2. **Publish** changes (click "Publish" button)
+3. **Wait** ~1-2 minutes for Vercel to rebuild
+4. **Verify** changes appear on the live site
+
+Draft changes (unsaved or saved but not published) do **not** affect the live site.
+
+### 9.6 Manual Script for Webhook Setup
+
+If you need to recreate the webhook programmatically:
+
+```bash
+# Add to .env.local:
+# VERCEL_DEPLOY_HOOK_URL=https://api.vercel.com/v1/integrations/deploy/...
+
+npx tsx scripts/create-sanity-webhook.ts
+```
+
+This script creates the webhook via the Sanity Management API.
+
+### 9.7 Monitoring & Troubleshooting
+
+**Check Vercel deployment status:**
+- Vercel Dashboard → `lc-reading-series-archive` → Deployments
+- Each webhook-triggered build shows "Deploy Hook" as the trigger
+
+**Check Sanity webhook activity:**
+- Sanity Manage → Project → API → Webhooks → Click webhook → "Deliveries" tab
+- Shows recent webhook calls and their HTTP status codes
+
+**Common issues:**
+- **Build not triggered:** Verify the webhook filter includes the document type you edited
+- **Draft changes not appearing:** Remember to click "Publish" — drafts don't trigger rebuilds
+- **Webhook failures:** Check Sanity webhook deliveries for HTTP errors; verify Deploy Hook URL is correct

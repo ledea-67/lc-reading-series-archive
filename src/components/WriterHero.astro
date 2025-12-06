@@ -7,6 +7,7 @@
  * Reads like a brief entry in a literary encyclopedia.
  */
 import type { Writer } from '../types/writer';
+import { getImageUrl, IMAGE_SIZES, hasValidImage } from '../lib/sanityImage';
 
 interface Props {
   writer: Writer;
@@ -16,8 +17,23 @@ const { writer } = Astro.props;
 
 const knownYears = writer.years.filter(y => y !== 0);
 const hasUnknownYear = writer.years.includes(0);
-const hasPhoto = writer.photo?.status === 'available';
-const photoPath = hasPhoto ? `/images/writers/${writer.id}.webp` : '/photos/placeholder.svg';
+
+// Determine photo URL: prefer Sanity CDN, fall back to local, then placeholder
+const hasSanityImage = hasValidImage(writer.photo?.imageRef);
+const hasLocalImage = writer.photo?.status === 'available' && !hasSanityImage;
+
+let photoPath: string;
+if (hasSanityImage) {
+  // Use Sanity CDN with automatic format conversion and resizing
+  photoPath = getImageUrl(writer.photo.imageRef, IMAGE_SIZES.writerHero) || '/photos/placeholder.svg';
+} else if (hasLocalImage) {
+  // Fall back to local WebP files (legacy)
+  photoPath = `/images/writers/${writer.id}.webp`;
+} else {
+  photoPath = '/photos/placeholder.svg';
+}
+
+const hasPhoto = hasSanityImage || hasLocalImage;
 ---
 
 <header class="writer-hero">

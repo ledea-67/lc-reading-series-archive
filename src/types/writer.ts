@@ -1,3 +1,42 @@
+/**
+ * Sanity image asset reference for building CDN URLs.
+ */
+export interface SanityImageAsset {
+  _ref: string;
+  _type: 'reference';
+}
+
+/**
+ * Sanity image hotspot for focal point cropping.
+ */
+export interface SanityImageHotspot {
+  x: number;
+  y: number;
+  height: number;
+  width: number;
+}
+
+/**
+ * Sanity image crop settings.
+ */
+export interface SanityImageCrop {
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
+}
+
+/**
+ * Full Sanity image reference with hotspot/crop data.
+ * Used to generate optimized CDN URLs via @sanity/image-url.
+ */
+export interface SanityImageRef {
+  _type: 'image';
+  asset: SanityImageAsset;
+  hotspot?: SanityImageHotspot;
+  crop?: SanityImageCrop;
+}
+
 export interface WriterPhoto {
   source: string;
   url: string | null;
@@ -5,6 +44,11 @@ export interface WriterPhoto {
   attribution: string | null;
   alt: string | null;
   status: 'available' | 'needs_acquisition' | string;
+  /**
+   * Sanity image reference for CDN URL generation.
+   * Present when photo is uploaded to Sanity; null for legacy local images.
+   */
+  imageRef?: SanityImageRef | null;
 }
 
 export interface Writer {
