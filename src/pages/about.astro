@@ -21,6 +21,8 @@ if (useSanityContent) {
   aboutDoc = await getAboutPage();
 }
 
+console.log('[about] useSanityContent =', useSanityContent, '| aboutDoc =', aboutDoc);
+
 const pageTitle = aboutDoc?.title ?? 'About the Reading Series';
 const pageSubtitle =
   aboutDoc?.subtitle ?? 'A brief history of voices';
