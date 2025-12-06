@@ -18,6 +18,18 @@ const useSanity =
   typeof rawUseSanity === 'string' &&
   ['true', '1', 'yes', 'on'].includes(rawUseSanity.toLowerCase());
 
+// Log how USE_SANITY is resolved at build time for debugging.
+// This will appear in Astro/Vercel build logs.
+const buildMode = import.meta.env?.MODE ?? process.env.NODE_ENV ?? 'unknown';
+console.log(
+  '[data] USE_SANITY:',
+  rawUseSanity,
+  '→ useSanity =',
+  useSanity,
+  '| mode =',
+  buildMode,
+);
+
 // Module-level state populated at load time
 let _writers: Writer[] = [];
 let _metadata: WritersMetadata;
