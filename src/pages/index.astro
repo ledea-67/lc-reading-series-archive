@@ -7,7 +7,7 @@
  */
 import Base from '../layouts/Base.astro';
 import WriterCard from '../components/WriterCard.astro';
-import { writers, metadata, getAllYears, getWritersByYear } from '../lib/data';
+import { writers, metadata, getAllYears, getWritersByYear, isSanityEnabled } from '../lib/data';
 import { getSiteSettings } from '../lib/siteContent-sanity';
 import { portableTextToHtml } from '../lib/portableText';
 
@@ -26,9 +26,10 @@ const recentYears = years.slice(0, 5).map(year => ({
   count: getWritersByYear(year).length
 }));
 
-// Homepage content: prefer Sanity when available (USE_SANITY=true),
-// but fall back to the original hard-coded text for local/staging JSON mode.
-const useSanityContent = import.meta.env.USE_SANITY === 'true';
+// Homepage content: prefer Sanity when the Sanity data
+// source is enabled, but fall back to the original hard-coded
+// copy for local/staging JSON mode.
+const useSanityContent = isSanityEnabled;
 
 let siteSettings = null;
 if (useSanityContent) {

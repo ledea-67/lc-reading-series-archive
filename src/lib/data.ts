@@ -38,6 +38,11 @@ console.log(
   buildMode,
 );
 
+// Export the resolved flag so that pages/components can make
+// consistent decisions about whether Sanity is enabled, instead
+// of re-reading environment variables independently.
+export const isSanityEnabled = useSanity;
+
 // In production builds, require Sanity as the canonical data source.
 // If USE_SANITY is not enabled, fail the build rather than silently
 // falling back to the JSON data path.

@@ -6,7 +6,7 @@
  * Dignified layout that lets the content breathe.
  */
 import Base from '../layouts/Base.astro';
-import { metadata, getAllYears, writers } from '../lib/data';
+import { metadata, getAllYears, writers, isSanityEnabled } from '../lib/data';
 import { getAboutPage } from '../lib/siteContent-sanity';
 import { portableTextToHtml } from '../lib/portableText';
 
@@ -14,14 +14,12 @@ const years = getAllYears();
 const startYear = years[years.length - 1];
 const endYear = years[0];
 
-const useSanityContent = import.meta.env.USE_SANITY === 'true';
+const useSanityContent = isSanityEnabled;
 
 let aboutDoc = null;
 if (useSanityContent) {
   aboutDoc = await getAboutPage();
 }
-
-console.log('[about] useSanityContent =', useSanityContent, '| aboutDoc =', aboutDoc);
 
 const pageTitle = aboutDoc?.title ?? 'About the Reading Series';
 const pageSubtitle =
