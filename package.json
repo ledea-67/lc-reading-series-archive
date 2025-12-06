@@ -10,6 +10,7 @@
     "process-photos:dry": "node scripts/process-photos.js --dry-run"
   },
   "dependencies": {
+    "@portabletext/to-html": "^4.0.1",
     "@sanity/client": "^7.13.1",
     "astro": "^5.16.4",
     "sharp": "^0.33.5",

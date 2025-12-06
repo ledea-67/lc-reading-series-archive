@@ -1,0 +1,20 @@
+{
+  "name": "lc-reading-series-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "start": "sanity start"
+  },
+  "dependencies": {
+    "sanity": "^3.72.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.17"
+  }
+}

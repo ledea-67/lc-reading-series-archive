@@ -8,6 +8,8 @@
 import Base from '../layouts/Base.astro';
 import WriterCard from '../components/WriterCard.astro';
 import { writers, metadata, getAllYears, getWritersByYear } from '../lib/data';
+import { getSiteSettings } from '../lib/siteContent-sanity';
+import { portableTextToHtml } from '../lib/portableText';
 
 const years = getAllYears();
 const startYear = years[years.length - 1];
@@ -23,15 +25,43 @@ const recentYears = years.slice(0, 5).map(year => ({
   year,
   count: getWritersByYear(year).length
 }));
+
+// Homepage content: prefer Sanity when available (USE_SANITY=true),
+// but fall back to the original hard-coded text for local/staging JSON mode.
+const useSanityContent = import.meta.env.USE_SANITY === 'true';
+
+let siteSettings = null;
+if (useSanityContent) {
+  siteSettings = await getSiteSettings();
+}
+
+const heroIntro = siteSettings?.heroIntro ?? 'The';
+const heroTitle =
+  siteSettings?.heroTitle ?? 'Lewis & Clark College\nReading Series';
+const heroSubtitle = siteSettings?.heroSubtitle ?? 'Archive';
+const heroDescription =
+  siteSettings?.heroDescription ??
+  'A preserved collection of poets, novelists, and essayists who have graced the series. Each name a chapter in two decades of literary gatherings.';
+
+const homeTeaserHtml = siteSettings?.homeTeaser
+  ? portableTextToHtml(siteSettings.homeTeaser)
+  : '<p>This digital archive preserves the legacy of the Reading Series, making information about visiting writers accessible to students, scholars, and the broader literary community.</p>';
 ---
 
 <Base title="The Archive">
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-container">
-      <p class="hero-intro">The</p>
-      <h1 class="hero-title">Lewis & Clark College<br />Reading Series</h1>
-      <p class="hero-subtitle">Archive</p>
+      <p class="hero-intro">{heroIntro}</p>
+      <h1 class="hero-title">
+        {heroTitle.split('\n').map((line, index) => (
+          <>
+            {line}
+            {index === 0 && <br />}
+          </>
+        ))}
+      </h1>
+      <p class="hero-subtitle">{heroSubtitle}</p>
 
       <div class="hero-meta">
         <p class="hero-span">{startYear} — {endYear}</p>
@@ -39,8 +69,7 @@ const recentYears = years.slice(0, 5).map(year => ({
       </div>
 
       <p class="hero-description">
-        A preserved collection of poets, novelists, and essayists who have graced the series.
-        Each name a chapter in two decades of literary gatherings.
+        {heroDescription}
       </p>
     </div>
   </section>
@@ -114,7 +143,10 @@ const recentYears = years.slice(0, 5).map(year => ({
   <section class="about-teaser">
     <div class="about-container">
       <blockquote class="about-quote">
-        <p>This digital archive preserves the legacy of the Reading Series, making information about visiting writers accessible to students, scholars, and the broader literary community.</p>
+        <div
+          class="about-quote-body"
+          set:html={homeTeaserHtml}
+        />
       </blockquote>
       <a href="/about" class="about-link">About the archive &rarr;</a>
     </div>

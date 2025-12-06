@@ -7,68 +7,46 @@
  */
 import Base from '../layouts/Base.astro';
 import { metadata, getAllYears, writers } from '../lib/data';
+import { getAboutPage } from '../lib/siteContent-sanity';
+import { portableTextToHtml } from '../lib/portableText';
 
 const years = getAllYears();
 const startYear = years[years.length - 1];
 const endYear = years[0];
+
+const useSanityContent = import.meta.env.USE_SANITY === 'true';
+
+let aboutDoc = null;
+if (useSanityContent) {
+  aboutDoc = await getAboutPage();
+}
+
+const pageTitle = aboutDoc?.title ?? 'About the Reading Series';
+const pageSubtitle =
+  aboutDoc?.subtitle ?? 'A brief history of voices';
+const aboutBodyHtml = aboutDoc?.body
+  ? portableTextToHtml(aboutDoc.body)
+  : '';
 ---
 
-<Base title="About" description="About the Lewis & Clark College Reading Series and this archive">
+<Base title={pageTitle} description="About the Lewis & Clark College Reading Series and this archive">
   <article class="about-page">
     <!-- Page Header -->
     <header class="page-header">
-      <h1 class="page-title">About the Reading Series</h1>
-      <p class="page-subtitle">A brief history of voices</p>
+      <h1 class="page-title">{pageTitle}</h1>
+      <p class="page-subtitle">{pageSubtitle}</p>
     </header>
 
     <!-- Main Content -->
     <div class="prose-container">
-      <!-- Introduction -->
-      <section class="prose-section intro-section">
-        <p class="intro-text">
-          The Lewis & Clark College Reading Series has been bringing distinguished
-          literary writers to campus since {startYear}. This archive documents over two
-          decades of readings featuring poets, novelists, essayists, and critics.
-        </p>
-      </section>
-
-      <!-- Decorative divider -->
-      <div class="section-ornament">
-        <span class="ornament-symbol">§</span>
-      </div>
-
-      <!-- History -->
-      <section class="prose-section">
-        <h2 class="section-heading">History</h2>
-        <p>
-          Founded in {startYear}, the Reading Series has become a vital part of the
-          literary life of Lewis & Clark College and the broader Portland community.
-          Over the years, the series has hosted {metadata.totalWriters} writers representing
-          the full spectrum of contemporary literature.
-        </p>
-        <p>
-          The series has welcomed winners of major literary awards including the
-          Pulitzer Prize, National Book Award, MacArthur Fellowship, and many others.
-          These readings have provided students with the rare opportunity to encounter
-          living authors whose work shapes the literary landscape.
-        </p>
-      </section>
-
-      <!-- The Archive -->
-      <section class="prose-section">
-        <h2 class="section-heading">About This Archive</h2>
-        <p>
-          This digital archive preserves the legacy of the Reading Series, making
-          information about visiting writers accessible to students, scholars, and
-          the broader literary community.
-        </p>
-        <p>
-          Each writer's entry includes biographical information, notable works,
-          awards and honors, and links to further resources. The archive can be
-          explored chronologically through the Timeline, or alphabetically through
-          the Writers index.
-        </p>
-      </section>
+      {aboutBodyHtml && (
+        <section class="prose-section">
+          <div
+            class="portable-text-body"
+            set:html={aboutBodyHtml}
+          />
+        </section>
+      )}
 
       <!-- Statistics -->
       <section class="prose-section stats-section">
