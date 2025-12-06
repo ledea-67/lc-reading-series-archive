@@ -9,7 +9,14 @@
  */
 import type { Writer, WritersData, WritersMetadata } from '../types/writer';
 
-const useSanity = import.meta.env.USE_SANITY === 'true';
+// Resolve USE_SANITY from either Vite/Astro env or raw process.env.
+// This makes behavior consistent between local `.env.local` and
+// Vercel's build-time environment variables.
+const rawUseSanity = import.meta.env?.USE_SANITY ?? process.env.USE_SANITY;
+
+const useSanity =
+  typeof rawUseSanity === 'string' &&
+  ['true', '1', 'yes', 'on'].includes(rawUseSanity.toLowerCase());
 
 // Module-level state populated at load time
 let _writers: Writer[] = [];
