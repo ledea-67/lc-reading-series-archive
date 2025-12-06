@@ -1,28 +1,59 @@
-import type { Writer, WritersData } from '../types/writer';
-import writersJson from '../data/writers.json';
+/**
+ * Data Module
+ *
+ * Provides unified access to writer data, supporting both JSON and Sanity backends.
+ * The data source is controlled by the USE_SANITY environment variable.
+ *
+ * When USE_SANITY=true: Fetches from Sanity CMS (requires valid Sanity credentials)
+ * When USE_SANITY is unset or false: Uses local JSON file
+ */
+import type { Writer, WritersData, WritersMetadata } from '../types/writer';
 
-const data = writersJson as WritersData;
+const useSanity = import.meta.env.USE_SANITY === 'true';
 
-export const writers: Writer[] = data.writers;
-export const metadata = data.metadata;
+// Module-level state populated at load time
+let _writers: Writer[] = [];
+let _metadata: WritersMetadata;
+
+if (useSanity) {
+  // Dynamic import to avoid loading Sanity client when not needed
+  const { getWriters, getMetadata } = await import('./data-sanity');
+  _writers = await getWriters();
+  _metadata = getMetadata();
+} else {
+  // Static JSON import
+  const writersJson = (await import('../data/writers.json')).default as WritersData;
+  _writers = writersJson.writers;
+  _metadata = writersJson.metadata;
+}
 
 /**
- * Get a single writer by their ID
+ * All writers from the data source.
+ */
+export const writers: Writer[] = _writers;
+
+/**
+ * Dataset metadata.
+ */
+export const metadata: WritersMetadata = _metadata;
+
+/**
+ * Get a single writer by their ID/slug.
  */
 export function getWriterById(id: string): Writer | undefined {
   return writers.find((writer) => writer.id === id);
 }
 
 /**
- * Get all writers who appeared in a specific year
+ * Get all writers who appeared in a specific year.
  */
 export function getWritersByYear(year: number): Writer[] {
   return writers.filter((writer) => writer.years.includes(year));
 }
 
 /**
- * Get all writers of a specific genre
- * Handles compound genres like "fiction/poetry" by checking if the genre contains the search term
+ * Get all writers of a specific genre.
+ * Handles compound genres like "fiction/poetry" by checking if the genre contains the search term.
  */
 export function getWritersByGenre(genre: string): Writer[] {
   const searchGenre = genre.toLowerCase();
@@ -32,8 +63,8 @@ export function getWritersByGenre(genre: string): Writer[] {
 }
 
 /**
- * Get all years that have associated writers, sorted in descending order
- * Excludes year 0 (unknown year)
+ * Get all years that have associated writers, sorted in descending order.
+ * Excludes year 0 (unknown year).
  */
 export function getAllYears(): number[] {
   const yearsSet = new Set<number>();
@@ -50,14 +81,14 @@ export function getAllYears(): number[] {
 }
 
 /**
- * Get all writers with unknown year (year = 0)
+ * Get all writers with unknown year (year = 0).
  */
 export function getWritersWithUnknownYear(): Writer[] {
   return writers.filter((writer) => writer.years.includes(0));
 }
 
 /**
- * Get all unique genres from the writers data
+ * Get all unique genres from the writers data.
  */
 export function getAllGenres(): string[] {
   const genresSet = new Set<string>();

@@ -3,6 +3,7 @@ export interface WriterPhoto {
   url: string | null;
   license: string | null;
   attribution: string | null;
+  alt: string | null;
   status: 'available' | 'needs_acquisition' | string;
 }
 
