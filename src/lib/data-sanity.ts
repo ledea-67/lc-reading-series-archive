@@ -46,6 +46,20 @@ const writerProjection = `{
       null
     )
   },
+  "media": {
+    "audioClips": media.audioClips[]{
+      title,
+      description,
+      "fileUrl": audioFile.asset->url,
+      externalUrl
+    },
+    "videoClips": media.videoClips[]{
+      title,
+      description,
+      "fileUrl": videoFile.asset->url,
+      externalUrl
+    }
+  },
   "confidence": coalesce(confidence, "medium"),
   "needsReview": coalesce(needsReview, false)
 }`;

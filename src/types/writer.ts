@@ -51,6 +51,38 @@ export interface WriterPhoto {
   imageRef?: SanityImageRef | null;
 }
 
+/**
+ * Audio clip - either uploaded directly to Sanity or linked externally.
+ */
+export interface AudioClip {
+  title: string;
+  description?: string | null;
+  /** CDN URL for directly uploaded audio file */
+  fileUrl?: string | null;
+  /** URL to externally hosted audio (SoundCloud, podcast host, etc.) */
+  externalUrl?: string | null;
+}
+
+/**
+ * Video clip - either uploaded directly to Sanity or linked externally.
+ */
+export interface VideoClip {
+  title: string;
+  description?: string | null;
+  /** CDN URL for directly uploaded video file */
+  fileUrl?: string | null;
+  /** URL to externally hosted video (YouTube, Vimeo, etc.) */
+  externalUrl?: string | null;
+}
+
+/**
+ * Media collection for a writer - audio and video recordings.
+ */
+export interface WriterMedia {
+  audioClips?: AudioClip[] | null;
+  videoClips?: VideoClip[] | null;
+}
+
 export interface Writer {
   id: string;
   name: string;
@@ -68,6 +100,11 @@ export interface Writer {
   wikipediaUrl: string | null;
   officialWebsite: string | null;
   photo: WriterPhoto;
+  /**
+   * Audio and video recordings of readings, interviews, etc.
+   * Present for Sanity-backed data; omitted in legacy JSON.
+   */
+  media?: WriterMedia | null;
   confidence: 'high' | 'medium' | 'low';
   needsReview: boolean;
 }

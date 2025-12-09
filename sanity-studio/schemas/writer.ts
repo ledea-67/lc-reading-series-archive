@@ -120,6 +120,8 @@ export const writerType = defineType({
       name: 'media',
       title: 'Media (audio / video)',
       type: 'object',
+      description:
+        'Audio and video recordings of readings, interviews, or other appearances. Each clip can be either uploaded directly or linked from an external platform.',
       fields: [
         defineField({
           name: 'audioClips',
@@ -128,27 +130,64 @@ export const writerType = defineType({
           of: [
             {
               type: 'object',
+              title: 'Audio clip',
               fields: [
                 defineField({
                   name: 'title',
                   title: 'Title',
                   type: 'string',
+                  description: 'A descriptive title for this recording.',
                   validation: (Rule) => Rule.required(),
                 }),
                 defineField({
                   name: 'description',
                   title: 'Description',
                   type: 'text',
+                  rows: 2,
+                  description: 'Optional context about this recording.',
                 }),
                 defineField({
-                  name: 'url',
-                  title: 'URL',
+                  name: 'audioFile',
+                  title: 'Upload audio file',
+                  type: 'file',
+                  options: {
+                    accept: 'audio/*',
+                  },
+                  description:
+                    'Upload an audio file directly (MP3, WAV, etc.). Best for recordings under 50MB. Files are served from Sanity\'s CDN and play in the browser\'s native audio player.',
+                }),
+                defineField({
+                  name: 'externalUrl',
+                  title: 'External URL',
                   type: 'url',
                   description:
-                    'Direct URL to the audio file or audio-as-video (L&C media server, podcast host, YouTube, etc.).',
-                  validation: (Rule) => Rule.required(),
+                    'Link to audio hosted elsewhere (SoundCloud, podcast host, etc.). Use this for larger files or when the recording already exists on another platform.',
                 }),
               ],
+              validation: (Rule) =>
+                Rule.custom((clip) => {
+                  if (!clip) return true;
+                  const hasFile = clip.audioFile?.asset;
+                  const hasUrl = clip.externalUrl;
+                  if (!hasFile && !hasUrl) {
+                    return 'Please provide either an uploaded audio file or an external URL.';
+                  }
+                  return true;
+                }),
+              preview: {
+                select: {
+                  title: 'title',
+                  hasFile: 'audioFile.asset',
+                  url: 'externalUrl',
+                },
+                prepare({ title, hasFile, url }) {
+                  const source = hasFile ? '📁 Uploaded' : url ? '🔗 External' : '⚠️ No source';
+                  return {
+                    title: title || 'Untitled audio',
+                    subtitle: source,
+                  };
+                },
+              },
             },
           ],
         }),
@@ -159,27 +198,64 @@ export const writerType = defineType({
           of: [
             {
               type: 'object',
+              title: 'Video clip',
               fields: [
                 defineField({
                   name: 'title',
                   title: 'Title',
                   type: 'string',
+                  description: 'A descriptive title for this video.',
                   validation: (Rule) => Rule.required(),
                 }),
                 defineField({
                   name: 'description',
                   title: 'Description',
                   type: 'text',
+                  rows: 2,
+                  description: 'Optional context about this video.',
                 }),
                 defineField({
-                  name: 'url',
-                  title: 'URL',
+                  name: 'videoFile',
+                  title: 'Upload video file',
+                  type: 'file',
+                  options: {
+                    accept: 'video/*',
+                  },
+                  description:
+                    'Upload a video file directly (MP4, WebM, etc.). Best for short clips under 2-3 minutes. Larger videos may buffer on slow connections since there\'s no adaptive streaming.',
+                }),
+                defineField({
+                  name: 'externalUrl',
+                  title: 'External URL',
                   type: 'url',
                   description:
-                    'Direct URL or embed URL (L&C media server, YouTube, Vimeo, Panopto, etc.).',
-                  validation: (Rule) => Rule.required(),
+                    'Link to video hosted on YouTube, Vimeo, or another platform. Recommended for longer recordings — these services provide adaptive streaming for better playback quality.',
                 }),
               ],
+              validation: (Rule) =>
+                Rule.custom((clip) => {
+                  if (!clip) return true;
+                  const hasFile = clip.videoFile?.asset;
+                  const hasUrl = clip.externalUrl;
+                  if (!hasFile && !hasUrl) {
+                    return 'Please provide either an uploaded video file or an external URL.';
+                  }
+                  return true;
+                }),
+              preview: {
+                select: {
+                  title: 'title',
+                  hasFile: 'videoFile.asset',
+                  url: 'externalUrl',
+                },
+                prepare({ title, hasFile, url }) {
+                  const source = hasFile ? '📁 Uploaded' : url ? '🔗 External' : '⚠️ No source';
+                  return {
+                    title: title || 'Untitled video',
+                    subtitle: source,
+                  };
+                },
+              },
             },
           ],
         }),

@@ -7,6 +7,7 @@
  */
 import Base from '../../layouts/Base.astro';
 import WriterHero from '../../components/WriterHero.astro';
+import MediaSection from '../../components/MediaSection.astro';
 import { writers, getWriterById } from '../../lib/data';
 import type { Writer } from '../../types/writer';
 
@@ -92,6 +93,9 @@ const hasUnknownYear = writer.years.includes(0);
           </ul>
         </section>
       )}
+
+      <!-- Media (Audio/Video) -->
+      <MediaSection media={writer.media} />
     </div>
 
     <!-- Back Navigation -->

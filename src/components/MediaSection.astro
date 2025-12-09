@@ -1,0 +1,278 @@
+---
+/**
+ * MediaSection — Displays audio and video recordings for a writer
+ *
+ * Handles both Sanity-hosted files (native HTML5 players) and
+ * external URLs (embedded players or links).
+ */
+import type { WriterMedia } from '../types/writer';
+
+interface Props {
+  media: WriterMedia | null | undefined;
+}
+
+const { media } = Astro.props;
+
+const audioClips = media?.audioClips ?? [];
+const videoClips = media?.videoClips ?? [];
+const hasMedia = audioClips.length > 0 || videoClips.length > 0;
+---
+
+{hasMedia && (
+  <section class="media-section">
+    <h2 class="section-heading">Recordings</h2>
+
+    {/* Audio Clips */}
+    {audioClips.length > 0 && (
+      <div class="media-group">
+        <h3 class="media-group-title">Audio</h3>
+        <ul class="media-list">
+          {audioClips.map((clip) => (
+            <li class="media-item">
+              <div class="media-info">
+                <span class="media-title">{clip.title}</span>
+                {clip.description && (
+                  <p class="media-description">{clip.description}</p>
+                )}
+              </div>
+              {clip.fileUrl ? (
+                <audio controls preload="metadata" class="audio-player">
+                  <source src={clip.fileUrl} />
+                  Your browser does not support the audio element.
+                </audio>
+              ) : clip.externalUrl && (
+                <a
+                  href={clip.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="external-media-link"
+                >
+                  <span class="link-icon">&#9834;</span>
+                  <span>Listen on external site</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Video Clips */}
+    {videoClips.length > 0 && (
+      <div class="media-group">
+        <h3 class="media-group-title">Video</h3>
+        <ul class="media-list">
+          {videoClips.map((clip) => {
+            const youtubeMatch = clip.externalUrl?.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&?/]+)/);
+            const vimeoMatch = clip.externalUrl?.match(/vimeo\.com\/(\d+)/);
+
+            return (
+              <li class="media-item video-item">
+                <div class="media-info">
+                  <span class="media-title">{clip.title}</span>
+                  {clip.description && (
+                    <p class="media-description">{clip.description}</p>
+                  )}
+                </div>
+                {clip.fileUrl ? (
+                  <video controls preload="metadata" class="video-player">
+                    <source src={clip.fileUrl} />
+                    Your browser does not support the video element.
+                  </video>
+                ) : youtubeMatch ? (
+                  <div class="video-embed">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${youtubeMatch[1]}`}
+                      title={clip.title}
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    />
+                  </div>
+                ) : vimeoMatch ? (
+                  <div class="video-embed">
+                    <iframe
+                      src={`https://player.vimeo.com/video/${vimeoMatch[1]}`}
+                      title={clip.title}
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    />
+                  </div>
+                ) : clip.externalUrl && (
+                  <a
+                    href={clip.externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="external-media-link"
+                  >
+                    <span class="link-icon">&#9658;</span>
+                    <span>Watch on external site</span>
+                    <span class="link-arrow">&nearr;</span>
+                  </a>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    )}
+  </section>
+)}
+
+<style>
+  .media-section {
+    animation: settle var(--duration-slower) var(--ease-out) forwards;
+    opacity: 0;
+    transform: translateY(8px);
+    animation-delay: 450ms;
+  }
+
+  .section-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--ink-deep);
+    margin: 0 0 var(--space-5);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--rule-faint);
+  }
+
+  .media-group {
+    margin-bottom: var(--space-8);
+  }
+
+  .media-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .media-group-title {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    margin: 0 0 var(--space-4);
+  }
+
+  .media-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .media-item {
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--rule-faint);
+  }
+
+  .media-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .media-info {
+    margin-bottom: var(--space-3);
+  }
+
+  .media-title {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--ink-body);
+    display: block;
+  }
+
+  .media-description {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    margin: var(--space-2) 0 0;
+    line-height: 1.5;
+  }
+
+  /* Native Audio Player */
+  .audio-player {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  /* Native Video Player */
+  .video-player {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 4px;
+    background: var(--ink-deep);
+  }
+
+  /* Embedded Video (YouTube/Vimeo) */
+  .video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--ink-deep);
+  }
+
+  .video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* External Link Fallback */
+  .external-media-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid var(--rule-faint);
+    border-radius: 4px;
+    transition:
+      border-color var(--duration-normal) var(--ease-out),
+      color var(--duration-normal) var(--ease-out);
+  }
+
+  .external-media-link:hover {
+    border-color: var(--rule-light);
+    color: var(--accent-stamp);
+  }
+
+  .link-icon {
+    font-size: var(--text-base);
+  }
+
+  .link-arrow {
+    font-size: var(--text-xs);
+    opacity: 0.6;
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  .external-media-link:hover .link-arrow {
+    transform: translate(2px, -2px);
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .video-embed,
+    .video-player {
+      max-width: 100%;
+    }
+  }
+</style>

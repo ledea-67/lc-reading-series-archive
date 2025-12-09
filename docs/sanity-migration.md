@@ -498,3 +498,111 @@ This script creates the webhook via the Sanity Management API.
 - **Build not triggered:** Verify the webhook filter includes the document type you edited
 - **Draft changes not appearing:** Remember to click "Publish" — drafts don't trigger rebuilds
 - **Webhook failures:** Check Sanity webhook deliveries for HTTP errors; verify Deploy Hook URL is correct
+
+---
+
+## 10. Media Hosting (Audio & Video)
+
+The archive supports hosting audio and video recordings directly in Sanity or linking to external platforms.
+
+### 10.1 Media Options Per Clip
+
+Each audio or video clip in the writer's media section can use **one of two sources**:
+
+| Source Type | Description | Best For |
+|------------|-------------|----------|
+| **Direct Upload** | File uploaded to Sanity, served from CDN | Audio files, short video clips (<2-3 min) |
+| **External URL** | Link to YouTube, Vimeo, SoundCloud, etc. | Long videos, existing hosted content |
+
+### 10.2 Schema Structure
+
+```
+writer.media:
+├── audioClips[]
+│   ├── title (required)
+│   ├── description (optional)
+│   ├── audioFile (file upload, audio/*)
+│   └── externalUrl (URL to external host)
+│
+└── videoClips[]
+    ├── title (required)
+    ├── description (optional)
+    ├── videoFile (file upload, video/*)
+    └── externalUrl (URL to external host)
+```
+
+Validation requires either a file upload OR an external URL for each clip.
+
+### 10.3 Direct Upload Details
+
+**How it works:**
+- Files are uploaded directly in Sanity Studio
+- Stored on Sanity's CDN at `https://cdn.sanity.io/files/{projectId}/{dataset}/{assetId}.{ext}`
+- Served as raw files (no transcoding or adaptive streaming)
+- Played using browser's native HTML5 `<audio>` or `<video>` elements
+
+**Free plan limits:**
+- 100 GB total asset storage
+- 100 GB bandwidth per month
+
+**Recommendations:**
+- **Audio:** Compress to 128-192 kbps MP3 for reasonable file sizes (~1MB per minute)
+- **Video:** Keep clips under 2-3 minutes; use MP4 with H.264 encoding
+- **Large videos:** Use YouTube/Vimeo instead — they provide adaptive streaming
+
+### 10.4 External URL Support
+
+**Embedded players (automatic):**
+- YouTube URLs → embedded YouTube player (iframe)
+- Vimeo URLs → embedded Vimeo player (iframe)
+
+**Other URLs:**
+- Displayed as a link button: "Listen on external site" or "Watch on external site"
+- Opens in new tab
+
+### 10.5 Admin Workflow
+
+In Sanity Studio, when adding a media clip:
+
+1. Enter a **title** (required)
+2. Optionally add a **description**
+3. Choose ONE:
+   - **Upload file** — drag/drop or browse to upload audio/video
+   - **External URL** — paste a URL to YouTube, Vimeo, SoundCloud, etc.
+4. The preview shows "📁 Uploaded" or "🔗 External" to confirm which source is set
+
+### 10.6 Frontend Display
+
+Media appears on the writer detail page below External Links:
+
+- **Audio:** Native HTML5 audio player with play/pause, scrubber, volume
+- **Video (uploaded):** Native HTML5 video player
+- **Video (YouTube/Vimeo):** Embedded responsive iframe player
+- **Other external:** Link button to open in new tab
+
+### 10.7 Technical Implementation
+
+**Files changed:**
+- `sanity-studio/schemas/writer.ts` — Schema with file upload fields
+- `src/lib/data-sanity.ts` — GROQ projection fetching file URLs
+- `src/types/writer.ts` — TypeScript interfaces for media
+- `src/components/MediaSection.astro` — Component rendering players
+- `src/pages/writers/[id].astro` — Includes MediaSection component
+
+**GROQ projection for media:**
+```groq
+"media": {
+  "audioClips": media.audioClips[]{
+    title,
+    description,
+    "fileUrl": audioFile.asset->url,
+    externalUrl
+  },
+  "videoClips": media.videoClips[]{
+    title,
+    description,
+    "fileUrl": videoFile.asset->url,
+    externalUrl
+  }
+}
+```
