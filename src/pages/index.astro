@@ -40,7 +40,8 @@ if (featuredWriters.length === 0) {
     .slice(0, 6);
 }
 
-const heroIntro = siteSettings?.heroIntro ?? 'The';
+// heroIntro: use empty string if Sanity returns null/undefined, preserve empty string from Sanity
+const heroIntro = siteSettings?.heroIntro !== undefined ? siteSettings.heroIntro : 'The';
 const heroTitle =
   siteSettings?.heroTitle ?? 'Lewis & Clark College\nReading Series';
 const heroSubtitle = siteSettings?.heroSubtitle ?? 'Archive';
@@ -119,7 +120,6 @@ const homeTeaserHtml = siteSettings?.homeTeaser
     <div class="section-container">
       <header class="section-header">
         <h2 class="section-title">Browse by Year</h2>
-        <p class="section-subtitle">The chronological spine</p>
       </header>
 
       <div class="years-grid">
