@@ -57,8 +57,8 @@ export const siteSettingsType = defineType({
         },
       ],
       description:
-        'Select up to 6 writers to feature on the homepage. Drag to reorder.',
-      validation: (Rule) => Rule.max(6).unique(),
+        'Select up to 8 writers to feature on the homepage. Drag to reorder.',
+      validation: (Rule) => Rule.max(8).unique(),
     }),
   ],
 });
