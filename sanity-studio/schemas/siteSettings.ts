@@ -44,7 +44,21 @@ export const siteSettingsType = defineType({
       type: 'array',
       of: [{ type: 'block' }],
       description:
-        'Rich text used in the “About the archive” teaser on the homepage.',
+        'Rich text used in the "About the archive" teaser on the homepage.',
+    }),
+    defineField({
+      name: 'featuredWriters',
+      title: 'Featured writers',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'writer' }],
+        },
+      ],
+      description:
+        'Select up to 6 writers to feature on the homepage. Drag to reorder.',
+      validation: (Rule) => Rule.max(6).unique(),
     }),
   ],
 });

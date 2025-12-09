@@ -15,11 +15,6 @@ const years = getAllYears();
 const startYear = years[years.length - 1];
 const endYear = years[0];
 
-// Featured writers: prioritize those with awards and known years
-const featuredWriters = writers
-  .filter(w => !w.years.includes(0) && w.awards.length > 0)
-  .slice(0, 6);
-
 // Recent years for quick navigation
 const recentYears = years.slice(0, 5).map(year => ({
   year,
@@ -34,6 +29,15 @@ const useSanityContent = isSanityEnabled;
 let siteSettings = null;
 if (useSanityContent) {
   siteSettings = await getSiteSettings();
+}
+
+// Featured writers: prefer Sanity-curated list, fall back to auto-selection
+let featuredWriters = siteSettings?.featuredWriters ?? [];
+if (featuredWriters.length === 0) {
+  // Fallback: prioritize those with awards and known years
+  featuredWriters = writers
+    .filter(w => !w.years.includes(0) && w.awards.length > 0)
+    .slice(0, 6);
 }
 
 const heroIntro = siteSettings?.heroIntro ?? 'The';
